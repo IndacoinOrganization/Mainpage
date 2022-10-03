@@ -11,7 +11,7 @@ import Navbar from '@/components/Navbar';
 
 function MainVer () {
   return (
-    <div className="wrapperVer2">
+    <div className="wrapper">
       <div className="_container">
         <Navbar />
         
