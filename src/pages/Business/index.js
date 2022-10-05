@@ -1,15 +1,16 @@
 import React, {Component} from 'react';
-import Header from '@containers/Header';
-import Footer from '@containers/Footer';
+
+// import Header from '@containers/Header';
+// import Footer from '@containers/Footer';
 
 import PartnershipFirstBlock from './PartnershipFirstBlock';
 import PartnershipSecondBlock from './PartnershipSecondBlock';
 import PartnershipThirdBlock from './PartnershipThirdBlock';
 import PartnershipOpportunities from './PartnershipOpportunities';
-import PotentialPartners from '@containers/PotentialPartners';
+// import PotentialPartners from '@containers/PotentialPartners';
 import BestTrustOfUs from './BestTrustOfUs';
 import PartnershipForm from './PartnershipForm';
-import Seo from '@tools/Seo';
+import Seo from '@/tools/Seo';
 import {withTranslation} from 'react-i18next';
 
 const FORM_ID = 'partnershipForm';
@@ -32,7 +33,7 @@ class Partnership extends Component {
                   <PartnershipSecondBlock />
                   <PartnershipThirdBlock />
                   <PartnershipOpportunities formId={FORM_ID}/>
-                  <PotentialPartners />
+                  {/* <PotentialPartners /> */}
                   <BestTrustOfUs />
                   <PartnershipForm formId={FORM_ID}/>
               </main>

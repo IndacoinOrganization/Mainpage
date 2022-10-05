@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import styles from './styles.scss';
-import Background from '@images/partnershipOpportunitiesBackground.png';
-import SildeUpDownCard from '@components/SlideUpDownCard';
+import styles from './styles.sass';
+import Background from '@/images/partnershipOpportunitiesBackground.png';
+import SildeUpDownCard from '@/components/SlideUpDownCard';
 import {Trans} from 'react-i18next';
 import Scroll from 'react-scroll';
-import Link from '@components/Link';
+import Link from '@/components/Link';
 
 const background = {
     backgroundImage: 'url(' + Background + ')',

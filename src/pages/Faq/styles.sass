@@ -1,0 +1,123 @@
+.wrapper 
+    height: 100%
+
+.main 
+    // Grid
+    @import '~@styles/general.scss'
+    @include button()
+
+    font-family: Gilroy
+    .title 
+        @media(max-width: $max-col-sm) 
+            padding-top: 35px
+        
+        @media(min-width: $min-col-sm) 
+            padding-top: 65px
+        
+        text-align: center
+        span 
+            color: #000000
+            font-weight: 700
+            @media(max-width: $max-col-sm) 
+                font-size: 24px
+                line-height: 29px
+            
+            @media(min-width: $min-col-sm) 
+                font-size: 36px
+                line-height: 44px
+            
+        
+    
+    .anchors 
+        padding: 20px 0
+        text-align: center
+        ul 
+            display: inline-block
+            > li 
+                margin-top: 15px
+                @media(max-width: $max-col-sm) 
+                    display: block
+                
+                @media(min-width: $min-col-sm) 
+                    display: inline-block
+                    margin-right: 22px
+                
+                a 
+                    text-decoration: none
+                    span 
+                        display: inline-block
+                        height: 37px
+                        line-height: 37px
+                        font-size: 18px
+                        font-weight: bold
+                        border-radius: 18.5px
+                        padding: 0 20px
+                        background: #edf1fa
+                        text-transform: capitalize
+                        text-align: center
+                        vertical-align: middle
+                        color: #000
+                        &:hover 
+                            background: #e4e9f3
+                        
+                    
+                
+            
+            > li:nth-last-child(1) 
+                margin-right: 0
+            
+        
+    
+    .linkSupport 
+        padding: 25px 0
+        text-align: center
+    
+
+.block 
+    ul 
+        > li 
+            > span 
+                display: block
+                margin: 40px 0
+                font-size: 24px
+                font-weight: bold
+                text-align: center
+                text-transform: capitalize
+                color: #000
+            
+            > ol 
+                max-width: 1011px
+                margin: 0 auto
+                > li 
+                    border-radius: 21px
+                    background: #fff
+                    padding: 17px 30px
+                    span 
+                        display: block
+                        font-size: 18px
+                        color: #3463F8
+                        cursor: pointer
+                        user-select: none
+                    
+                    p 
+                        height: 0
+                        overflow: hidden
+                        transition: all 0.25s ease-in
+                        color: rgba(0,0,0,0)
+                    
+                    .show + p 
+                        height: auto
+                        padding-top: 25px
+                        color: rgba(0,0,0,1)
+                    
+                
+                li + li 
+                    margin-top: 10px
+                
+                > li.show 
+
+                
+            
+        
+    
+

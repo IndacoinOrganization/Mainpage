@@ -1,0 +1,128 @@
+.wrapper 
+    padding: 70px 0
+
+    .title 
+        display: block
+        text-align: center
+        font-size: 3rem
+        font-weight: bold
+        line-height: 3rem
+        font-family: Gilroy
+    
+
+    .slidesContainer 
+        width: 90%
+        margin: 40px auto 0 auto
+        display: flex
+        justify-content: space-between
+    
+
+    .cardContainer:first-child 
+        margin-left: 0
+    
+
+    .cardContainer 
+        flex: 1
+        margin-left: 3rem
+
+        .cardTitle 
+            font-size: .9rem
+            font-family: Gilroy
+            line-height: 1.4rem
+            display: inline-block
+            padding-bottom: .5em
+        
+
+        .cardList 
+            list-style: none
+
+            li:first-child 
+                margin-top: 0
+            
+
+            li 
+                margin-top: .7em
+                font-size: .9rem
+                font-family: Gilroy
+                line-height: 1.5rem
+
+                &::before 
+                    content: "\2013"
+                    font-weight: bold
+                    display: inline-block
+                    width: .8em
+                
+            
+        
+    
+
+
+
+@media(max-width: 575px) 
+    .wrapper 
+        padding-bottom: 3.5em
+        padding-top: 2em
+
+        .title 
+            font-size: 1.4rem
+            line-height: 1.4rem
+        
+
+        .slidesContainer 
+            width: 90%
+            margin: 0 auto
+            justify-content: start
+            flex-direction: column
+        
+
+        .cardContainer 
+            flex: 1
+            margin-left: 0
+            margin-top: 13em
+        
+    
+
+
+@media(min-width: 575px) AND (max-width: 768px) 
+    .wrapper 
+        // padding-bottom: 3.5em
+        // padding-top: 2em
+
+        .title 
+            font-size: 2rem
+            line-height: 2.4rem
+        
+
+        .slidesContainer 
+            width: 80%
+            margin: 0 auto
+            justify-content: start
+            flex-direction: column
+        
+
+        .cardContainer 
+            flex: 2
+            margin-left: 0
+            // margin-top: 3em
+        
+    
+
+
+@media(min-width: 1366px) AND (max-width: 1522px) 
+    .slidesContainer 
+        width: 85%
+    
+
+
+@media(min-width: 1522px) AND (max-width: 1899px) 
+    .slidesContainer 
+        width: 80%
+    
+
+
+
+@media(min-width: 1900px) 
+    .slidesContainer 
+        width: 70%
+    
+

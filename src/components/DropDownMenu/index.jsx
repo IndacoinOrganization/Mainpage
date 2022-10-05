@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // styles
-import styles from "./styles.scss";
+import styles from "./styles.sass";
 
 class MenuDropdown extends Component {
     constructor() {

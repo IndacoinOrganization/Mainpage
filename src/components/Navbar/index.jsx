@@ -30,7 +30,6 @@ const Navbar = () => {
                     <li>
                         <Link to={'#'}>Track order</Link>
                     </li>
-
                     <li>
                         <Link to="verification">
                             Official Verification

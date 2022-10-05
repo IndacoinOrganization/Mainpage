@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import styles from './styles.scss';
+import styles from './styles.sass';
 import Slider from "react-slick";
 import {Trans} from 'react-i18next';
 
