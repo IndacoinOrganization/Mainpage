@@ -24,7 +24,7 @@ import Subscribe from '@pages/Subscribe';
 import RestoreAccount from '@pages/RestoreAccount';
 import Charts from '@pages/Charts';
 
-import Verification from './pages/Verification';
+import Verification from '@/pages/Verification';
 
 export const ROUTES = [
     {
