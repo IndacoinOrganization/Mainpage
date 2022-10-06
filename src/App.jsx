@@ -14,6 +14,8 @@ import Verification from '@/pages/Verification'
 
 
 //const globals = Globals.getInstance();
+// import Status from "./pages/Status";
+import Verification from "./pages/Verification";
 
 function App() {
   return (
@@ -23,7 +25,9 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/business' element={<Business />} />  
             <Route path='/verification' element={<Verification />} />  
-            <Route path='/faq' element={<Faq />} />  
+            <Route path='/faq' element={<Faq />} /> 
+            <Route path='/verification' element={<Verification />} />
+            {/* <Route path='/payment-status' element={<Status />} /> */} 
      </Routes>
     </BrowserRouter>
 

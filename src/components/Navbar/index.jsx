@@ -13,6 +13,7 @@ const Navbar = () => {
     const [selectedOption, setSelectedOption] = useState(null);
     const [showLanguages, setShowLanguages] = useState(false)
 
+export default function Navbar() {
     return (
         <nav>    
             <MenuDropdown />

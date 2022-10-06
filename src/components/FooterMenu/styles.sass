@@ -1,0 +1,248 @@
+.burger
+    display: none
+    cursor: pointer
+    user-select: none
+
+.close
+    display: none
+    cursor: pointer
+    user-select: none
+
+.menu
+    li
+        display: inline-block
+        margin-left: 32px
+.menu
+    a,span
+        font-size: 1.1rem
+        font-weight: bold
+        color: #000
+        text-decoration: none
+        position: relative
+
+.menu
+    span
+        cursor: pointer
+        display: inline-block
+        user-select: none
+        
+    a:hover,
+    span:hover
+        text-decoration: underline
+        
+    .dropDown:
+        display: inline-block
+        margin-left: 5px
+        padding-bottom: 2px
+
+.menu
+    display: flex
+    font-family: Gilroy
+    align-items: center
+    user-select: none
+    
+    .button
+        display: inline-block
+        text-align: center
+        padding: 8px 30px
+        border-radius: 12px
+        border: 0
+        background: #3463F8
+        color: #fff
+        font-weight: bold
+    
+    .button:focus
+        outline: none
+
+
+.loaderContainer
+    display: flex
+
+    .loader
+        width: 7rem
+        height: 1.2rem
+        margin-left: 1.4em
+
+        &:defs
+            &:rect
+                width: 100%
+                height: 100%
+            
+        
+    
+
+
+
+
+@media(max-width: 575px)
+    .wrapper.show
+        display: block
+    
+    .wrapper
+       // display: none
+        position: absolute
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        background: #fff
+        z-index: 999999999999
+    
+   
+    .menu
+        flex-direction: column
+        margin-top: 1em
+        padding-bottom: 1em
+    .menu
+        li
+            margin-top: 1em
+            margin-left: 0
+            &:div
+                margin-top: 1em
+                &:ul
+                    position: static 
+            
+        
+    
+
+    .loaderContainer
+        display: flex
+
+        .loader
+            display: none
+
+            &:last-child
+                display: initial
+                width: 2rem
+                height: .9rem
+            
+        
+    
+
+
+@media(min-width: 576px) AND (max-width: 767px)
+    .wrapper.show
+        display: block
+    
+    .wrapper
+       // display: none
+        position: absolute
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        background: #fff
+        z-index: 999999999999
+    
+ 
+    
+    .menu
+        flex-direction: column
+        margin-top: 1em
+        padding-bottom: 1em
+                
+    .menu
+        li
+            margin-top: 1em
+            margin-left: 0
+    .menu
+        li
+            a,span
+                font-size: 1.5rem
+            div
+                margin-top: 1em
+                &:ul
+                    position: static
+                
+    
+
+
+    .loaderContainer
+        display: flex
+
+        .loader
+            display: none
+
+            &:last-child
+                display: initial
+                width: 2rem
+                height: .9rem
+            
+        
+    
+
+
+@media screen and (min-width: 768px) AND (max-width: 1100px)
+    .wrapper.show
+        display: block
+    
+    .wrapper
+      // display: none
+        position: absolute
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        background: #fff
+        z-index: 999999999999
+
+    .menu
+        li 
+            margin-top: 1em
+            margin-left: 0
+            a,span
+                font-size: 1.5rem
+            div
+                margin-top: 1em
+                ul
+                    position: static
+    
+    
+    
+    .menu
+         li
+            margin-top: 1em
+            margin-left: 0
+            a,span
+                font-size: 1.5rem
+            div
+                margin-top: 1em
+                ul
+                    position: static
+                
+            
+        
+    
+
+    .loaderContainer
+        display: flex
+
+        .loader
+            display: none
+
+            &:last-child
+                display: initial
+                width: 2rem
+                height: .9rem
+            
+        
+    
+
+
+
+@media screen and (min-width: 1101px) AND (max-width: 1200px)
+
+    .menu
+
+         li
+            display: inline-block
+            margin-left: 0.8rem
+            a,span
+                font-size: 0.9rem
+                font-weight: bold
+                color: #000
+                text-decoration: none
+            
+        
+    
+
