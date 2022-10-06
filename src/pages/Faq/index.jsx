@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styles from "./styles.sass";
+import "./styles.sass";
 import { Trans, withTranslation } from "react-i18next";
 
 // components
@@ -11,14 +11,13 @@ import Scroll from "react-scroll";
 import Seo from "@/tools/Seo";
 
 class Faq extends Component {
-  // constructor(props) {
-  //   super(props);
 
-  //   Seo.getInstance().changeTitle(this.props.i18n.t("seo.faq.title"));
-  //   Seo.getInstance().changeDescription(
-  //     this.props.i18n.t("seo.faq.description")
-  //   );
-  // }
+  constructor (props) {
+    super(props);
+
+    Seo.getInstance().changeTitle(this.props.i18n.t('seo.faq.title'));
+    Seo.getInstance().changeDescription(this.props.i18n.t('seo.faq.description'));
+}
 
   get questions() {
     return [

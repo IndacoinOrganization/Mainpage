@@ -5,7 +5,6 @@ import {Trans} from 'react-i18next';
 import Slider from "react-slick";
 import Slide from './Slide';
 
-import partnershipSecurityImg from '@/assets/image/partner/partnershipSecurity.svg'
 
 
 export default class extends Component {
@@ -57,36 +56,37 @@ export default class extends Component {
 
                         <Slider {...settings}>
                             <Slide
-                                image={partnershipSecurityImg}
+                                image={'../../../../src/assets/image/partnershipSecurity.svg'}
                                 title="partnership.thirdBlock.slides.security.title"
                                 text="partnership.thirdBlock.slides.security.text"
                                 aria-labelledby="circle"
                             />
 
-                            {/* <Slide
-                                image={require('@image/partnershipStability.svg')}
+                             <Slide
+                          
+                                image={'../../../../src/assets/image/partnershipStability.svg'}
                                 title="partnership.thirdBlock.slides.stability.title"
                                 text="partnership.thirdBlock.slides.stability.text"
                             />
 
                             <Slide
-                                image={require('@image/partnershipSpeed.svg')}
+                                image={'../../../../src/assets/image/partnershipSpeed.svg'}
                                 title="partnership.thirdBlock.slides.speed.title"
                                 text="partnership.thirdBlock.slides.speed.text"
                                 active={true}
                             />
 
                             <Slide
-                                image={require('@image/partnershipFreedom.svg')}
+                                image={'../../../../src/assets/image/partnershipFreedom.svg'}
                                 title="partnership.thirdBlock.slides.freedom.title"
                                 text="partnership.thirdBlock.slides.freedom.text"
                             />
 
                             <Slide
-                                image={require('@image/partnershipScale.svg')}
+                                image={'../../../../src/assets/image/partnershipScale.svg'}
                                 title="partnership.thirdBlock.slides.scale.title"
                                 text="partnership.thirdBlock.slides.scale.text"
-                            /> */}
+                            /> 
                         </Slider>
 
                     </div>
