@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 // containers
 import VerificationBlock from '../../components/Verification';
 import Navbar from '../../components/Navbar';
@@ -36,6 +37,7 @@ class Verification extends Component {
                     <p className="footerText">
                         Indacoin Limited, Suite 4b, 43 Berkeley Square, Mayfair, London, Westminster, United Kingdom, W1J 5FJ Company Number 08924450
                     </p>
+
                 </div>
             </div>
         );

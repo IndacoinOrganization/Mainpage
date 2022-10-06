@@ -1,0 +1,63 @@
+{
+    "domain":"",
+    "reCaptchaSiteKey": "6LdSsYQUAAAAACaKePefPUSx1Zpp6pXQFQQ0Ezri",
+    "rootElementSelector": "#root",
+    "kfp": {
+        "number": "33789",
+        "action": "login"
+    },
+    "freshchat": {
+        "token": "b34aadd4-a993-4d87-a841-46b11a609877",
+        "host": "https://wchat.freshchat.com"
+    },
+    "livechat": {
+        "license": "11719131"
+    },
+    "hiddenCryptoCurrencies": [
+        "INTT"
+    ],
+    "showForDomain_hiddenCryptoCurrencies": "flacon.indacoin.io",
+    "USA_CLOUDFLARE_ISO": "US",
+    "USA_AVAILABLE_CRYPTO": ["BTC"],
+    "LOYALTY_TOKEN_FULL_NAME" :  "INDA Token",
+    "LOYALTY_TOKEN" :  "INDA",
+    "LOYALTY_TOKEN_PAIR" :  "ETH",
+    "PCICertificateLink": "https://indacoin.com/assets/pdf/pci_dss_self_assessment_certificate.pdf",
+    "locales":{
+        "available": [
+            {
+                "language": "et",
+                "defaultCountry": "ET"
+            },
+            
+            {
+                "language": "en",
+                "defaultCountry": "GB"
+            }
+            
+        ]
+    },
+    "discountModal": {
+        "partnerName": "inda_discount_",
+        "minDiscount": 1,
+        "maxDiscount": 5,
+        "minActionsCount": 6
+    },
+    "cryptoMood": {
+        "cloud": "https://cryptomood-widgets-qt75lk2n1.now.sh/indacoin-tag-cloud",
+        "news": "https://cryptomood-widgets-qt75lk2n1.now.sh/indacoin-sentiment-news",
+        "ticker": "https://cryptomood-widgets-qt75lk2n1.now.sh/indacoin-ticker"
+    },
+    "yandexMetrika": {
+        "id": 56424850
+    },
+    "news": {
+        "countPerPage": 7
+    },
+    "formBuyCrypto": {
+        "FORM_DATA_KEY": "wNrNWIVaYA"
+    },
+    "referral": {
+        "registrationUrl": "https://indacoin.com?discount"
+    }
+}
