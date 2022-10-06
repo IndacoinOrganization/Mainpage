@@ -1,18 +1,18 @@
 import React, {Component} from 'react';
-import styles from './styles.sass';
+import './styles.sass';
 import {Trans} from 'react-i18next';
 
 export default class extends Component {
 
     render () {
         return (
-            <section className={styles.wrapper}>
+            <section className="wrapper">
                 <div className="container">
-                    <h1 className={styles.title}>
+                    <h1 className="title">
                        <Trans i18nKey="partnership.secondBlock.title">Business Partnership</Trans>
                     </h1>
 
-                    <h3 className={styles.text}>
+                    <h3 className="text">
                         <Trans i18nKey="partnership.secondBlock.text">
                             There are many ways of collaborating with Indacoin.
                             The Indacoin Partnership Program is for crypto-related companies that are willing to connect the world of

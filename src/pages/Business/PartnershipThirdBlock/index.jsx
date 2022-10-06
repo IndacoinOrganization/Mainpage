@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
-import styles from './styles.sass';
+import './styles.sass';
 import {Trans} from 'react-i18next';
 
 import Slider from "react-slick";
 import Slide from './Slide';
+
+import partnershipSecurityImg from '@/assets/image/partner/partnershipSecurity.svg'
+
 
 export default class extends Component {
 
@@ -42,25 +45,25 @@ export default class extends Component {
         };
 
         return (
-            <section className={styles.wrapper}>
+            <section className="wrapper">
                 <div className="container">
-                    <h2 className={styles.title}>
+                    <h2 className="title">
                         <Trans i18nKey="partnership.thirdBlock.title">
                             Why partner with Indacoin?
                         </Trans>
                     </h2>
 
-                    <div className={styles.sliderContainer + ' partnershipSlider'}>
+                    <div className="sliderContainer partnershipSlider">
 
                         <Slider {...settings}>
                             <Slide
-                                image={require('@image/partnershipSecurity.svg')}
+                                image={partnershipSecurityImg}
                                 title="partnership.thirdBlock.slides.security.title"
                                 text="partnership.thirdBlock.slides.security.text"
                                 aria-labelledby="circle"
                             />
 
-                            <Slide
+                            {/* <Slide
                                 image={require('@image/partnershipStability.svg')}
                                 title="partnership.thirdBlock.slides.stability.title"
                                 text="partnership.thirdBlock.slides.stability.text"
@@ -83,7 +86,7 @@ export default class extends Component {
                                 image={require('@image/partnershipScale.svg')}
                                 title="partnership.thirdBlock.slides.scale.title"
                                 text="partnership.thirdBlock.slides.scale.text"
-                            />
+                            /> */}
                         </Slider>
 
                     </div>

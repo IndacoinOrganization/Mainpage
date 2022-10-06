@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import styles from './styles.sass';
+import './styles.sass';
 import Background from '@/images/partnershipOpportunitiesBackground.png';
 import SildeUpDownCard from '@/components/SlideUpDownCard';
 import {Trans} from 'react-i18next';
 import Scroll from 'react-scroll';
-import Link from '@/components/Link';
+import { Link }  from 'react-router-dom';
 
 const background = {
     backgroundImage: 'url(' + Background + ')',
@@ -38,16 +38,16 @@ export default class extends Component {
 
     render () {
         return (
-            <section className={styles.wrapper} style={background}>
-                <span className={styles.title}>
+            <section className="wrapper" style={background}>
+                <span className="title">
                     <Trans i18nKey="partnership.opportunities.title">
                         Opportunities for partners
                     </Trans>
                 </span>
 
-                <div className={styles.slidesContainer}>
+                <div className="slidesContainer">
 
-                    <div className={styles.cardContainer}>
+                    <div className="cardContainer">
                         <SildeUpDownCard
                           title={
                             <Trans i18nKey="partnership.opportunities.slides.listToken.title">
@@ -63,7 +63,7 @@ export default class extends Component {
                           }
                           onClick={() => Scroll.animateScroll.scrollTo(0)}
                         >
-                            <ul className={styles.cardList}>
+                            <ul className="cardList">
                                 <li>
                                     <Trans i18nKey="partnership.opportunities.slides.listToken.points.first">
                                         Your token will be available for instant purchase on
@@ -89,7 +89,7 @@ export default class extends Component {
                         </SildeUpDownCard>
                     </div>
 
-                    <div className={styles.cardContainer}>
+                    <div className="cardContainer">
                       <SildeUpDownCard
                           title={
                               <Trans i18nKey="partnership.opportunities.slides.api.title">
@@ -103,14 +103,14 @@ export default class extends Component {
                           }
                           onClick={this.scroll.bind(this)}
                       >
-                          <span className={styles.cardTitle}>
+                          <span className="cardTitle">
                               <Trans i18nKey="partnership.opportunities.slides.api.text">
                                   Discover a huge list of features with our flexible API.
                               </Trans>
                           </span>
 
 
-                          <ul className={styles.cardList}>
+                          <ul className="cardList">
                               <li>
                                   <Trans i18nKey="partnership.opportunities.slides.api.points.first">
                                       Acceptance of fiat cryptocurrency payments.
@@ -181,7 +181,7 @@ export default class extends Component {
                       </SildeUpDownCard>
                     </div>*/}
 
-                    <div className={styles.cardContainer}>
+                    <div className="cardContainer">
                         <SildeUpDownCard
                             title={
                                 <Trans i18nKey="partnership.opportunities.slides.processing.title">
@@ -195,7 +195,7 @@ export default class extends Component {
                             }
                             onClick={this.scroll.bind(this)}
                         >
-                            <span className={styles.cardTitle}>
+                            <span className="cardTitle">
 
                                 <Trans i18nKey="partnership.opportunities.slides.processing.text">
                                     Do you want to accept payments in rubles, dollars
@@ -203,7 +203,7 @@ export default class extends Component {
                                 </Trans>
                             </span>
 
-                            <ul className={styles.cardList}>
+                            <ul className="cardList">
                                 <li>
                                     <Trans i18nKey="partnership.opportunities.slides.processing.points.first">
                                         Send a request and receive an offer on the processing of your project.

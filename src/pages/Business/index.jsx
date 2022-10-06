@@ -9,38 +9,42 @@ import PartnershipThirdBlock from './PartnershipThirdBlock';
 import PartnershipOpportunities from './PartnershipOpportunities';
 // import PotentialPartners from '@containers/PotentialPartners';
 import BestTrustOfUs from './BestTrustOfUs';
-import PartnershipForm from './PartnershipForm';
-import Seo from '@/tools/Seo';
+//import PartnershipForm from './PartnershipForm';
+// import Seo from '@/tools/Seo';
 import {withTranslation} from 'react-i18next';
 
-const FORM_ID = 'partnershipForm';
 
-class Partnership extends Component {
+// const FORM_ID = 'partnershipForm';
 
-    constructor (props) {
-        super(props);
+
+
+
+class Business extends Component {
+
+    // constructor (props) {
+    //     super(props);
             
-        Seo.getInstance().changeTitle(this.props.i18n.t('seo.partnership.title'));
-        Seo.getInstance().changeDescription(this.props.i18n.t('seo.partnership.description'));
-    }
+    //     Seo.getInstance().changeTitle(Trans('seo.partnership.title'));
+    //     Seo.getInstance().changeDescription(Trans('seo.partnership.description'));
+    // }
 
     render () {
         return (
           <div>
-              <Header />
+            
               <main>
-                  <PartnershipFirstBlock formId={FORM_ID}/>
+                  <PartnershipFirstBlock/>
                   <PartnershipSecondBlock />
                   <PartnershipThirdBlock />
-                  <PartnershipOpportunities formId={FORM_ID}/>
+                  <PartnershipOpportunities/>
                   {/* <PotentialPartners /> */}
                   <BestTrustOfUs />
-                  <PartnershipForm formId={FORM_ID}/>
+                  {/* <PartnershipForm formId={FORM_ID}/> */}
               </main>
-              <Footer />
+            
           </div>
         );
     }
 }
 
-export default withTranslation()(Partnership);
+export default withTranslation()(Business);

@@ -1,9 +1,9 @@
-.wrapper 
+.wrapper
     padding: 70px 0 90px 0
     background: #3464f8
     overflow: hidden
 
-    .title 
+    .title
         display: block
         text-align: center
         color: #ffffff
@@ -11,200 +11,140 @@
         font-weight: bold
         line-height: 3rem
         font-family: Gilroy
-    
 
-    .sliderContainer 
+    .sliderContainer
         margin: 40px auto 0 auto
         width: 80%
 
-        button[class="slick-arrow slick-next"], button[class="slick-arrow slick-next slick-disabled"] 
+        button[class="slick-arrow slick-next"], button[class="slick-arrow slick-next slick-disabled"]
             //background: url(~@images/whiteArrowRight.svg) no-repeat
             display: block
             width: 1.1rem
             height: 2rem
             background-size: cover
 
-            &:before 
+            &:before
                 content: ''
-            
-        
 
-        button[class="slick-arrow slick-prev"], button[class="slick-arrow slick-prev slick-disabled"] 
+        button[class="slick-arrow slick-prev"], button[class="slick-arrow slick-prev slick-disabled"]
           //  background: url(~@images/whiteArrowLeft.svg) no-repeat
             display: block
             width: 1.1rem
             height: 2rem
             background-size: cover
 
-            &:before 
+            &:before
                 content: ''
-            
-        
 
-        .slide 
-            div 
+        .slide
+            div
                 padding: 0 1rem
                 display: flex
                 justify-content: center
 
-                img 
+                img
                     display: block
                     height: 3rem
-                
-            
-        
 
-        .slide.huge 
-            div 
-                img 
-                   height: 5.5rem
-                
-            
-        
+        .slide .huge
+            div
+                img
+                    height: 5.5rem
 
-        .slide.small 
-            div 
-                img 
-                   height: 2rem
-                
+        .slide small
             
-        
+                img
+                    height: 2rem
 
-        .slide.futureOneExchange 
-            div 
-                img 
-                   height: 1.75rem
-                
-            
-        
+        .slide .futureOneExchange
+            div
+                img
+                    height: 1.75rem
 
-        .slide.extraSmall 
-            div 
-                img 
+        .slide .extraSmall
+            div
+                img
                     height: 1.5rem
-                
-            
-        
-    
 
-
-@media(max-width: 575px) 
-    .wrapper 
+@media(max-width: 575px)
+    .wrapper
         padding-top: 2em
         padding-bottom: 4rem
 
-        .title 
+        .title
             font-size: 1.4rem
             line-height: 1.4rem
-        
 
-        .sliderContainer 
+        .sliderContainer
             width: 95%
             margin: 2em auto 0 auto
 
-
-            .slide 
-                div 
+            .slide
+                div
                     padding: 0 .5rem
 
-                    img 
+                    img
                         display: block
                         height: initial
                         width: 100%
-                    
-                
-            
 
-            .slide.futureOneExchange 
-                div 
-                    img 
+            .slide .futureOneExchange
+                div
+                    img
                         height: 1.7rem
-                    
-                
-            
 
-            .slide.huge 
-                div 
-                    img 
+            .slide .huge
+                div
+                    img
                         width: initial
                         height: 4.5rem
-                    
-                
-            
 
-            .slide.small 
-                div 
-                    img 
+            .slide small
+                div
+                    img
                         height: initial
                         width: 100%
-                    
-                
-            
 
-            .slide.extraSmall 
-                div 
-                    img 
+            .slide .extraSmall
+                div
+                    img
                         height: initial
                         width: 100%
-                    
-                
-            
 
-            .slide.smallMobile 
-                div 
-                    img 
+            .slide .smallMobile
+                div
+                    img
                         height: 1.8rem
-                    
-                
-            
-        
-    
 
+@media(min-width: 576px) AND (max-width: 1200px)
 
-@media(min-width: 576px) AND (max-width: 1200px) 
-
-    .wrapper 
+    .wrapper
         padding-top: 2em
         padding-bottom: 4rem
 
-        .sliderContainer 
+        .sliderContainer
             width: 85%
             margin: 2em auto 0 auto
-            .slide 
-                div 
+            .slide
+                div
                     padding: 0 .5rem
-                
-            
 
-            .slide.futureOneExchange 
-                div 
-                    img 
+            .slide .futureOneExchange
+                div
+                    img
                         height: 1.7rem
-                    
-                
-            
 
-            .slide.huge 
-                div 
-                    img 
+            .slide .huge
+                div
+                    img
                         height: 4.5rem
-                    
-                
-            
 
-            .slide.extraSmall 
-                div 
-                    img 
+            .slide .extraSmall
+                div
+                    img
                         height: initial
                         width: 100%
-                    
-                
-            
-        
-    
 
-
-div[class="slick-track"] 
+div[class="slick-track"]
     display: flex
     align-items: center
-

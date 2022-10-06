@@ -11,14 +11,14 @@ import Scroll from "react-scroll";
 import Seo from "@/tools/Seo";
 
 class Faq extends Component {
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
 
-    Seo.getInstance().changeTitle(this.props.i18n.t("seo.faq.title"));
-    Seo.getInstance().changeDescription(
-      this.props.i18n.t("seo.faq.description")
-    );
-  }
+  //   Seo.getInstance().changeTitle(this.props.i18n.t("seo.faq.title"));
+  //   Seo.getInstance().changeDescription(
+  //     this.props.i18n.t("seo.faq.description")
+  //   );
+  // }
 
   get questions() {
     return [
@@ -878,7 +878,7 @@ class Faq extends Component {
   }
 
   showAnswer(event) {
-    event.target.classList.toggle(styles.show);
+    event.target.classList.toggle("show");
   }
 
   scroll(event, index) {
@@ -894,16 +894,16 @@ class Faq extends Component {
 
   render() {
     return (
-      <div className={styles.wrapper}>
-        <Header />
-        <main className={styles.main}>
+      <div className="wrapper">
+        {/* <Header /> */}
+        <main className="main">
           <div className="container">
-            <div className={styles.title}>
+            <div className="title">
               <span>
                 <Trans i18nKey="faq.title">Frequently Asked Questions</Trans>
               </span>
             </div>
-            <div className={styles.anchors}>
+            <div className="anchors">
               <ul>
                 {this.questions.map((value, index) => {
                   const title = this.props.t(value.title.props.i18nKey);
@@ -920,9 +920,9 @@ class Faq extends Component {
                 })}
               </ul>
             </div>
-            <div className={styles.linkSupport}>
+            <div className="linkSupport">
               <button
-                className={`${styles.blue} ${styles.small}`}
+                className="blue small"
                 onClick={() =>
                   window.open("mailto:support@indacoin.com", "_blank")
                 }
@@ -930,13 +930,13 @@ class Faq extends Component {
                 <Trans i18nKey="faq.button">Contact Support</Trans>
               </button>
             </div>
-            <div className={styles.block}>
+            <div className="block">
               <hr />
               <ul>
                 {this.questions.map((value, index) => {
                   return (
                     <li key={index}>
-                      <a id={"title-" + index} />
+                      <a id={`title-${index}`} />
                       <span>{value.title}</span>
                       <ol>
                         {value.questionList.map((value, index) => {
@@ -957,7 +957,7 @@ class Faq extends Component {
             </div>
           </div>
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }

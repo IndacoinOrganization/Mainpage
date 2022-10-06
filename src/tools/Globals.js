@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Auth from '@/components/Auth';
+
 
 let Instance  = null;
 

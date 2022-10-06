@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // styles
-import styles from "./styles.sass";
+import "./styles.sass";
 
 class MenuDropdown extends Component {
     constructor() {
@@ -107,15 +107,15 @@ class MenuDropdown extends Component {
 
     render() {
         return (
-            <div className={styles.wrapper}>
+            <div className="wrapper">
                 <div
                     ref={ref => this.container = ref}
-                    className={`${styles.dropdown} ${this.props.className || ''}`}
+                    className={`{"dropdown" ${this.props.className || ''}`}
                     style={{height: this.closeShow() ? `${this.state.scrollHeight}px` : 0}}
                 >
                     <menu ref={ref => this.menu = ref}>
                         {
-                            this.props.items && this.props.items.map((value, index) => {
+                            this.props.items?.map((value, index) => {
                                 let localClassLi = null;
                                 let renderItem = value;
 

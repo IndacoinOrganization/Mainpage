@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import styles from './styles.sass';
-import Background from '@image/partnershipFirstBlock.svg';
+import './styles.sass';
+import Background from '@/assets/image/partnershipFirstBlock.svg';
 import {Trans} from 'react-i18next';
 import Scroll from 'react-scroll';
 
@@ -38,8 +38,8 @@ export default class extends Component
 
     render () {
         return (
-            <section className={styles.wrapper} style={background}>
-                <div className={styles.titleContainer}>
+            <section className="wrapper" style={background}>
+                <div className="titleContainer">
                     <span>
                         <Trans i18nKey="partnership.firstBlock.title">
                             Grow and scale your <br/> business with us
