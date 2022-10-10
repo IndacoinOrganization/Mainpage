@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './styles.sass';
-import Background from '@/assets/image/partnershipFirstBlock.svg';
+import Background from '@/images/partnershipFirstBlock.svg';
 import {Trans} from 'react-i18next';
 import Scroll from 'react-scroll';
 

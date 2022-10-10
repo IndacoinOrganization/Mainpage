@@ -6,7 +6,7 @@ export default class extends Component {
 
     render () {
         return (
-            <div className={`${"cardContainer"} + ' ' + ${(this.props.active ? styles.active : '')}`}>
+            <div className="cardContainer">
                 <div className="card">
                     <div className="image">
                         <img src={this.props.image}/>

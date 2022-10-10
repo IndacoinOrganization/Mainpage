@@ -1,12 +1,12 @@
 import React from "react";
 import './styles.sass';
 import { Trans } from 'react-i18next';
-import Alexandro from "../../assets/images/Alexandro.png"
-import locationReview from "../../assets/images/locationReview.png"
-import blueStar from "../../assets/images/blueStar.png"
-import Arnold from "../../assets/images/Arnold.png"
-import Erik from "../../assets/images/Erik.png"
-import Sofia from "../../assets/images/Sofia.png"
+import Alexandro from "@/images/Alexandro.png"
+import locationReview from "@/images/locationReview.png"
+import blueStar from "@/images/blueStar.png"
+import Arnold from "@/images/Arnold.png"
+import Erik from "@/images/Erik.png"
+import Sofia from "@/images/Sofia.png"
 
 export const ReviewMy = () => {
   return (
@@ -21,8 +21,7 @@ export const ReviewMy = () => {
             <div style={{ padding: "0.5rem" }}>
               <div className="main__text" style={{ marginLeft: 10, marginBottom: 1 }}>Alexandro A</div>
               <div className="infoTop">
-                <div style={{ display: "flex" }}>
-                </div>
+            
                 <div style={{ display: "flex", marginLeft: 10 }}>
                   <img src={locationReview} style={{ marginRight: 5, marginTop: 2 }} width={13} height={13} />
                   <div className="main__text_data">IT</div>

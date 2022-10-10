@@ -2,41 +2,27 @@
   width: 143px
   height: 19px
 
+.h-navigation-menu > ul > li > a
+  position: relative
+  cursor: pointer
 
-.h-navigation-menu 
-  ul 
-    li 
-      a
-        position: relative
-        cursor: pointer
+.h-navigation-menu > ul > li > a:after
+  display: block
+  position: absolute
+  left: 0
+  width: 0
+  height: 2px
+  background-color: #3463F8
+  content: ""
+  transition: width 0.3s ease-out
 
-
-
-.h-navigation-menu 
- ul 
-  li 
-   a:after
-    display: block
-    position: absolute
-    left: 0
-    width: 0
-    height: 2px
-    background-color: #3463F8
-    content: ""
-    transition: width 0.3s ease-out
-
-
-.h-navigation-menu 
- ul 
-  li 
-   a:hover:after
-      width: 100%
-
+.h-navigation-menu > ul > li > a:hover:after,
+a:focus:after
+  width: 100%
 
 .logo
   display: flex
   align-items: center
-
 
 .header-btn
   width: 99px
@@ -51,8 +37,6 @@
   padding: 0.4rem 1.2rem
   margin-left: 24px
 
-
-
 .h-navigation
   display: flex
   align-items: center
@@ -61,34 +45,18 @@
   margin-bottom: 245px
   padding: 1rem
   justify-content: space-between
-  .logo
-    width: 143px
-    height: 19px
-    // .burger
-    //   width: 14px
-    //   height: 19px
-    
-    
 
+.h-navigation-menu ul
+  display: flex
+  align-items: center
 
-.h-navigation-menu 
-  ul
-    display: flex
-    align-items: center
-
-
-
-.h-navigation-menu 
-  li
-    margin-left: 32px
-
+.h-navigation-menu li
+  margin-left: 32px
 
 .brand-name
   text-decoration: none
   color: black
   font-size: 1.3rem
-
-
 
 .h-navigation-menu
   display: flex
@@ -96,20 +64,15 @@
   align-items: center
   list-style-type: none
 
-
-
-.h-navigation-menu 
-  li 
-    a
-      text-decoration: none
-      display: block
-      font-style: normal
-      font-weight: 700
-      font-size: 18px
-      line-height: 22px
-      color: #000000
-      width: 100%
-
+.h-navigation-menu li a
+  text-decoration: none
+  display: block
+  font-style: normal
+  font-weight: 700
+  font-size: 18px
+  line-height: 22px
+  color: #000000
+  width: 100%
 
 .hamburger
   width: 12px
@@ -117,18 +80,15 @@
   position: relative
   margin-left: 23px
 
-
 .h3
   font-style: normal
   font-weight: 500
   font-size: 14px
   line-height: 17px
 
-
 .hamburger-menu
   display: flex
   align-items: center
-
 
 .lang
   display: flex
@@ -139,36 +99,26 @@
   line-height: 22px
   color: #000000
 
-
-
 @media screen and (max-width: 768px)
-  .h-navigation-menu 
-    ul 
-      li
-        display: none
-  
+  .h-navigation-menu ul li
+    display: none
 
   .h-navigation-menu
     display: none
-  
+
   .logo-img
     width: 95px
     height: 13px
-  
+
   .h-navigation
     margin-bottom: 90px
-  
+
   .wrapper button
-    font-size: 16px !important
-  
+    font-size: 16px
+
   .wrapper input
-    font-size: 16px !important
-  
-
-
-
+    font-size: 16px
 
 @media screen and (min-width: 769px)
   .hamburger-menu
     display: none
-  

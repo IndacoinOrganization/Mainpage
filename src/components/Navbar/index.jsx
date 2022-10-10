@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Indacoin from "@/assets/images/INDACOIN.svg"
 import burger1 from "@/assets/images/burger.svg"
 import close from "@/assets/images/Close.svg"
-import MenuDropdown from "@/components/DropDownMenu"
+import MenuDropdown from "@/components/MenuDropdown"
 
 // import MenuDropdown from "@components/MenuDropdown";
 const Navbar = () => {
@@ -13,13 +13,11 @@ const Navbar = () => {
     const [selectedOption, setSelectedOption] = useState(null);
     const [showLanguages, setShowLanguages] = useState(false)
 
-export default function Navbar() {
     return (
         <nav>    
             <MenuDropdown />
             <img src={Indacoin} className="logo" />
             <img src={burger1} className="burger" onClick={() => setToggleMenu(!toggleMenu)} />
-            <div className="wrapper" >
                 <img src={close} className="close" onClick={() => setToggleMenu(!toggleMenu)} />
                 <ul className="menu">
                     <li>
@@ -40,7 +38,6 @@ export default function Navbar() {
                         <Link to="/faq">FAQ</Link>
                     </li>
                 </ul>
-            </div>
         </nav>
     )
 }

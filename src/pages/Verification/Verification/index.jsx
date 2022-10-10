@@ -3,7 +3,7 @@ import styles from "./styles.sass";
 import Modal from "react-modal";
 import axios from "axios";
 import { withTranslation, Trans } from "react-i18next";
-import closeVerificationImg from "@/assets/image/closeVerification.svg"
+import closeVerificationImg from "@/images/closeVerification.svg"
 Modal.setAppElement("#root");
 
 const VerificationBlock = (props) => {
