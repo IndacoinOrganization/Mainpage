@@ -13,7 +13,6 @@ const Navbar = () => {
     const [selectedOption, setSelectedOption] = useState(null);
     const [showLanguages, setShowLanguages] = useState(false)
 
-export default function Navbar() {
     return (
         <nav>    
             <MenuDropdown />
@@ -29,7 +28,7 @@ export default function Navbar() {
                         <Link to="/business">Business</Link>
                     </li>
                     <li>
-                        <Link to={'#'}>Track order</Link>
+                        <Link to='/payment-status'>Track order</Link>
                     </li>
                     <li>
                         <Link to="/verification">

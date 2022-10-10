@@ -1,0 +1,102 @@
+.wrapper 
+    font-family: Gilroy
+     outline: 0
+
+.whiteBlock 
+    width: 735px
+    margin: 0 auto
+    background: #fff
+    border-radius: 20px
+
+    > span 
+        font-weight: 500
+        font-size: 21px
+        line-height: 28px
+        color: #414042
+        display: block
+        text-align: center
+        padding: 13px 0
+        
+
+    hr 
+        height: 1px
+        background: #F3F3F3
+        border: 0
+        
+
+    form 
+        div.flexbox 
+            display: flex
+            flex-flow: column nowrap
+            align-items: center
+            > div.cont 
+                flex: 0 1 auto
+                &.input 
+                    width: calc(100% - 120px)
+                    
+                
+            
+
+        div.flexbox 
+            padding: 25px 0
+            > div.cont 
+                & + div.cont 
+                    margin-top: 25px
+                    
+                
+            
+
+        input 
+            width: 100%
+            height: 44px
+            background: #F7F9FA
+            border-radius: 22px
+            border: 0
+            font-size: 18px
+            padding: 0 25px
+            text-align: center
+            &::placeholder 
+                color: #D2D2D2
+                
+            
+
+        span 
+            text-align: center
+            display: block
+            font-size: 1.1rem
+            margin-top: .7rem
+            color: red
+            
+        
+    
+
+
+
+.loader 
+    height: 24px
+    svg 
+        width: 24px
+        height: 24px
+    
+
+
+
+@media (max-width: 767px) 
+    .wrapper 
+
+        * 
+            font-family: Gilroy
+            outline: 0
+
+        .whiteBlock 
+            width: 95%
+            margin: 0 auto
+            background: #fff
+            border-radius: 20px
+
+            form 
+                div.flexbox 
+                    > div.cont 
+                        &.input 
+                            width: 95%
+                            margin: 0 auto
