@@ -6,10 +6,10 @@ import { withTranslation, Trans } from 'react-i18next';
 import ContentLoader from "react-content-loader";
 // import {changeUrl, pathname} from '@root/i18n';
 import MenuDropdown from "../MenuDropdown/index.jsx";
-import burger from "@/images/burger.svg"
-import close from "@/images/close.svg"
-import dropDown from "@/assets/images/dropDown.svg"
-import Indacoin from "@/assets/images/INDACOIN.svg"
+import burger from "@images/burger.svg"
+import close from "@images/close.svg"
+import dropDown from "@images/dropDown.svg"
+import Indacoin from "@images/INDACOIN.svg"
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -21,7 +21,7 @@ class Header extends Component {
             showMenu: false,
             showLoader: this.props.getUser === null,
         };
-
+            
         this.timeout = null;
 
         this.refIgnoreSpan = React.createRef();
