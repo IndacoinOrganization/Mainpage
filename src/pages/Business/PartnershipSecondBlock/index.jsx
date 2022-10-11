@@ -11,7 +11,6 @@ export default class extends Component {
                     <h1 className="title">
                        <Trans i18nKey="partnership.secondBlock.title">Business Partnership</Trans>
                     </h1>
-
                     <h3 className="text">
                         <Trans i18nKey="partnership.secondBlock.text">
                             There are many ways of collaborating with Indacoin.
