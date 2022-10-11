@@ -1,14 +1,14 @@
-import React from "react";
-import "./styles.sass";
-import icon1 from "../../assets/images/icon1.png"
-import icon8 from "../../assets/images/icon8.png"
-import icon9 from "../../assets/images/icon9.png"
-import icon3 from "../../assets/images/icon3.png"
-import icon7 from "../../assets/images/icon7.png"
-import icon4 from "../../assets/images/icon4.png"
-import icon5 from "../../assets/images/icon5.png"
-import icon2 from "../../assets/images/icon2.png"
-import icon6 from "../../assets/images/icon6.png"
+import React from "react"
+import "./styles.sass"
+import icon1 from "@images/icon1.png"
+import icon8 from "@images/icon8.png"
+import icon9 from "@images/icon9.png"
+import icon3 from "@images/icon3.png"
+import icon7 from "@images/icon7.png"
+import icon4 from "@images/icon4.png"
+import icon5 from "@images/icon5.png"
+import icon2 from "@images/icon2.png"
+import icon6 from "@images/icon6.png"
 
 export const Features = () => {
   return (
@@ -16,37 +16,34 @@ export const Features = () => {
       <div className="features _container">
         <div className="features_content">
           <div className="content_box">
-            <div className="div-3">
+            <div className="box_items">
             <img src={icon1}
                 alt={'portfolio'}
               />
-              <div className="builder-image-sizer image-sizer"/>
             </div>
             <div className="box_text">
               <span>
                 Hold it to get passive income from your portfolio
-                </span>
+              </span>
             </div>
           </div>
           <div className="content_box">
-            <div className="div-6">
+            <div className="box_items">
             <img src={icon8}
                 alt={'Trade it to get'}
               />
-              <div className="builder-image-sizer image-sizer" />
             </div>
             <div className="box_text">
             <span>
                 Trade it to get a speculative profit bigger than stocks
-                </span>
+            </span>
             </div>
           </div>
           <div className="content_box">
-            <div className="div-9">
+            <div className="box_items">
             <img src={icon9}
                 alt={'deposit in the bank'}
               />
-              <div className="builder-image-sizer image-sizer" />
             </div>
             <div className="box_text">
               <span>
@@ -55,11 +52,10 @@ export const Features = () => {
             </div>
           </div>
           <div className="content_box">
-            <div className="div-12">  
+            <div className="box_items">  
             <img src={icon3}
                   alet={'global transfers'}   
               />
-              <div className="builder-image-sizer image-sizer" />
             </div>
             <div className="box_text">
               <span>
@@ -68,63 +64,58 @@ export const Features = () => {
             </div>
           </div>
           <div className="content_box">
-            <div className="div-15">
+            <div className="box_items">
             <img src={icon7}
                   alt={'live support'}
                 />
-              <div className="builder-image-sizer image-sizer" />
             </div>
             <div className="box_text">
               <span>
                 Get help from live support agents 24/7
-                </span>
+              </span>
             </div>
           </div>
           <div className="content_box">
-            <div className="div-18">
+            <div className="box_items">
             <img src={icon4}
                   alt={'Visa & Mastercard'}
                 />
-              <div className="builder-image-sizer image-sizer" />
             </div>
             <div className="box_text">
               <span>
                 Buy crypto directly with Visa &amp; Mastercard
-                </span>
+              </span>
             </div>
           </div>
           <div className="content_box">
-            <div className="div-21">
+            <div className="box_items">
             <img src={icon5}
             alt={'extra charges'}
                 />
-              <div className="builder-image-sizer image-sizer" />
             </div>
             <div className="box_text">
               <span>
                 Avoid hidden fees and extra charges
-                </span>
+              </span>
             </div>
           </div>
           <div className="content_box">
-            <div className="div-24">
+            <div className="box_items">
             <img src={icon2}
                   alt={'bonuses'}
                 />
-              <div className="builder-image-sizer image-sizer" />
             </div>
             <div className="box_text">
               <span>
                 Receive bonuses for every purchase
-                </span>
+              </span>
             </div>
           </div>
           <div className="content_box">
-            <div className="div-27">
+            <div className="box_items">
             <img src={icon6}
                   alt={'security system'}
                 />
-              <div className="builder-image-sizer image-sizer" />
             </div>
             <div className="box_text">
               <span>

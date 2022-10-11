@@ -15,9 +15,8 @@ export const ReviewMy = () => {
         <div className="reviewBlock">
           <div className="reviewTop" style={{ paddingBottom: 5 }}>
             <div>
-              <img className="rewieImg" style={{ width: "66px", height: "66px", marginBottom: "1rem" }} src={Alexandro} />
+              <img className="reviewImg" style={{ width: "66px", height: "66px", marginBottom: "1rem" }} src={Alexandro} />
             </div>
-
             <div style={{ padding: "0.5rem" }}>
               <div className="main__text" style={{ marginLeft: 10, marginBottom: 1 }}>Alexandro A</div>
               <div className="infoTop">
@@ -48,7 +47,7 @@ export const ReviewMy = () => {
         <div className="reviewBlock">
           <div className="reviewTop">
             <div>
-              <img className="rewieImg" style={{ width: "66px", height: "66px", marginBottom: "1rem" }} src={Arnold} alt='avatar'/>
+              <img className="reviewImg" style={{ width: "66px", height: "66px", marginBottom: "1rem" }} src={Arnold} alt='avatar'/>
             </div>
             <div style={{ padding: "0.5rem" }}>
               <div className="main__text" style={{ marginLeft: 10, marginBottom: 1 }}>Arnold M</div>
@@ -85,7 +84,7 @@ export const ReviewMy = () => {
         <div className="reviewBlock" style={{ marginTop: 60 }}>
           <div className="reviewTop" style={{ paddingBottom: 5 }}>
             <div>
-              <img className="rewieImg" style={{ width: "66px", height: "66px", marginBottom: "1rem" }} src={Sofia} alt='avatar'/>
+              <img className="reviewImg" style={{ width: "66px", height: "66px", marginBottom: "1rem" }} src={Sofia} alt='avatar'/>
             </div>
             <div style={{ padding: "0.5rem" }}>
               <div className="main__text" style={{ marginLeft: 10, marginBottom: 1 }}>Eva Green</div>
@@ -118,9 +117,8 @@ export const ReviewMy = () => {
         <div className="reviewBlock" style={{ marginTop: 60 }}>
           <div className="reviewTop" style={{ paddingBottom: 5 }}>
             <div>
-              <img className="rewieImg" style={{ width: "66px", height: "66px", marginBottom: "1rem" }} src={Erik} alt='avatar'/>
+              <img className="reviewImg" style={{ width: "66px", height: "66px", marginBottom: "1rem" }} src={Erik} alt='avatar'/>
             </div>
-
             <div style={{ padding: "0.5rem" }}>
               <div className="main__text" style={{ marginLeft: 10, marginBottom: 1 }}>Erik Jok</div>
               <div className="infoTop">
@@ -153,4 +151,3 @@ export const ReviewMy = () => {
     </div>
   );
 };
-
