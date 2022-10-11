@@ -11,9 +11,9 @@ const MyForm = () => {
         <span className="info_text"><Trans i18nKey="header.menu.titleMainUndo">Verified by 10M+ purchases per month</Trans></span>
       </div>
       <form className="mainform" action="https://gw.indacoin.io/" target="_blank">
-            <div className="btn-container" style={{width: 240, margin: '0 auto'}}>                
-              <button onClick={() => window.open("https://gw.indacoin.io/")}><Trans i18nKey="header.menu.button">Buy crypto</Trans></button>
-            </div>
+        <div className="btn-container" style={{width: 240, margin: '0 auto'}}>                
+          <button onClick={() => window.open("https://gw.indacoin.io/")}><Trans i18nKey="header.menu.button">Buy crypto</Trans></button>
+        </div>
       </form>
     </div>
   );
