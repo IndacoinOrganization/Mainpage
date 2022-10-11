@@ -14,16 +14,10 @@ function Home () {
     <div className="main_wrapper">
         <div className="_container">
           <Header />
-          <MyForm />
+          {/* <MyForm />
           <h2> Our features</h2>
           <Features />
           <h2>User reviews</h2>
-          <ReviewMy />
-          <Footer />
-          {/* <MyForm />
-          <h2><Trans i18nKey="header.menu.features"> Our features </Trans></h2>
-          <Features />
-          <h2><Trans i18nKey="header.menu.reviews">User reviews </Trans></h2>
           <ReviewMy />
           <Footer /> */}
         </div>
