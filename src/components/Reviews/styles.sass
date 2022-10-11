@@ -5,14 +5,23 @@
   height: auto
   margin-bottom: 125px
   padding: 0rem
+
+
 .main__text 
     font-size: 20px
     font-weight: 500
+
+
+
 .main__text_data 
     font-style: italic
     font-weight: 500
 
 
+.rewieImg
+  width: 40px
+  height: 40px
+  border-radius: 50%
 
 
 .review__box 
@@ -49,6 +58,18 @@
   background-repeat: no-repeat
   background-size: cover
 
+.reviewBlock
+  background: #FFFFFF
+  box-shadow: 0px 0px 29px -3px rgba(172, 172, 172, 0.25)
+  border-radius: 17px
+  padding: 44px
+  width: 48%
+  margin-right: 44px
+
+.reviewTop
+  display: flex
+  border-bottom: 1px solid #80808040
+  margin-bottom: 15px
 
 
 .infoTop
@@ -75,21 +96,8 @@
 .reviewRow
   display: flex
   justify-content: space-between
-  .reviewBlock
-    background: #FFFFFF
-    box-shadow: 0px 0px 29px -3px rgba(172, 172, 172, 0.25)
-    border-radius: 17px
-    padding: 44px
-    width: 48%
-    margin-right: 44px
-    .reviewTop
-      display: flex
-      border-bottom: 1px solid #80808040
-      margin-bottom: 15px
-      .reviewImg
-        width: 40px
-        height: 40px
-        border-radius: 50%
+
+
 @media screen and (max-width: 720px) 
   .reviewRow
     flex-direction: column
