@@ -16,12 +16,12 @@ import Indacoin from "@images/INDACOIN.svg"
 
 
 function Header (props) {
-    const [mobile, setMobile] = useState(true)
+    const [mobile, setMobile] = useState(false)
 
     return (
         <header>
             <img src={Indacoin} className="logo" alt='INDACOIN' />
-            <div className='burger-Box'>
+            <div className='burger-Box' onClick={() => setMobile(!mobile)}>
                 <p>Menu</p>
                 <div className='burger'>
                     <span /><span /><span />
