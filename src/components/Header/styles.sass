@@ -1,6 +1,7 @@
 header
     display: flex
     justify-content: space-between
+    padding: 1rem
     .burger-Box
         display: none
         font-weight: 600
@@ -30,7 +31,12 @@ header
             height: 100vh
             z-index: 999
             align-items: center
-            justify-content: center
+            justify-content: flex-start
+            padding: 3rem
+            .close
+                position: fixed
+                top: 15px
+                right: 20px
             nav
                 flex-direction: column
         nav
@@ -43,6 +49,8 @@ header
                 line-height: 22px
                 color: #000000
                 text-decoration: none
+                &:hover
+                    text-decoration: underline
         .linkPanel
             font-weight: 700
             font-size: 18px
@@ -60,8 +68,9 @@ header
             display: none
             &.mobile
                 display: flex
-@media (max-width: 600px)
-    header
-        .navigateBox
-            &.mobile
                 width: 100%
+// @media (max-width: 600px)
+//     header
+//         .navigateBox
+//             &.mobile
+//                 width: 100%

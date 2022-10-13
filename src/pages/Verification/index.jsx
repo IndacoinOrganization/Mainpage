@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import VerificationBlock from '@/components/Verification'
-import Header from '@/components/HeaderMenu'
+import Header from '@/components/Header'
 import {withTranslation} from 'react-i18next'
 import './styles.sass'
 

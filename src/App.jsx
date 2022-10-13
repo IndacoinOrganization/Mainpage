@@ -1,32 +1,27 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+// Pages
+import Home         from '@/pages/Home/index.jsx'
+import Business     from '@/pages/Business/index.jsx'
+import Faq          from '@/pages/Faq/index.jsx'
+import Verification from '@/pages/Verification'
+
+
 // import Globals from "@/tools/Globals";
 // import {languagesPattern} from '.././i18n';
-// Pages
-import Home from '@/pages/Home/index.jsx'
-import Business from '@/pages/Business/index.jsx'
-import Faq from '@/pages/Faq/index.jsx'
-
-import Verification from '@/pages/Verification'
-// routes
-//import { ROUTES } from './routes';
-
-
 //const globals = Globals.getInstance();
-import Status from "./pages/Status";
+// import Status from "./pages/Status";
 
 function App() {
   return (
     <BrowserRouter>
-    <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/business' element={<Business />} />  
-            <Route path='/verification' element={<Verification />} />  
-            <Route path='/faq' element={<Faq />} /> 
-            <Route path='/verification' element={<Verification />} />
-            <Route path='/payment-status' element={<Status />} /> 
-     </Routes>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/business' element={<Business />} />  
+        <Route path='/verification' element={<Verification />} />  
+        <Route path='/faq' element={<Faq />} />
+      </Routes>
     </BrowserRouter>
   )
 }
