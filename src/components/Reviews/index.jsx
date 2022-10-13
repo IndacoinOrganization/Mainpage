@@ -82,7 +82,7 @@ export const ReviewMy = () => {
         </div>
       </div>
       <div className="reviewRow">
-        <div className="reviewBlock" style={{ marginTop: 60 }}>
+        <div className="reviewBlock">
           <div className="reviewTop" style={{ paddingBottom: 5 }}>
             <div>
               <img className="rewieImg" style={{ width: "66px", height: "66px", marginBottom: "1rem" }} src={Sofia} alt='avatar'/>
@@ -115,7 +115,7 @@ export const ReviewMy = () => {
             </div>
           </div>
         </div>
-        <div className="reviewBlock" style={{ marginTop: 60 }}>
+        <div className="reviewBlock">
           <div className="reviewTop" style={{ paddingBottom: 5 }}>
             <div>
               <img className="rewieImg" style={{ width: "66px", height: "66px", marginBottom: "1rem" }} src={Erik} alt='avatar'/>
