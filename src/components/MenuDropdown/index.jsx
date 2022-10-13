@@ -52,13 +52,10 @@ class MenuDropdown extends Component {
             if(
                 refItem
                 && (
-                    refItem.contains
-                    && refItem.contains(event.target)
-                    || refItem.current
-                    && refItem.current.contains
-                    && refItem.current.contains(event.target)
+                    refItem.contains?.(event.target)
+                    || refItem.current?.contains?.(event.target)
                 )
-                || this.container && this.container.contains(event.target)
+                || this.container?.contains(event.target)
             ) {
                 return undefined;
             }
@@ -70,12 +67,12 @@ class MenuDropdown extends Component {
     classAR() {
         this.container.classList.add(styles.scrollHidden);
         setTimeout(() => {
-            this.container && this.container.classList && this.container.classList.remove(styles.scrollHidden);
+            this.container?.classList?.remove(styles.scrollHidden);
         },150);
     }
 
     selected(item, index) {
-        const selected = this.props.selected;
+        const { selected } = this.props;
         if(typeof selected === 'function') {
             return selected(item, index);
         }
@@ -91,9 +88,8 @@ class MenuDropdown extends Component {
     scrollEvent() {
         const index = this.props.indexShowArrow;
         if(typeof index === 'function' && index() !== this.indexShowArrow) {
-            const
-                scrollHeight = this.menu.scrollHeight,
-                data = this.props.data;
+            const { scrollHeight } = this.menu;
+            const { data } = this.props;
             if(scrollHeight && data) {
                 this.indexShowArrow = index();
                 this.container.scrollTop = this.menu.scrollHeight / this.props.data.length * index() +1;

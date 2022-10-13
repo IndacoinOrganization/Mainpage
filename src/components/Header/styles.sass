@@ -1,0 +1,67 @@
+header
+    display: flex
+    justify-content: space-between
+    .burger-Box
+        display: none
+        font-weight: 600
+        font-size: 18px
+        line-height: 22px
+        gap: 16px
+        align-items: center
+        .burger
+            display: flex
+            gap: 4px
+            flex-direction: column
+            span
+                height: 2px
+                width: 13px
+                border-radius: 50%
+                background-color: black
+    .navigateBox
+        display: flex
+        gap: 41px
+        &.mobile
+            flex-direction: column
+            background-color: white
+            width: 300px
+            position: absolute
+            right: 0
+            top: 0
+            height: 100vh
+            z-index: 999
+            align-items: center
+            justify-content: center
+            nav
+                flex-direction: column
+        nav
+            display: flex
+            gap: 32px
+            align-items: center
+            a
+                font-weight: 700
+                font-size: 18px
+                line-height: 22px
+                color: #000000
+                text-decoration: none
+        .linkPanel
+            font-weight: 700
+            font-size: 18px
+            line-height: 22px
+            padding: 9px 20px
+            text-decoration: none
+            background: #3463F8
+            color: #fff
+            border-radius: 13px
+@media (max-width: 1200px)
+    header
+        .burger-Box
+            display: flex
+        .navigateBox
+            display: none
+            &.mobile
+                display: flex
+@media (max-width: 600px)
+    header
+        .navigateBox
+            &.mobile
+                width: 100%

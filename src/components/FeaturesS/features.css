@@ -1,0 +1,151 @@
+.features_content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+.content_box {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 135px;
+  border-radius: 17px;
+  width: 385px;
+  padding-left: 29px;
+  padding-right: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 24px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 29px -3px rgba(172, 172, 172, 0.25);
+  -moz-box-shadow: 0px 0px 29px -3px rgba(172, 172, 172, 0.25);
+  box-shadow: 0px 0px 29px -3px rgba(172, 172, 172, 0.25);
+}
+
+.content_box_inner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  line-height: normal;
+  height: 45px;
+  width: 45px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.image-sizer {
+  width: 100%;
+  padding-top: 70.04048582995948%;
+  pointer-events: none;
+  font-size: 0;
+}
+
+
+.box_text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  line-height: normal;
+  height: auto;
+  text-align: left;
+  margin-bottom: auto;
+  margin-top: auto;
+  width: 275px;
+  margin-left: 25px;
+}
+
+
+
+.div-29 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 1440px;
+  line-height: 49px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .features_content {
+    display: block;
+  }
+  .box_text {
+    font-size: 18px;
+  }
+
+  .content_box {
+    max-width: 370px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .features {
+    width: auto;
+  }
+
+  .features_content {
+    align-items: center;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .content_box {
+    width: 80%;
+    margin-bottom: 25px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .box_text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    line-height: normal;
+    height: auto;
+    max-width: 290px;
+
+  }
+
+  
+  .content_box {
+    padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  background: none!important;
+  -webkit-box-shadow: none!important;
+  -moz-box-shadow: none!important;
+  box-shadow: none!important;
+  width: 87%;
+  }
+}

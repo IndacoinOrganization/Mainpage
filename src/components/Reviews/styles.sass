@@ -1,4 +1,4 @@
-.review 
+.review
   display: flex
   flex-wrap: wrap
   justify-content: space-between
@@ -6,25 +6,22 @@
   margin-bottom: 125px
   padding: 0rem
 
+.main__text
+  font-size: 20px
+  font-weight: 500
 
-.main__text 
-    font-size: 20px
-    font-weight: 500
+.main__text_data
+  font-style: italic
+  font-weight: 500
 
-
-
-.main__text_data 
-    font-style: italic
-    font-weight: 500
-
-
-.rewieImg
+.reviewImg
   width: 40px
   height: 40px
   border-radius: 50%
-
-
-.review__box 
+  width: 66px
+  height: 66px
+  margin-bottom: 1rem
+.review__box
   background: var(--clr-white)
   padding: 40px
   box-shadow: var(--light-shadow)
@@ -40,20 +37,8 @@
   justify-content: space-between
   margin-bottom: 55px
 
-
-.header-container-1,
-.header-container-2,
-.header-container-3 
-  width: 256px
-  height: 236px
-
-
-.header-container-4 
-  width: 256px
-  height: 276px
-
-.starsBlockB 
-  background-image: url('../../../../assets/image/blueStar.png')
+.starsBlockB
+  background-image: url('@/assets/image/blueStar.png')
   background-position: left center
   background-repeat: no-repeat
   background-size: cover
@@ -65,56 +50,48 @@
   padding: 44px
   width: 48%
 
-
 .reviewTop
   display: flex
   border-bottom: 1px solid #80808040
   margin-bottom: 15px
 
-
 .infoTop
   display: flex
 
-
-.starsBlock 
-    img
-        margin-right: 1px
-
+.starsBlock
+  img
+    margin-right: 1px
 
 .reviewRating
   display: flex
   justify-content: space-between
   margin-bottom: 10px
 
-
-.imgReview 
-    p
-        padding: 10px
-        border-radius: 50%
-
+.imgReview
+  p
+    padding: 10px
+    border-radius: 50%
 
 .reviewRow
   display: flex
   justify-content: space-between
+  padding: 1.4rem
 
-
-@media screen and (max-width: 720px) 
+@media screen and (max-width: 720px)
   .reviewRow
     flex-direction: column
     align-items: center
-  
-  .reviewRow 
+
+  .reviewRow
     .reviewBlock
-        margin-top: 40px !important
-  
+      margin-top: 40px !important
+
   .reviewBlock
     width: 90%
     padding: 21px
-  
 
-
-@media screen and (max-width: 1360px) 
-  .review__box 
+@media screen and (max-width: 1360px)
+  .review__box
     width: 100%
     max-width: 570px
     margin-bottom: 25px
@@ -123,17 +100,10 @@
     margin-bottom: 35px
     max-height: 520px
     height: 100%
-  
 
-
-@media screen and (max-width: 750px) 
-  .review__box 
+@media screen and (max-width: 750px)
+  .review__box
     width: 100%
     max-width: 370px
     margin-bottom: 25px
     display: block
-  
-
-
- 
-

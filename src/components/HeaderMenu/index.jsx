@@ -5,11 +5,11 @@ import { withTranslation, Trans } from 'react-i18next';
 // import settings from '@config/settings.json';
 import ContentLoader from "react-content-loader";
 // import {changeUrl, pathname} from '@root/i18n';
-import MenuDropdown from "../MenuDropdown";
-import burger from "../../assets/images/burger.svg"
-import close from "../../assets/images/close.svg"
-import dropDown from "../../assets/images/dropDown.svg"
-
+import MenuDropdown from "../MenuDropdown/index.jsx";
+import burger from "@images/burger.svg"
+import close from "@images/close.svg"
+import dropDown from "@images/dropDown.svg"
+import Indacoin from "@images/INDACOIN.svg"
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -21,7 +21,7 @@ class Header extends Component {
             showMenu: false,
             showLoader: this.props.getUser === null,
         };
-
+            
         this.timeout = null;
 
         this.refIgnoreSpan = React.createRef();
@@ -35,11 +35,11 @@ class Header extends Component {
      */
     changeLanguage(element) {
         this.props.i18n.changeLanguage(element.language.toLowerCase());
-        // pathname(element.language.toLowerCase());
+        pathname(element.language.toLowerCase());
 
-        // if (!changeUrl(this.props.i18n.language, element.language)) {
-        //     window.localStorage.setItem('language', element.language.toLowerCase());
-        // }
+        if (!changeUrl(this.props.i18n.language, element.language)) {
+            window.localStorage.setItem('language', element.language.toLowerCase());
+        }
     }
 
     /**
@@ -66,11 +66,12 @@ class Header extends Component {
             fiat = this.props.setCurrentCurrenciesPair.fiat.toLowerCase();
         }
         return (
-            <div className="mainWrapper">
+            <div className="mainWrapper" style={{display: 'flex', justifyContent: 'space-between', width: 1400}}>
+                <img src={Indacoin} className="logo" />
                 <div className="burger" onClick={this.toggleMenu.bind(this)}>
                     <img src={burger} />
                 </div>
-                <div className="wrapper" >
+                <div className="wrapper_menu">
                     <div className="close" >
                         <img src={close} onClick={this.toggleMenu.bind(this)} />
                     </div>
@@ -130,11 +131,11 @@ class Header extends Component {
                                 selected={this.changeLanguage.bind(this)}
                                 jsx={(value) => {
                                     let img;
-                                    // try {
-                                    //     img = require(`@images/${value.language}Language.svg`);
-                                    // } catch(e) {
-                                    //     img = false;
-                                    // }
+                                    try {
+                                        img = require(`@images/${value.language}Language.svg`);
+                                    } catch(e) {
+                                        img = false;
+                                    }
                                     return (
                                         <>
                                             <div>
@@ -151,7 +152,7 @@ class Header extends Component {
                         { this.account() }
                     </ul>
                 </div>
-            </div>
+                </div>
         );
     }
 
