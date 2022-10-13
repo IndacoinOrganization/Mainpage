@@ -1,0 +1,59 @@
+.header__WrapperLang
+    display: flex
+    position: relative
+    .header__Language
+        display: flex
+        cursor: pointer
+        align-items: center
+        p
+            font-weight: 600
+            font-size: 20px
+            line-height: 25px
+            margin: 0
+        svg
+            margin-left: 3px
+    .header__Languages
+        display: flex
+        flex-direction: row-reverse
+        flex-wrap: wrap
+        padding: 10px 15px
+        gap: 10px
+        justify-content: space-between
+        align-items: center
+        background: #FFFFFF
+        border-radius: 11px
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+        position: absolute
+        top: -8px
+        span
+            display: flex
+            cursor: pointer
+            color: black
+            font-weight: 600
+            font-size: 20px
+            line-height: 25px
+            img
+                width: 24px
+                height: 24px
+                margin-right: 8px
+        span:first-child
+            text-decoration-line: underline
+
+
+@media (max-width: 600px)
+    .header__WrapperLang
+        .header__Language
+            justify-content: end
+            p
+                font-weight: 600
+                font-size: 16px
+                line-height: 20px
+        .header__Languages
+            justify-content: end
+            top: -10px
+            span
+                min-width: 32px
+                align-items: center
+                font-weight: 600
+                font-size: 16px
+                line-height: 20px

@@ -3,15 +3,13 @@ import './styles.sass';
 
 // -------------- Components ------------------ //
 import { Trans } from 'react-i18next';
-import Header from '@/components/HeaderMenu';
+import Header from '@/components/Header';
 //import Navbar from '../../components/Navbar/index.jsx';
 import { Features } from '@/components/Features/index.jsx';
 import { ReviewMy } from '@/components/Reviews/index.jsx';
 import Footer from '@/components/Footer/index.jsx';
 
 function Home () {
-  
-
   return (
     <div className="home">
       <Header />
