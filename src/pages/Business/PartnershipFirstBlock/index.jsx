@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import './styles.sass';
-import Background from '@/images/partnershipFirstBlock.svg';
+// import Background from '@/images/partnershipFirstBlock.svg';
 import {Trans} from 'react-i18next';
 import Scroll from 'react-scroll';
 
-const background = {
-    backgroundImage: 'url(' + Background + ')',
-};
+// const background = {
+//     backgroundImage: 'url(' + Background + ')',
+// };
 
 export default class extends Component
 {
@@ -38,7 +38,7 @@ export default class extends Component
 
     render () {
         return (
-            <section className="wrapper" style={background}>
+            <section className="wrapper">
                 <div className="titleContainer">
                     <span>
                         <Trans i18nKey="partnership.firstBlock.title">

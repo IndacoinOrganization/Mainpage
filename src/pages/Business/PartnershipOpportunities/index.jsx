@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import './styles.sass';
-import Background from '@/images/partnershipOpportunitiesBackground.png';
+// import Background from '@/images/partnershipOpportunitiesBackground.png';
 import SildeUpDownCard from '@/components/SlideUpDownCard';
 import {Trans} from 'react-i18next';
 import Scroll from 'react-scroll';
 import { Link }  from 'react-router-dom';
 
-const background = {
-    backgroundImage: 'url(' + Background + ')',
-};
+// const background = {
+//     backgroundImage: 'url(' + Background + ')',
+// };
 
 export default class extends Component {
     constructor (props) {
@@ -38,7 +38,7 @@ export default class extends Component {
 
     render () {
         return (
-            <section className="wrapper" style={background}>
+            <section className="wrapper">
                 <span className="title">
                     <Trans i18nKey="partnership.opportunities.title">
                         Opportunities for partners
