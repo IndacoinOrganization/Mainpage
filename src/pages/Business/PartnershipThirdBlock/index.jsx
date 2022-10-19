@@ -5,9 +5,12 @@ import {Trans} from 'react-i18next';
 import Slider from "react-slick";
 import Slide from './Slide';
 
-
-
 export default class extends Component {
+
+    getImgSVG (name) {
+        const img = new URL(`../../../assets/images/${name}.svg`, import.meta.url).href
+        return img || null 
+    }
 
     render () {
 
@@ -44,49 +47,48 @@ export default class extends Component {
         };
 
         return (
-            <section className="wrapper">
+            <section className={'PartnershipThirdBlock'}>
                 <div className="container">
-                    <h2 className="title">
+                    <h2 className={'title'}>
                         <Trans i18nKey="partnership.thirdBlock.title">
                             Why partner with Indacoin?
                         </Trans>
                     </h2>
 
-                    <div className="sliderContainer partnershipSlider">
+                    <div className={'sliderContainer partnershipSlider'}>
 
                         <Slider {...settings}>
                             <Slide
-                                image={'../../../../src/assets/image/partnershipSecurity.svg'}
+                                image={this.getImgSVG('partnershipSecurity')}
                                 title="partnership.thirdBlock.slides.security.title"
                                 text="partnership.thirdBlock.slides.security.text"
                                 aria-labelledby="circle"
                             />
 
-                             <Slide
-                          
-                                image={'../../../../src/assets/image/partnershipStability.svg'}
+                            <Slide
+                                image={this.getImgSVG('partnershipStability')}
                                 title="partnership.thirdBlock.slides.stability.title"
                                 text="partnership.thirdBlock.slides.stability.text"
                             />
 
                             <Slide
-                                image={'../../../../src/assets/image/partnershipSpeed.svg'}
+                                image={this.getImgSVG('partnershipSpeed')}
                                 title="partnership.thirdBlock.slides.speed.title"
                                 text="partnership.thirdBlock.slides.speed.text"
                                 active={true}
                             />
 
                             <Slide
-                                image={'../../../../src/assets/image/partnershipFreedom.svg'}
+                                image={this.getImgSVG('partnershipFreedom')}
                                 title="partnership.thirdBlock.slides.freedom.title"
                                 text="partnership.thirdBlock.slides.freedom.text"
                             />
 
                             <Slide
-                                image={'../../../../src/assets/image/partnershipScale.svg'}
+                                image={this.getImgSVG('partnershipScale')}
                                 title="partnership.thirdBlock.slides.scale.title"
                                 text="partnership.thirdBlock.slides.scale.text"
-                            /> 
+                            />
                         </Slider>
 
                     </div>

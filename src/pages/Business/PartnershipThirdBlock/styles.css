@@ -1,0 +1,8 @@
+.PartnershipThirdBlock{background:#3464f8;padding:70px 0}
+.PartnershipThirdBlock .title{display:block;color:#fff;text-align:center;font-size:1.8rem;font-family:Gilroy;font-weight:bold}
+.PartnershipThirdBlock h2{margin-top:0px !important}
+.PartnershipThirdBlock .sliderContainer{margin-top:40px}
+@media(max-width: 575px){
+    .PartnershipThirdBlock{padding-bottom:3.5em;padding-top:2em}
+    .PartnershipThirdBlock .title{font-size:1.1rem;line-height:1.1rem}
+    .PartnershipThirdBlock .sliderContainer{margin-top:1em}}

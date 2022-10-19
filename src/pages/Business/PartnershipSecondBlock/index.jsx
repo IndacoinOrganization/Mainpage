@@ -6,7 +6,7 @@ export default class extends Component {
 
     render () {
         return (
-            <section className="wrapper">
+            <section className="PartnershipSecondBlock">
                 <div className="container">
                     <h1 className="title">
                        <Trans i18nKey="partnership.secondBlock.title">Business Partnership</Trans>

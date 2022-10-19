@@ -1,0 +1,271 @@
+@import "../assets/fonts/Gilroy/stylesheet.css";
+@import "./shake.css";
+@import url('https://fonts.cdnfonts.com/css/nordstern-demo');
+
+html,body,body > #root {
+    min-height: 100%;
+}
+
+body, #wrapper {
+    background: #fff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button:disabled, input:disabled, .disabled {
+    pointer-events: none !important;
+    user-select: none !important;
+    opacity: .65 !important;
+    cursor: default !important;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* max width container */
+.container {
+    margin: 0 auto;
+    
+    height: auto;
+}
+
+@media(max-width: 575px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media(min-width: 576px) AND (max-width: 767px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media(min-width: 768px) AND (max-width: 991px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media(min-width: 992px) AND (max-width: 1199px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media(min-width: 1200px) AND (max-width: 1899px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media(min-width: 1900px) {
+    .container {
+        width: 80%;
+    }
+}
+
+/* ul list */
+ol, ul, menu {
+    list-style: none;
+    padding: 0;
+}
+
+.grecaptcha-badge {
+    display: none !important;
+    bottom: 90px !important;
+}
+
+.openReCaptcha .grecaptcha-badge {
+    display: inline-block!important;
+}
+
+
+
+.slick-list, .slick-list .slick-slide {
+    outline: none !important;
+}
+
+.slick-slide > div > div {
+    outline: none !important;
+}
+
+.partnershipSlider .slick-dots {
+    bottom: -30px;
+}
+
+.partnershipSlider .slick-dots li button:before {
+    font-size: 10px;
+    color: #fff;
+}
+
+.partnershipSlider .slick-dots li.slick-active button:before {
+    color: #fff;
+    opacity: 1;
+}
+
+.bestTrustSlider .slick-dots {
+    bottom: -50px;
+}
+
+.bestTrustSlider .slick-dots li button:before {
+    font-size: 10px;
+    color: #fff;
+}
+
+.bestTrustSlider .slick-dots li.slick-active button:before {
+    color: #fff;
+    opacity: 1;
+}
+
+.slick-prev, .slick-next{
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: white !important;
+    font-size: 36px !important;
+    opacity: 1 !important;
+}
+
+.slick-prev:before{
+    content: "" !important;
+    font-family: 'Nordstern Demo', sans-serif !important;
+    position: absolute;
+    right: 16px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/images/Arrowbuttonleft.svg");
+}
+
+.slick-next:before{
+    content: "" !important;
+    font-family: 'Nordstern Demo', sans-serif !important;
+    position: absolute;
+    right: 12px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/images/Arrowbuttonright.svg");
+}
+/* scroll */
+*::-webkit-scrollbar { width: 8px; height: 7px; }
+*::-webkit-scrollbar-button {  height: 0; }
+*::-webkit-scrollbar-track {  background-color: #999;}
+*::-webkit-scrollbar-track-piece { background-color: #E6E6E6;}
+*::-webkit-scrollbar-thumb { height: 30px; background-color: #3463F8; border-radius: 54px;}
+
+body.green::-webkit-scrollbar-thumb, body.green *::-webkit-scrollbar-thumb {
+    background-color: #72DBCC !important;
+}
+body.blue::-webkit-scrollbar-thumb, body.blue *::-webkit-scrollbar-thumb {
+    background-color: #3463F8 !important;
+}
+
+/*&::-webkit-scrollbar-corner { background-color: #999;}
+&::-webkit-resizer { background-color: #888;}*/
+
+/* REACT MODAL */
+.ReactModal__Body--open {
+    overflow: hidden;
+}
+
+
+/* TOAST */
+.Toastify__toast--success {
+    background: #05C0A5 !important;
+    border-radius: 15px !important;
+}
+.Toastify__toast--error {
+    background: #FF6E4E !important;
+    border-radius: 15px !important;
+}
+
+.Toastify__toast-body {
+    font-family: Gilroy;
+    font-size: 1.1rem;
+}
+
+.Toastify__toast {
+    padding-left: 20px !important;
+}
+
+/* override */
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+    overflow-y: scroll;
+}
+
+.transaction-widget-area {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 2147483600;
+
+}
+
+
+@media (max-width: 575px) {
+    .transaction-widget-area {
+        min-width: calc(100% - 2em);
+    }
+}
+
+
+/* override */
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+    overflow-y: scroll;
+}
+
+#rc-imageselect{
+    position: relative;
+    z-index: 99999;
+}
+
+.mymodal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    border: 1px solid #ccc;
+    background: #fff;
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+  }
+  
+  .myoverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 9999999;
+  }
+  
+  .ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+  }
+  
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+  }
+  
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+  }
+  

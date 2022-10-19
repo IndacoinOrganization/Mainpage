@@ -1,0 +1,125 @@
+.PartnershipForm
+    padding: 2rem 3.5rem
+    background: #ffffff
+    .title
+        display: block
+        text-align: center
+        font-family: Gilroy
+        font-size: .9rem
+    .form
+        margin-top: 1rem
+    .inputGroup 
+        margin-top: 2rem
+        textarea
+            resize: none
+            width: 100%
+            border: 0
+            background: #F7F9FA
+            padding: .7rem .9rem
+            border-radius: 1.5em
+            font-family: Gilroy
+            outline: none
+    .inputContainer
+        width: 31%
+        margin-left: 3.5%
+        float: left
+        &:first-child
+            margin-left: 0
+        input
+            width: 100%
+            border: 0
+            background: #F7F9FA
+            padding: .7rem .9rem
+            border-radius: 4em
+            font-family: Gilroy
+            outline: none
+        .error
+            display: block
+            visibility: hidden
+            margin-top: 10px
+            padding-left: 20px
+            color: red
+            font-family: Gilroy
+            font-size: .9rem
+            &.active
+                visibility: visible
+    .inputContainer.inputDownContainer
+        position: relative
+        .inputDown
+            position: relative
+            button
+                position: absolute
+                outline: none
+                cursor: pointer
+                background: transparent
+                border: 0
+                right: 5.5%
+                top: .7rem
+        .types.show
+            display: block
+        .types
+            position: absolute
+            top: 38px
+            width: 100%
+            background: #FBFBFE
+            height: 7rem
+            overflow-y: scroll
+            display: none
+            button
+                width: 100%
+                display: block
+                cursor: pointer
+                background: transparent
+                border: 0
+                font-family: Gilroy
+                padding: .7rem .9rem
+                font-weight: bold
+                outline: none
+                &:hover
+                    background: #F2F2F4
+    .inputGroup.btnContainer
+        display: flex
+        justify-content: center
+        button
+            background: #3463F8
+            font-family: Gilroy
+            color: #fff
+            border: 0
+            padding: .4rem 1rem
+            font-weight: bold
+            font-size: 1.1rem
+            border-radius: 1.5rem
+            outline: none
+            cursor: pointer
+            &:hover
+                -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15)
+                -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15)
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15)
+                background: #2d57dc
+            & > .loader
+                height: 24px
+                svg 
+                    width: 24px
+                    height: 24px
+@media(max-width: 575px)
+    .PartnershipForm
+        padding: 0
+        .title
+            padding: 0 1em
+        .inputGroup
+            margin-top: 0
+            textarea
+                margin-top: 1.5rem
+                font-size: .9rem
+        .inputContainer
+            width: 100%
+            margin-left: 0
+            float: none
+            margin-top: 1.5rem
+            input
+                font-size: .9rem
+        .inputContainer.inputDownContainer
+            .types
+                height: 10rem
+        .inputGroup.btnContainer
+            margin-top: 1.5rem

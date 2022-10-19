@@ -1,50 +1,45 @@
 import React, {Component} from 'react';
-
-// import Header from '@containers/Header';
-// import Footer from '@containers/Footer';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
 
 import PartnershipFirstBlock from './PartnershipFirstBlock';
 import PartnershipSecondBlock from './PartnershipSecondBlock';
 import PartnershipThirdBlock from './PartnershipThirdBlock';
 import PartnershipOpportunities from './PartnershipOpportunities';
-// import PotentialPartners from '@containers/PotentialPartners';
+import PotentialPartners from './PotentialPartners';
 import BestTrustOfUs from './BestTrustOfUs';
-//import PartnershipForm from './PartnershipForm';
-// import Seo from '@/tools/Seo';
+import PartnershipForm from './PartnershipForm';
+// import Seo from '@tools/Seo';
 import {withTranslation} from 'react-i18next';
 
+const FORM_ID = 'partnershipForm';
 
-// const FORM_ID = 'partnershipForm';
+class Partnership extends Component {
 
-
-
-
-class Business extends Component {
-
-    // constructor (props) {
-    //     super(props);
+    constructor (props) {
+        super(props);
             
-    //     Seo.getInstance().changeTitle(Trans('seo.partnership.title'));
-    //     Seo.getInstance().changeDescription(Trans('seo.partnership.description'));
-    // }
+        // Seo.getInstance().changeTitle(this.props.i18n.t('seo.partnership.title'));
+        // Seo.getInstance().changeDescription(this.props.i18n.t('seo.partnership.description'));
+    }
 
     render () {
         return (
           <div>
-            
+              <Header />
               <main>
-                  <PartnershipFirstBlock/>
+                  <PartnershipFirstBlock formId={FORM_ID}/>
                   <PartnershipSecondBlock />
                   <PartnershipThirdBlock />
-                  <PartnershipOpportunities/>
-                  {/* <PotentialPartners /> */}
+                  <PartnershipOpportunities formId={FORM_ID}/>
+                  <PotentialPartners />
                   <BestTrustOfUs />
-                  {/* <PartnershipForm formId={FORM_ID}/> */}
+                  <PartnershipForm formId={FORM_ID}/>
               </main>
-            
+              <Footer />
           </div>
         );
     }
 }
 
-export default withTranslation()(Business);
+export default withTranslation()(Partnership);

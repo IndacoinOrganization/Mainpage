@@ -1,41 +1,27 @@
 import React, {Component} from 'react';
 import './styles.sass';
-// import Background from '@/images/partnershipOpportunitiesBackground.png';
 import SildeUpDownCard from '@/components/SlideUpDownCard';
 import {Trans} from 'react-i18next';
 import Scroll from 'react-scroll';
 import { Link }  from 'react-router-dom';
-
-// const background = {
-//     backgroundImage: 'url(' + Background + ')',
-// };
-
 export default class extends Component {
     constructor (props) {
         super(props);
-
         this.formId = props.formId || null;
     }
-
     /**
      * Animated scroll to formId
      * @param {object} event
      */
     scroll (event) {
-        if (this.formId == null) {
-            return false;
-        }
-
+        if (this.formId == null) return false
         event.preventDefault();
-
         const offsetTop = document.getElementById(this.formId).offsetTop;
-
         Scroll.animateScroll.scrollTo(offsetTop, {
             duration: 1000,
             delay: 100,
         });
     }
-
     render () {
         return (
             <section className="wrapper">
@@ -44,9 +30,7 @@ export default class extends Component {
                         Opportunities for partners
                     </Trans>
                 </span>
-
                 <div className="slidesContainer">
-
                     <div className="cardContainer">
                         <SildeUpDownCard
                           title={
@@ -134,53 +118,6 @@ export default class extends Component {
                           </ul>
                       </SildeUpDownCard>
                     </div>
-
-                    {/*<div className={styles.cardContainer}>
-                      <SildeUpDownCard
-                          title={
-                              <Trans i18nKey="partnership.opportunities.slides.widget.title">
-                                  Widget
-                              </Trans>
-                          }
-                          button={
-                              <Trans i18nKey="partnership.opportunities.moreBtn">
-                                  More details
-                              </Trans>
-                          }
-                          onClick={this.scroll.bind(this)}
-                      >
-                          <span className={styles.cardTitle}>
-                              <Trans i18nKey="partnership.opportunities.slides.widget.text">
-                                  Quick installation. High commission payments. Ideal for crypto media.
-                              </Trans>
-                          </span>
-
-
-                          <ul className={styles.cardList}>
-                              <li>
-                                  <Trans i18nKey="partnership.opportunities.slides.widget.points.first">
-                                      Install the widget in 5 minutes.
-                                  </Trans>
-                              </li>
-                              <li>
-                                  <Trans i18nKey="partnership.opportunities.slides.widget.points.second">
-                                      Availability of all cryptocurrencies.
-                                  </Trans>
-                              </li>
-                              <li>
-                                  <Trans i18nKey="partnership.opportunities.slides.widget.points.third">
-                                      Customization widget.
-                                  </Trans>
-                              </li>
-                              <li>
-                                  <Trans i18nKey="partnership.opportunities.slides.widget.points.fourth">
-                                      Adapted for mobile devices.
-                                  </Trans>
-                              </li>
-                          </ul>
-                      </SildeUpDownCard>
-                    </div>*/}
-
                     <div className="cardContainer">
                         <SildeUpDownCard
                             title={

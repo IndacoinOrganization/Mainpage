@@ -1,19 +1,10 @@
 import React, {Component} from 'react';
-import  './styles.sass';
+import './styles.sass';
 import Slider from "react-slick";
 import {Trans} from 'react-i18next';
 
-import rectangleDotActiveGr from '@/assets/image/rectangleDotActiveGr.svg'
-import rectangleDotLight from  '@/assets/image/rectangleDotLight.svg'
-
-
-
-
-
-
-
-
-
+import rectangleDotActiveGr from '@images/partners/rectangleDotActiveGr.svg'
+import rectangleDotLight from '@images/partners/rectangleDotLight.svg'
 
 export default class extends Component {
     constructor(props) {
@@ -22,6 +13,15 @@ export default class extends Component {
         this.state = {
             dotIndex: 0
         }
+    }
+
+    getImgPNG (name) {
+        const img = new URL(`../../../assets/images/partners/${name}.png`, import.meta.url).href
+        return img || null 
+    }
+    getImgSVG (name) {
+        const img = new URL(`../../../assets/images/partners/${name}.svg`, import.meta.url).href
+        return img || null 
     }
 
     render() {
@@ -42,11 +42,11 @@ export default class extends Component {
             customPaging: function(i) {
                 if(i === state.dotIndex)
                     return (
-                         <img src={rectangleDotActiveGr} width={20} height={15} />
+                        <img src={rectangleDotActiveGr} width={20} height={15} />
                     );
                 else
                     return (
-                         <img src={rectangleDotLight} width={20} height={15} />
+                        <img src={rectangleDotLight} width={20} height={15} />
                     );
             },
             dotsClass: "slick-dots slick-thumb",
@@ -100,209 +100,209 @@ export default class extends Component {
         };
 
         return (
-            <section className="wrapper">
-                <span className="title">
+            <section className={'BestTrustOfUs'}>
+                <span className={'title'}>
                     <Trans i18nKey="partnership.trust.title">
                         The best trust us
                     </Trans>
                 </span>
 
-                <div className="sliderContainer bestTrustSlider">
+                <div className={'sliderContainer bestTrustSlider'}>
                     <Slider {...settings}>
 
-                        <div className="slide">
+                        <div className={'slide'}>
                             <div>
                                 <a href="https://www.okex.com/" target="_blank">
-                                    <img src={'../../../../src/assets/images/partners/okexlogowebsite.png'} alt={'okex'}/>
+                                    <img src={this.getImgPNG('okexlogowebsite')} alt={'okex'} />
                                 </a>
                             </div>
                         </div>
-                        <div className="slide small">
+                        <div className={'slide small'}>
                             <div>
                                 <a href="https://changelly.com/" target="_blank">
-                                     <img src={'../../../../src/assets/images/partners/changelly.svg'} alt={'changelly'}/> 
+                                    <img src={this.getImgSVG('changelly')} alt={'changelly'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide small">
+                        <div className={'slide small'}>
                             <div>
                                 <a href="https://www.bestchange.com/" target="_blank">
-                                    <img src={'../../../../src/assets/images/partners/bestchange.svg'}  alt={'bestchange'}/>
+                                    <img src={this.getImgSVG('bestchange')}  alt={'bestchange'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide">
+                        <div className={'slide'}>
                             <div>
                                 <a href="https://www.cryptodaily.co.uk/" target="_blank">
-                               <img src={'../../../../src/assets/images/partners/cryptodaily.png'} alt={'cryptodaily'}/> 
+                                    <img src={this.getImgPNG('cryptodaily')} alt={'cryptodaily'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide">
+                        <div className={'slide'}>
                             <div>
                                 <a href="https://wavesplatform.com/" target="_blank">
-                               <img src={'../../../../src/assets/images/partners/waves.svg'} alt={'waves'}/>
+                                    <img src={this.getImgSVG('waves')} alt={'waves'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide smallMobile">
+                        <div className={'slide smallMobile'}>
                             <div>
                                 <a href="https://www.bithumb.com/" target="_blank">
-                                   <img src={'../../../../src/assets/images/partners/bithumb.png'} alt={'bithumb'}/>
+                                    <img src={this.getImgPNG('bithumb')} alt={'bithumb'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide small">
+                        <div className={'slide small'}>
                             <div>
                                 <a href="https://coinswitch.co/" target="_blank">
-                                    <img src={'../../../../src/assets/images/partners/coinswitch.png'} alt={'coinswitch'} height={10} width={10}/>
+                                    <img src={this.getImgPNG('coinswitch')} alt={'coinswitch'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide">
+                        <div className={'slide'}>
                             <div>
                                 <a href="https://latoken.com/" target="_blank">
-                                   <img src={'../../../../src/assets/images/partners/latoken.png'} alt={'coinswitch'}/> 
+                                    <img src={this.getImgPNG('latoken')} alt={'coinswitch'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide smallMobile">
+                        <div className={'slide huge smallMobile'}>
                             <div>
                                 <a href="https://magnumwallet.co/" target="_blank">
-                               <img src={'../../../../src/assets/images/partners/magnum.png'} alt={'magnum'}/> 
+                                    <img src={this.getImgPNG('magnum')} alt={'magnum'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide huge">
+                        <div className={'slide huge'}>
                             <div>
                                 <a href="https://www.thundercore.com/" target="_blank">
-                            <img src={'../../../../src/assets/images/partners/thunderCore.svg'} alt={'thunderCore'}/>
+                                    <img src={this.getImgSVG('thunderCore')} alt={'thunderCore'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide small">
+                        <div className={'slide small'}>
                             <div>
                                 <a href="https://finex.cz/" target="_blank">
-                            <img src={'../../../../src/assets/images/partners/finex.cz.png'}  alt={'finexcz'}/>
+                                    <img src={this.getImgPNG('finex.cz')}  alt={'finexcz'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide small">
+                        <div className={'slide small'}>
                             <div>
                                 <a href="https://fortunez.com" target="_blank">
-                               <img src={'../../../../src/assets/images/partners/fortunez.com.png'}  alt={'fortunez'}/>
+                                    <img src={this.getImgPNG('fortunez.com')}  alt={'fortunez'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide small">
+                        <div className={'slide small'}>
                             <div>
                                 <a href="https://cryptomood.com" target="_blank">
-                                 <img src={'../../../../src/assets/images/partners/cryptoMood.svg'}  alt={'cryptoMood'}/>
+                                    <img src={this.getImgSVG('cryptoMood')}  alt={'cryptoMood'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide">
+                        <div className={'slide'}>
                             <div>
                                 <a href="https://fundshing.com/" target="_blank">
-                                 <img src={'../../../../src/assets/images/partners/fundshing.png'} alt={'fundshing'} />
+                                    <img src={this.getImgPNG('fundshing')} alt={'fundshing'} />
                                 </a>
                             </div>
                         </div>
-                        <div className="slide">
+                        <div className={'slide'}>
                             <div>
                                 <a href="https://obyte.org/" target="_blank">
-                               <img src={'../../../../src/assets/images/partners/byteball.svg'} alt={'byteball'} />
+                                    <img src={this.getImgSVG('byteball')} alt={'byteball'} />
                                 </a>
                             </div>
                         </div>
-                        <div className="slide">
+                        <div className={'slide'}>
                             <div>
                                 <a href="https://genesis.vision/" target="_blank">
-                              <img src={'../../../../src/assets/images/partners/genesis-vision.svg'} alt={'genesisvision'} />
+                                    <img src={this.getImgSVG('genesis-vision')} alt={'genesisvision'} />
                                 </a>
                             </div>
                         </div>
-                        <div className="slide">
+                        <div className={'slide'}>
                             <div>
                                 <a href="https://coincheckup.com/" target="_blank">
-                      <img src={'../../../../src/assets/images/partners/coin-checkup.svg'}  alt={'coincheckup'}/>
+                                    <img src={this.getImgSVG('coin-checkup')}  alt={'coincheckup'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide">
+                        <div className={'slide'}>
                             <div>
                                 <a href="https://trustwallet.com/" target="_blank">
-                                     <img src={'../../../../src/assets/images/partners/trust-wallet.svg'} alt={'trustwallet'}/>
+                                    <img src={this.getImgSVG('trust-wallet')} alt={'trustwallet'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide small">
+                        <div className={'slide small'}>
                             <div>
                                 <a href="https://cryptocoin.news/" target="_blank">
-                                     <img src={'../../../../src/assets/images/partners/cryptocoins-news.svg'} alt={'cryptocoinsnews'}/>
+                                    <img src={this.getImgSVG('cryptocoins-news')} alt={'cryptocoinsnews'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide small">
+                        <div className={'slide small'}>
                             <div>
                                 <a href="https://coinranking.com/" target="_blank">
-                                     <img src={'../../../../src/assets/images/partners/coinranking.svg'} alt={'coinranking'}/>
+                                    <img src={this.getImgSVG('coinranking')} alt={'coinranking'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide small">
+                        <div className={'slide small'}>
                             <div>
                                 <a href="https://www.ewdn.com" target="_blank">
-                                     <img src={'../../../../src/assets/images/partners/east-west.svg'} alt={'eastwest'}/>
+                                    <img src={this.getImgSVG('east-west')} alt={'eastwest'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide">
+                        <div className={'slide'}>
                             <div>
                                 <a href="https://kryll.io/" target="_blank">
-                                <img src={'../../../../src/assets/images/partners/Kryll.svg'} alt={'kryll'}/>
+                                    <img src={this.getImgSVG('Kryll')} alt={'kryll'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide">
+                        <div className={'slide'}>
                             <div>
                                 <a href="https://cointelegraph.com/" target="_blank">
-                                     <img src={'../../../../src/assets/images/partners/cointelegraph.svg'} alt={'cointelegraph'}/>
+                                    <img src={this.getImgSVG('cointelegraph')} alt={'cointelegraph'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide">
+                        <div className={'slide'}>
                             <div>
                                 <a href="https://guarda.co/" target="_blank">
-                                     <img src={'../../../../src/assets/images/partners/guarda-wallet.svg'} alt={'guardawwallet'}/>
+                                    <img src={this.getImgSVG('guarda-wallet')} alt={'guardawwallet'}/>
                                 </a>
                             </div>
                         </div>
-                        <div className="slide">
+                        <div className={'slide'}>
                             <div>
                                 <a href="https://phenom.team/" target="_blank">
-                                     <img src={'../../../../src/assets/images/partners/phenom.svg'} alt={'phenom'} />
+                                    <img src={this.getImgSVG('phenom')} alt={'phenom'} />
                                 </a>
                             </div>
                         </div>
-                        <div className="slide">
+                        <div className={'slide'}>
                             <div>
                                 <a href="https://changenow.io/" target="_blank">
-                                    <img src={'../../../../src/assets/images/partners/change-now.svg'} alt={'changenow'} />
+                                    <img src={this.getImgSVG('change-now')} alt={'changenow'} />
                                 </a>
                             </div>
                         </div>
-                        <div className="slide extraSmall">
+                        <div className={'slide extraSmall'}>
                             <div>
                                 <a href="https://www.cryptopolitan.com/" target="_blank">
-                                   <img src={'../../../../src/assets/images/partners/Cryptopolitian.svg'} alt={'cryptopolitian'} />
+                                    <img src={this.getImgSVG('Cryptopolitian')} alt={'cryptopolitian'} />
                                 </a>
                             </div>
                         </div>
-                        <div className="slide small">
+                        <div className={'slide small'}>
                             <div>
                                 <a href="https://coinpedia.org/pro/" target="_blank">
-                               <img src={'@/images/partners/coinpedia.png'} alt={'cryptopolitian'} />
+                                    <img src={this.getImgPNG('coinpedia')} alt={'cryptopolitian'} />
                                 </a>
                             </div>
                         </div>

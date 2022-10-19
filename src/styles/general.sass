@@ -1,0 +1,253 @@
+// grid
+$max-col-xsm: 360px
+$max-col-sm: 575px
+$min-col-sm: 576px
+$max-col-md: 767px
+$min-col-md: 768px
+$max-col-lg: 991px
+$min-col-lg: 992px
+$max-col-xl: 1139px
+$min-col-xl: 1140px
+$max-col-notebook: 1366px
+$min-col-notebook: 1367px
+$max-col-xxl: 1899px
+$min-col-xxl: 1900px
+
+// LK
+// admin left navbar width(not collapsed)
+$navWidth: 250px
+
+// admin left navbar width(collapsed)
+$navCollapsedWidth: 60px
+
+// LK colors (light theme - светлая тема)
+$liColor1: #3463F8
+$liColor2: #F7931A
+$liColor3: #DDE0EA
+$liColor4: #EFF1F5
+$liColor5: #F6F6F6
+$liColor6: #FFFFFF
+$liColor7: #929292
+
+// Цвета нового ЛК
+$liColor8: #E8EBEC
+$liColor9: #898989
+$liColor10: #626262
+$liColor11: #D4D4D4
+$liColor12: #000000
+
+// LK colors (black theme - темная тема)
+$blColor1: #191F29
+$blColor2: #3B4453
+$blColor3: #DDE0EA
+$blColor4: #A8ADB8
+$blColor5: #FFFFFF
+$blColor6: #72DBCC
+$blColor7: #BCBCBC
+
+
+$mobileMenuWidth: 1200px
+
+// mobile width
+$mobileWidth: 450px
+
+// tablet width
+$tabletWidth: 1023px
+
+textarea,
+input
+    &::placeholder
+        color: #D2D2D2
+
+// container
+@mixin container()
+    &
+        margin: 0 auto
+        padding-bottom: 2em
+    @media(max-width: $max-col-sm)
+        &
+            width: 90%
+    @media(min-width: $min-col-sm) AND (max-width: $max-col-md)
+        &
+            width: 95%
+    @media(min-width: $min-col-md) AND (max-width: $max-col-lg)
+        &
+            width: 95%
+    @media (min-width: $min-col-lg) AND (max-width: $max-col-notebook)
+        &
+            width: 85%
+    @media(min-width: $min-col-notebook) AND (max-width: $max-col-xxl)
+        &
+            width: 95%
+    // @media(min-width: $min-col-xxl) {
+    //     & {
+    //         width: 80%;
+    //         max-width: 1600px;
+    //     }
+    // }
+
+// containerLK
+@mixin containerLK()
+    &
+        margin: 0 auto
+        // padding-bottom: 2em;
+    @media(max-width: $max-col-sm)
+        &
+            width: 90%
+    @media(min-width: $min-col-sm) AND (max-width: $max-col-md)
+        &
+            width: 95%
+    @media(min-width: $min-col-md) AND (max-width: $max-col-lg)
+        &
+            width: 95%
+    @media (min-width: $min-col-lg) AND (max-width: $max-col-notebook)
+        &
+            width: 85%
+    @media(min-width: $min-col-notebook) AND (max-width: $max-col-xxl)
+        &
+            width: 95%
+    @media(min-width: $min-col-xxl)
+        &
+            width: 95%
+            max-width: 1900px
+
+// react-slick
+@mixin slider()
+    $borderRadius: 1.7rem
+    &
+        position: relative
+        z-index: 1
+        border-radius: $borderRadius
+        background: transparent // variable
+    .slick
+        &
+            border-radius: $borderRadius
+            position: relative
+            width: calc(100% - 100px)
+            margin: 0 auto
+            background: transparent // variable
+        div[class='slick-list']
+            width: 80% // variable
+            margin: 0 auto
+            background: transparent // variable
+            border-radius: $borderRadius
+            *
+                outline: 0
+        > div
+            > button
+                top: calc(50% - 5px)
+                &::before
+                    content: ''
+                    display: block
+                    width: 15px
+                    height: 29px
+                    background: transparent center center/auto no-repeat url('~@images/navSlider.svg')
+                &[class='slick-arrow slick-next']::before,
+                &[class='slick-arrow slick-next slick-disabled']::before
+                    transform: rotate(180deg)
+            > ul[class='slick-dots']
+                bottom: 0
+                @media(max-width: $max-col-xl)
+                    > li
+                        width: 10px
+                        margin: 0 5px
+                        > button
+                            width: 10px
+                            &::before
+                                width: 10px
+                                color: #3463F8
+                                font-size: 12px
+                @media(min-width: $min-col-xl)
+                    > li
+                        width: 10px
+                        margin: 0 2px
+                        > button
+                            width: 10px
+                            &::before
+                                width: 10px
+                                color: #3463F8
+                                font-size: 9px
+@mixin customButton($minHeight)
+    button,
+    input
+        outline: 0
+        cursor: pointer
+    button.blue,
+    input.blue
+        min-width: 155px
+        min-height: $minHeight
+        padding: 0 30px
+        background: #3463F8
+        border-radius: calc(#{$minHeight} / 2)
+        border: 0
+        font-weight: bold
+        font-size: 21px
+        color: #fff
+        &:hover
+            opacity: .9
+    button.white,
+    input.white
+        min-width: 155px
+        min-height: calc(#{$minHeight} + 17px)
+        background: #fff
+        border-radius: calc((#{$minHeight} + 17px) / 2)
+        border: 8px solid #5d82f9
+        font-weight: bold
+        font-size: 18px
+        color: #000
+        &:hover
+            background: #f0f0f0
+    button.caribbeanGreen,
+    input.caribbeanGreen
+        min-width: 93px
+        min-height: $minHeight
+        padding: 6px 30px
+        background: #05C0A5
+        border-radius: calc(#{$minHeight} / 2)
+        border: 0
+        font-weight: bold
+        font-size: 18px
+        color: #fff
+        &:hover
+            opacity: .9
+    button.orange,
+    input.orange
+        min-width: 155px
+        min-height: $minHeight
+        padding: 0 30px
+        background: #FF6E4E
+        border-radius: calc(#{$minHeight} / 2)
+        border: 0
+        font-weight: bold
+        font-size: 21px
+        color: #fff
+        &:hover
+            opacity: .9
+    button.transparent,
+    input.transparent
+        background: transparent
+        &.blue
+            border: 1px solid #3463F8
+            color: #3463F8
+            &:hover
+                background: rgba(#3463F8, .05)
+        &.orange
+            border: 1px solid #FF6E4E
+            color: #FF6E4E
+            &:hover
+                background: rgba(#FF6E4E, .05)
+    button.small,
+    input.small
+        min-height: 37px
+        font-size: 18px
+
+@mixin button()
+    @media(max-width: $max-col-sm)
+        @include customButton($minHeight: 40px)
+    @media(min-width: $min-col-sm)
+        @include customButton($minHeight: 47px)
+
+@mixin displayProperty()
+    @media(max-width: $max-col-xl)
+        .d_xl_none
+            display: none

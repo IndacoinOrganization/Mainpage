@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import  './styles.sass';
-
+import arrowDown from '@/images/arrowDown.svg';
 export default class extends Component {
 
     constructor(props) {
@@ -58,7 +58,7 @@ export default class extends Component {
                         <div className="absolute">
                             <div className="arrowContainer">
                                 <button onClick={() => this.setState({isOpen: !this.state.isOpen})}>
-                                    <img src={'@/assets/image/arrowDown.svg'} alt="arrowDown"/>
+                                    <img src={arrowDown} alt="arrowDown"/>
                                 </button>
                             </div>
                         </div>
