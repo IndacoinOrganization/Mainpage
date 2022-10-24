@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import {withTranslation} from 'react-i18next'
 import './styles.sass'
+import Seo from '@tools/Seo';
 
 class Verification extends Component {
 
