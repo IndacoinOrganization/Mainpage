@@ -6,16 +6,16 @@ import { Trans, withTranslation } from "react-i18next";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import Scroll from "react-scroll";
-// import Seo from "@tools/Seo";
+import Seo from "@tools/Seo";
 
 class Faq extends Component {
   constructor(props) {
     super(props);
 
-    // Seo.getInstance().changeTitle(this.props.i18n.t("seo.faq.title"));
-    // Seo.getInstance().changeDescription(
-    //   this.props.i18n.t("seo.faq.description")
-    // );
+    Seo.getInstance().changeTitle(this.props.i18n.t("Indacoin FAQ"));
+    Seo.getInstance().changeDescription(
+      this.props.i18n.t("Indacoin FAQ")
+    );
   }
 
   get questions() {

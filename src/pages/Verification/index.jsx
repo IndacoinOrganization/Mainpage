@@ -7,9 +7,11 @@ import './styles.sass'
 
 class Verification extends Component {
 
-    constructor (props) {
+    constructor(props) {
         super(props);
 
+        Seo.getInstance().changeTitle(this.props.i18n.t("Indacoin Verification"));
+        Seo.getInstance().changeDescription(this.props.i18n.t("Indacoin Verification"));
     }
 
     render() {
