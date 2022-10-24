@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <url>
+        <loc>https://indacoin.io</loc>  <!-- тут указываем основную версию -->
+
+         
+        <!-- тут дублируем и указываем что это английский -->
+        <xhtml:link
+                rel="alternate"
+                hreflang="en-gb"
+                href="https://indacoin.io"
+        />
+        <!--версия для говорящих на эстонском-->
+        <xhtml:link
+                rel="alternate"
+                hreflang="et-et"
+                href="https://indacoin.io/et-ET"
+        />
+        <!-- испанская версия для Испании -->
+                <!-- <xhtml:link
+                        rel="alternate"
+                        hreflang="es-es"
+                        href="https://indacoin.io/es-ES"
+                /> -->
+        <!-- русская версия для России -->
+                <!-- <xhtml:link
+                        rel="alternate"
+                        hreflang="ru-ru"
+                        href="https://indacoin.io/ru-RU"
+                /> -->
+        <!-- турецкая версия для Турции -->
+                <!-- <xhtml:link
+                        rel="alternate"
+                        hreflang="tr-tr"
+                        href="https://indacoin.io/tr-TR"
+                /> -->
+        <!-- арабская версия для ОАЭ -->
+                <!-- <xhtml:link
+                        rel="alternate"
+                        hreflang="ar-ae"
+                        href="https://indacoin.io/ar-AE"
+
+                /> -->
+
+        <!-- версия для англоговорящих но по гео находятся в Германии, по рекомендациям GGL первый идёт код языка потом код страны-->
+        <!--первым идет код языка потом код страны   -->
+                <!-- <xhtml:link
+                        rel="alternate"
+                        hreflang="en-de"
+                href="https://indacoin.io/en-DE"
+
+                /> -->
+        <!--иногда код языка и код страны одинаковы, но не всегда-->
+        <!-- версия на немецком для тех кто в Германии   -->
+                <!-- <xhtml:link
+                        rel="alternate"
+                        hreflang="de-de"
+                href="https://indacoin.io/de-DE"
+
+                /> -->
+        <!--версия для говорящих на испанском, но по гео в Щвейцарии, нужна ли такая версия в принципе?-->
+                <!-- <xhtml:link
+                        rel="alternate"
+                        hreflang="es-ch"
+                href="https://indacoin.io/es-CH"
+                /> -->
+        <!--версия для говорящих на английском в Бельгии -->
+                <!-- <xhtml:link
+                        rel="alternate"
+                        hreflang="en-be"
+                href="https://indacoin.io/en-BE"
+                /> -->
+        <!--версия для говорящих на немецком в Бельгии -->
+                <!-- <xhtml:link
+                        rel="alternate"
+                        hreflang="de-be"
+                href="https://indacoin.io/de-BE"
+                /> -->
+        <!--версия для говорящих на французком в Бельгии -->
+                <!-- <xhtml:link
+                        rel="alternate"
+                        hreflang="de-BE"
+                href="https://indacoin.io/fr-BE"
+                /> -->
+
+
+        <!--таким же образом нужно сгенерить 100500 вариантов, выборочно делать это или сгенереить все существующие - вам решать. -->
+
+
+
+    </url> <!--АХТУНГ - вот тут мы закончили с ГЛАВНОЙ страницей сайта -->
+
+
+
+    <!-- <url> -->
+        <!-- берем очередную станицу, стараницу битка-->
+        <!-- <loc>https://indacoin.io/change</loc> -->
+        <!--тут дублируем и указываем что это английский для UK-->
+        <!-- <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://indacoin.io/change"
+        /> -->
+        <!-- испанская версия для Испании -->
+        <!-- <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://indacoin.io/es-ES/buy-btc-with-usd"
+        /> -->
+        <!-- русская версия для России  -->
+        <!-- <xhtml:link
+                rel="alternate"
+                hreflang="ru-ru"
+                href="https://indacoin.io/ru-RU/buy-btc-with-usd"
+        /> -->
+        <!-- турецкая версия для Турции  -->
+        <!-- <xhtml:link
+            rel="alternate"
+            hreflang="tr-tr"
+            href="https://indacoin.io/tr-TR/buy-btc-with-usd"
+        /> -->
+        <!-- арабская версия для ОАЭ  -->
+        <!-- <xhtml:link
+            rel="alternate"
+            hreflang="ar-ae"
+            href="https://indacoin.io/ar-AE/buy-btc-with-usd"
+        /> -->
+        <!--100500 вариантов-->
+
+
+    <!-- </url> -->
+
+</urlset>  <!--тут заканчивается карта сайта -->
