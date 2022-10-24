@@ -612,7 +612,6 @@ const acceptLanguage = ["en", "et"]
 const storage = Storage.getInstance()
 if (storage.get(COOKIES_LANGUAGE)) {
   let lang = acceptLanguage.find((el) => {
-    console.log(brouserLanguage == el)
     if (brouserLanguage == el) return true
     return false
   })

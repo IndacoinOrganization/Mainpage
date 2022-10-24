@@ -21,7 +21,6 @@ export default class {
      * @param value
      */
     set (name, value) {
-        console.log(value)
         localStorage.setItem(name, value);
     }
 

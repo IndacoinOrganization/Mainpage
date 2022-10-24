@@ -23,7 +23,6 @@ const VerificationBlock = (props) => {
         `https://indacoin.io/api/v1/UserVerification/UserVerification?ContactInfo=${value}`
       )
       .then((res) => {
-        console.log(res.data.data.userIsVerified);
         setIsVerification(res.data.data.userIsVerified);
         setIsOpen(!isOpen);
       });
