@@ -15,9 +15,9 @@ class Verification extends Component {
     render() {
         return (
             <div className="verificationPage">
-                <Header />
-                <VerificationBlock/>
-                <Footer />
+                    <Header /> 
+                    <VerificationBlock/>
+                    <Footer /> 
             </div>
         );
     }

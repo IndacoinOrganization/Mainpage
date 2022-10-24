@@ -9,7 +9,7 @@ import { withTranslation, Trans } from 'react-i18next';
 // // import {changeUrl, pathname} from '@root/i18n';
 // import MenuDropdown from "../MenuDropdown/index.jsx";
 
-// import burger from "@images/burger.svg"
+import burger from "@images/burger.svg"
 // import close from "@images/close.svg"
 // import dropDown from "@images/dropDown.svg"
 import Indacoin from "@images/INDACOIN.svg"
@@ -20,11 +20,10 @@ function Header (props) {
 
     return (
         <header>
-            <img src={Indacoin} className="logo" alt='INDACOIN' />
+                <img src={Indacoin} className="logo" alt='INDACOIN' />
             <div className='burger-Box' onClick={() => setMobile(!mobile)}>
-                <p>Menu</p>
                 <div className='burger'>
-                    <span /><span /><span />
+                    <img src={burger} className="burger" alt='INDACOIN' />
                 </div>
             </div>
             <div className={`navigateBox ${mobile ? 'mobile' : ''}`}>
@@ -33,7 +32,7 @@ function Header (props) {
                     <path d="M11.1803 9.50081L18.6519 2.02929C19.116 1.56549 19.116 0.812956 18.6519 0.349155C18.1877 -0.115042 17.4359 -0.115042 16.9717 0.349155L9.5002 7.82067L2.02829 0.349155C1.56409 -0.115042 0.812345 -0.115042 0.348148 0.349155C-0.116049 0.812956 -0.116049 1.56549 0.348148 2.02929L7.82006 9.50081L0.348148 16.9723C-0.116049 17.4361 -0.116049 18.1887 0.348148 18.6525C0.580246 18.8842 0.88443 19.0002 1.18822 19.0002C1.49201 19.0002 1.79619 18.8842 2.02829 18.6521L9.5002 11.1806L16.9717 18.6521C17.2038 18.8842 17.508 19.0002 17.8118 19.0002C18.1156 19.0002 18.4198 18.8842 18.6519 18.6521C19.116 18.1883 19.116 17.4357 18.6519 16.9719L11.1803 9.50081Z" fill="black"/>
                 </svg> : ''}
                 <nav>
-                    <a href="https://gw.indacoin.io/" target={"_blank"}><Trans i18nKey="header.menu.buyBtc">Buy crypto</Trans></a>
+                    <Link to=""><Trans i18nKey="header.menu.buyBtc">Buy crypto</Trans></Link>
                     <Link to="business"><Trans i18nKey="header.menu.partnership">Business</Trans></Link>
                     <Link to="faq"><Trans i18nKey="header.menu.faq">FAQ</Trans></Link>
                     <Link to="verification"><Trans i18nKey="header.menu.verification">Official Verification</Trans></Link>

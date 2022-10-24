@@ -137,7 +137,7 @@ class PartnershipForm extends Component {
             <div className={'PartnershipForm'}>
                 <ToastContainer />
 
-                <span className={'title'}>
+                <span className={'title_form'}>
                     <Trans i18nKey="partnership.form.formTitle">
                         Please fill out the form below and our representative will get back to you within 24 hours
                     </Trans>

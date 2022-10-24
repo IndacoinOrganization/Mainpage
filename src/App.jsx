@@ -7,7 +7,6 @@ import Business     from '@/pages/Business/index.jsx'
 import Faq          from '@/pages/Faq/index.jsx'
 import Verification from '@/pages/Verification'
 
-
 // import Globals from "@/tools/Globals";
 // import {languagesPattern} from '.././i18n';
 //const globals = Globals.getInstance();

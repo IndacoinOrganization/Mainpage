@@ -355,7 +355,7 @@ class Faq extends Component {
         ],
       },
       {
-        title: <Trans i18nKey="faq.questionList.account.title">ACCOUNT</Trans>,
+        title: <Trans i18nKey="faq.questionList.account.title">Transactions</Trans>,
         questionList: [
           {
             question: (
@@ -377,85 +377,6 @@ class Faq extends Component {
           },
           {
             question: (
-              <Trans i18nKey="faq.questionList.account.question2">
-                HOW TO REGISTER ON THE INDACOIN WEBSITE?
-              </Trans>
-            ),
-            answer: (
-              <Trans i18nKey="faq.questionList.account.answer2">
-                Please enter your email address on this
-                <a href={"/auth/register"}>page</a> and follow the instructions
-                in the confirmation email from us.If the email is not in your
-                Inbox, please, check Bin and Spam folders.
-              </Trans>
-            ),
-          },
-          {
-            question: (
-              <Trans i18nKey="faq.questionList.account.question3">
-                I MADE AN ORDER ON INDACOIN. DO I HAVE AN ACCOUNT ON YOUR
-                PLATFORM NOW?
-              </Trans>
-            ),
-            answer: (
-              <Trans i18nKey="faq.questionList.account.answer3">
-                Registration is not mandatory to buy crypto on Indacoin, that is
-                why the order can be processed without creating an account. To
-                register the account on our website, please, open this
-                <a href={"/auth/register"}>page</a> or use our app.
-              </Trans>
-            ),
-          },
-          {
-            question: (
-              <Trans i18nKey="faq.questionList.account.question4">
-                WHY I CAN NOT LOG INTO THE ACCOUNT IN THE INDACOIN APP? I
-                ALREADY REGISTERED AN ACCOUNT ON THE INDACOIN WEBSITE.
-              </Trans>
-            ),
-            answer: (
-              <Trans i18nKey="faq.questionList.account.answer4">
-                Unfortunately, the account on the website and account in the
-                Indacoin app are different accounts with different wallets that
-                cannot be combined. Please, register a separate account in the
-                Indacoin app or <a href={"/auth/login"}>log into</a> the account
-                on the website.
-              </Trans>
-            ),
-          },
-          {
-            question: (
-              <Trans i18nKey="faq.questionList.account.question5">
-                I DO NOT REMEMBER MY PASSWORD. WHAT SHOULD I DO?
-              </Trans>
-            ),
-            answer: (
-              <Trans i18nKey="faq.questionList.account.answer5">
-                In this case, you can recover access to your account by
-                resetting the password on this <a href={"/auth/forgot"}>page</a>
-                . You will be able to set up a new password following the
-                instructions mentioned in the email received from us. After the
-                password is reset the withdrawals from the account will be
-                blocked for 24 hours due to security reasons.
-              </Trans>
-            ),
-          },
-          {
-            question: (
-              <Trans i18nKey="faq.questionList.account.question6">
-                WHAT IS THE MINIMUM FOR THE WITHDRAWAL?
-              </Trans>
-            ),
-            answer: (
-              <Trans i18nKey="faq.questionList.account.answer6">
-                The minimum for withdrawal depends on cryptocurrency and is
-                usually equivalent to 0.0007 BTC plus blockchain network
-                commission.
-              </Trans>
-            ),
-          },
-          {
-            question: (
               <Trans i18nKey="faq.questionList.account.question7">
                 WHAT IS THE MINIMUM FOR THE EXCHANGE?
               </Trans>
@@ -464,33 +385,6 @@ class Faq extends Component {
               <Trans i18nKey="faq.questionList.account.answer7">
                 The minimum for the exchange depends on cryptocurrency and
                 usually equivalent to 10 USD.
-              </Trans>
-            ),
-          },
-          {
-            question: (
-              <Trans i18nKey="faq.questionList.account.question8">
-                THE ALTCOIN FROM THE BALANCE OF MY ACCOUNT IS NO LONGER
-                AVAILABLE. WHAT HAPPENED?
-              </Trans>
-            ),
-            answer: (
-              <Trans i18nKey="faq.questionList.account.answer8">
-                Unfortunately, altcoins are not stable and can be delisted from
-                trading platforms for different reasons. If the altcoin is no
-                longer available on main trading platforms we have to block
-                these coins from transactions. In this case, your coins will be
-                stored on the balance of the account until the coin is available
-                again. We kindly ask you not to hold your altcoins on Indacoin
-                for a long time and withdraw them to a separate wallet specified
-                for this exact cryptocurrency on your PC. Please, do your own
-                research and pick the wallet provider you like the most. You can
-                use the information in the open sources and consult with the
-                community members of the coins you chose. Cryptocurrency
-                purchase is a high-risk operation. It is necessary to analyze
-                all possible risks associated with the market volatility.
-                Indacoin is not responsible for sharp fluctuations in
-                cryptocurrency, its fall in value, impairment and delistment.
               </Trans>
             ),
           },
@@ -894,68 +788,71 @@ class Faq extends Component {
     return (
       <div className='Faq'>
         <Header />
-        <main className='main'>
-          <div className="container">
-            <div className='title'>
-              <span>
-                <Trans i18nKey="faq.title">Frequently Asked Questions</Trans>
-              </span>
+        <div style={{background: "#F6F6F6"}}>
+          <main className='main'>
+            <div className="container">
+              <div className='title'>
+                <span>
+                  <Trans i18nKey="faq.title">Frequently Asked Questions</Trans>
+                </span>
+              </div>
+              <div className='anchors'>
+                <ul>
+                  {this.questions.map((value, index) => {
+                    const title = this.props.t(value.title.props.i18nKey);
+                    return (
+                      <li key={index}>
+                        <a
+                          href={"#" + value.title}
+                          onClick={(event) => this.scroll(event, index)}
+                        >
+                          <span>{title.toLocaleLowerCase()}</span>
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+              <div className='linkSupport'>
+                <button
+                  className={`blue small`}
+                  onClick={() =>
+                    window.open("mailto:support@indacoin.com", "_blank")
+                  }
+                >
+                  <Trans i18nKey="faq.button">Contact Support</Trans>
+                </button>
+              </div>
+              <div className='block'>
+                <hr />
+                <ul>
+                  {this.questions.map((value, index) => {
+                    return (
+                      <li key={index}>
+                        <a id={"title-" + index} />
+                        <span>{value.title}</span>
+                        <ol className="questionsBlock">
+                          {value.questionList.map((value, index) => {
+                            return (
+                              <li key={index}>
+                                <span onClick={this.showAnswer.bind(this)}>
+                                  {value.question}
+                                </span>
+                                <p>{value.answer}</p>
+                              </li>
+                            );
+                          })}
+                        </ol>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
             </div>
-            <div className='anchors'>
-              <ul>
-                {this.questions.map((value, index) => {
-                  const title = this.props.t(value.title.props.i18nKey);
-                  return (
-                    <li key={index}>
-                      <a
-                        href={"#" + value.title}
-                        onClick={(event) => this.scroll(event, index)}
-                      >
-                        <span>{title.toLocaleLowerCase()}</span>
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-            <div className='linkSupport'>
-              <button
-                className={`blue small`}
-                onClick={() =>
-                  window.open("mailto:support@indacoin.com", "_blank")
-                }
-              >
-                <Trans i18nKey="faq.button">Contact Support</Trans>
-              </button>
-            </div>
-            <div className='block'>
-              <hr />
-              <ul>
-                {this.questions.map((value, index) => {
-                  return (
-                    <li key={index}>
-                      <a id={"title-" + index} />
-                      <span>{value.title}</span>
-                      <ol>
-                        {value.questionList.map((value, index) => {
-                          return (
-                            <li key={index}>
-                              <span onClick={this.showAnswer.bind(this)}>
-                                {value.question}
-                              </span>
-                              <p>{value.answer}</p>
-                            </li>
-                          );
-                        })}
-                      </ol>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          </div>
-        </main>
-        <Footer />
+          </main>
+          <Footer />
+        </div>
+        
       </div>
     );
   }

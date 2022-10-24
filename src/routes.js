@@ -2,7 +2,7 @@
 
 import Home from '@/pages/Home';
 import Business from '@/pages/Business';
-import Faq from '@/pages/Faq';
+import Faq from './pages/Faq/index.jsx';
 
 
 // import BlogOrder from '@pages/BlogOrder';
@@ -36,83 +36,12 @@ export const ROUTES = [
         component: Home,
     },
     {
-        path: 'referral',
-        component: Referral,
-    },
-    {
-        path: 'blog',
-        component: Blog,
-    },
-    // {
-    //     path: 'blog/:sampleNews',
-    //     component: BlogOrder,
-    // },
-    {
-        path: 'status',
-        component: Change,
-    },
-    {
         path: 'business',
         component: Business,
     },
     {
         path: 'faq',
         component: Faq,
-    },
-    {
-        path: 'terms',
-        component: TermsAndAml,
-    },
-    {
-        path: 'terms/amlpolicy',
-        component: TermsAndAml,
-    },
-    {
-        path: 'api_doc',
-        component: ApiDoc,
-    },
-    {
-        path: 'listing',
-        component: Listing,
-    },
-    {
-        path: 'payment-status',
-        component: Status
-    },
-    {
-        path: 'landing',
-        component: Landing
-    },
-    {
-        path: ':crypto-usd-price-charts',
-        component: Charts
-    },
-    {
-        path: 'unsubscribe/:email/:token',
-        component: Unsubscribe
-    },
-    {
-        path: 'subscribe/:email/:token',
-        component: Subscribe
-    },
-    {
-        path: 'restore-account/:email/:token',
-        component: RestoreAccount
-    },
-    // {
-    //     path: 'dashboard',
-    //     component: () => {
-    //         window.location.href = env.BASENAME + '/panel/exchange';
-    //         return null;
-    //     },
-    // },
-    {
-        path: 'tokens',
-        component: Inda
-    },
-    {
-        path: 'tokens/buy-:crypto-with-card',
-        component: Inda
     },
     {
         path: 'verification',

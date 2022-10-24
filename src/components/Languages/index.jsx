@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import './style.sass';
 import { useTranslation } from "react-i18next";
+import enLanguage from "../../assets/images/enLanguage.svg"
+import etLanguage from "../../assets/images/etLanguage.svg"
 // import Storage from '@tools/Globals';
 
 export const COOKIES_LANGUAGE = 'cookies_language'
@@ -17,7 +19,7 @@ const LangBlock = () => {
     const [Language, setLanguage] = useState('en')
     const [openLanguges, setopenLanguges] = useState(false)
 
-    let languages = ['en', 'ee']
+    let languages = ['en', 'et']
     languages = languages.sort(a => ~a.indexOf(Language))
 
 
@@ -46,12 +48,17 @@ const LangBlock = () => {
                 <div className = "header__Languages">
                     {
                         languages.map((lang, index) => {
-                            return <span
-                            className="itemLang"
-                            key={ index }
-                            onClick={() => { changeLanguage(lang), closeHandler(false) }}>
-                                { lang.toUpperCase() }
-                            </span>
+                            return <div 
+                            onClick={() => { changeLanguage(lang), closeHandler(false) }} 
+                            style={{display: "flex", cursor: "pointer"}}>
+                                <img src={lang == "et" ? etLanguage : enLanguage} style={{marginRight: 10}} alt=""/>
+                                <span
+                                className="itemLang"
+                                key={ index }
+                                >
+                                    { lang.toUpperCase() }
+                                </span>
+                                </div>
                         })
                     }
                 </div>

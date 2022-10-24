@@ -676,20 +676,8 @@
         "title": "ACCOUNT",
         "question1": "DO I NEED TO SIGN UP/ CREATE AN ACCOUNT TO BUY HERE?",
         "answer1": "No, having an account on Indacoin is not mandatory to buy crypto coins. To make a purchase you just need to enter in the calculator on the page <1>https://indacoin.com</1> amount of fiat money you want to spend, email, mobile phone number, card details and crypto wallet address. Then you will be forwarded to your order page.",
-        "question2": "HOW TO REGISTER ON THE INDACOIN WEBSITE?",
-        "answer2": "Please enter your email address on this <1>page</1> and follow the instructions in the confirmation email from us.<br>If the email is not in your Inbox, please, check Bin and Spam folders.",
-        "question3": "I MADE AN ORDER ON INDACOIN. DO I HAVE AN ACCOUNT ON YOUR PLATFORM NOW?",
-        "answer3": "Registration is not mandatory to buy crypto on Indacoin, that is why the order can be processed without creating an account.<br>To register the account on our website, please, open this <1>page</1> or use our app.",
-        "question4": "WHY I CAN NOT LOG INTO THE ACCOUNT IN THE INDACOIN APP? I ALREADY REGISTERED AN ACCOUNT ON THE INDACOIN WEBSITE.",
-        "answer4": "Unfortunately, the account on the website and account in the Indacoin app are different accounts with different wallets that cannot be combined. Please, register a separate account in the Indacoin app or <1>log into</1> the account on the website.",
-        "question5": "I DO NOT REMEMBER MY PASSWORD. WHAT SHOULD I DO?",
-        "answer5": "In this case, you can recover access to your account by resetting the password on this <1>page</1>. You will be able to set up a new password following the instructions mentioned in the email received from us.<br> After the password is reset the withdrawals from the account will be blocked for 24 hours due to security reasons.",
-        "question6": "WHAT IS THE MINIMUM FOR THE WITHDRAWAL?",
-        "answer6": "The minimum for withdrawal depends on cryptocurrency and is usually equivalent to 0.0007 BTC plus blockchain network commission.",
-        "question7": "WHAT IS THE MINIMUM FOR THE EXCHANGE?",
-        "answer7": "The minimum for the exchange depends on cryptocurrency and usually equivalent to 10 USD.",
-        "question8": "THE ALTCOIN FROM THE BALANCE OF MY ACCOUNT IS NO LONGER AVAILABLE. WHAT HAPPENED?",
-        "answer8": "Unfortunately, altcoins are not stable and can be delisted from trading platforms for different reasons. If the altcoin is no longer available on main trading platforms we have to block these coins from transactions. In this case, your coins will be stored on the balance of the account until the coin is available again.<br>We kindly ask you not to hold your altcoins on Indacoin for a long time and withdraw them to a separate wallet specified for this exact cryptocurrency on your PC.<br>Please, do your own research and pick the wallet provider you like the most. You can use the information in the open sources and consult with the community members of the coins you chose.<br>Cryptocurrency purchase is a high-risk operation. It is necessary to analyze all possible risks associated with the market volatility. Indacoin is not responsible for sharp fluctuations in cryptocurrency, its fall in value, impairment and delistment."
+       "question2": "WHAT IS THE MINIMUM FOR THE EXCHANGE?",
+        "answer2": "The minimum for the exchange depends on cryptocurrency and usually equivalent to 10 USD."
       },
       "indacoinVerification": {
         "title": "INDACOIN VERIFICATION",

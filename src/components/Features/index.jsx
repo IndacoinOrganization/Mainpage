@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.sass";
+import { withTranslation, Trans } from 'react-i18next';
 import icon1 from "../../assets/images/icon1.png"
 import icon8 from "../../assets/images/icon8.png"
 import icon9 from "../../assets/images/icon9.png"
@@ -24,7 +25,9 @@ export const Features = () => {
             </div>
             <div className="box_text">
               <span>
+              <Trans i18nKey="home.features.featurestext.feature0">
                 Hold it to get passive income from your portfolio
+                </Trans>
                 </span>
             </div>
           </div>
@@ -37,7 +40,9 @@ export const Features = () => {
             </div>
             <div className="box_text">
             <span>
+            <Trans i18nKey="home.features.featurestext.feature1">
                 Trade it to get a speculative profit bigger than stocks
+                </Trans>
                 </span>
             </div>
           </div>
@@ -50,7 +55,9 @@ export const Features = () => {
             </div>
             <div className="box_text">
               <span>
+              <Trans i18nKey="home.features.featurestext.feature2">
                 Stake it as if it’s a deposit in the bank but with higher rate
+                </Trans>
               </span>
             </div>
           </div>
@@ -63,7 +70,9 @@ export const Features = () => {
             </div>
             <div className="box_text">
               <span>
+              <Trans i18nKey="home.features.featurestext.feature3">
               Make fast global transfers and pay online without extra fees
+              </Trans>
               </span>
             </div>
           </div>
@@ -76,7 +85,9 @@ export const Features = () => {
             </div>
             <div className="box_text">
               <span>
+              <Trans i18nKey="home.features.featurestext.feature4">
                 Get help from live support agents 24/7
+                </Trans>
                 </span>
             </div>
           </div>
@@ -89,7 +100,9 @@ export const Features = () => {
             </div>
             <div className="box_text">
               <span>
+              <Trans i18nKey="home.features.featurestext.feature5">
                 Buy crypto directly with Visa &amp; Mastercard
+                </Trans>
                 </span>
             </div>
           </div>
@@ -102,7 +115,9 @@ export const Features = () => {
             </div>
             <div className="box_text">
               <span>
+              <Trans i18nKey="home.features.featurestext.feature6">
                 Avoid hidden fees and extra charges
+                </Trans>
                 </span>
             </div>
           </div>
@@ -115,7 +130,9 @@ export const Features = () => {
             </div>
             <div className="box_text">
               <span>
+              <Trans i18nKey="home.features.featurestext.feature7">
                 Receive bonuses for every purchase
+                </Trans>
                 </span>
             </div>
           </div>
@@ -128,7 +145,9 @@ export const Features = () => {
             </div>
             <div className="box_text">
               <span>
+              <Trans i18nKey="home.features.featurestext.feature8">
                 Protect your funds &amp; data with our AI powered security system
+                </Trans>
               </span>
             </div>
           </div>

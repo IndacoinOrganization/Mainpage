@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import  './styles.sass';
-import arrowDown from '@/images/arrowDown.svg';
+import arrowDown from '../../assets/images/arrowDown.svg'
 export default class extends Component {
 
     constructor(props) {
@@ -44,7 +44,7 @@ export default class extends Component {
 
     render () {
         return (
-            <div className={`wrapper ${this.state.isOpen ? "open" : ''}`}>
+            <div className={`wrapperOpportunities ${this.state.isOpen ? "open" : ''}`}>
                 <span className="title">{this.props.title}</span>
 
                 <div className="content" ref={this.contentContainerRef}>

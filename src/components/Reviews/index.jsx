@@ -37,7 +37,7 @@ export const ReviewMy = () => {
             </div>
             <div className="main__text_data">6 days ago</div>
           </div>
-              <div className="main__text"> <Trans i18nKey="header.menu.reviews1">The process was smooth and fast. I had to pass KYC process and I must say it was one of the simplest KYC I've ever seen. In the end, verification took about 5 minutes and then I immediately got my coins. Totally recommend</Trans></div>
+              <div className="main__text"> <Trans i18nKey="home.reviews.reviewstext.review0">The process was smooth and fast. I had to pass KYC process and I must say it was one of the simplest KYC I've ever seen. In the end, verification took about 5 minutes and then I immediately got my coins. Totally recommend</Trans></div>
         </div>
         <div className="reviewBlock">
           <div className="reviewTop">
@@ -66,7 +66,7 @@ export const ReviewMy = () => {
             </div>
             <div className="main__text_data">Nov 25, 2021</div>
           </div>
-              <div className="main__text"><Trans i18nKey="header.menu.reviews2">I received coins relatively fast, must admit that auto updates on the transaction status in TG were very helpful. Appreciate the efforts, hope they'll add more rare coins soon</Trans></div>
+              <div className="main__text"><Trans i18nKey="home.reviews.reviewstext.review1">I received coins relatively fast, must admit that auto updates on the transaction status in TG were very helpful. Appreciate the efforts, hope they'll add more rare coins soon</Trans></div>
         </div>
       </div>
       <div className="reviewRow">
@@ -95,7 +95,7 @@ export const ReviewMy = () => {
             </div>
             <div className="main__text_data">Feb 7, 2022</div>
           </div>
-              <div className="main__text"><Trans i18nKey="header.menu.reviews3">I had a very pleasant experience. I had troubles with verification, support was very polite and helpful. That's how all crypto services should operate!</Trans></div>
+              <div className="main__text"><Trans i18nKey="home.reviews.reviewstext.review2">I had a very pleasant experience. I had troubles with verification, support was very polite and helpful. That's how all crypto services should operate!</Trans></div>
         </div>
         <div className="reviewBlock">
           <div className="reviewTop" style={{ paddingBottom: 5 }}>
@@ -122,7 +122,7 @@ export const ReviewMy = () => {
             </div>
             <div className="main__text_data">4 days ago</div>
           </div>
-              <div className="main__text"><Trans i18nKey="header.menu.reviews4">I tried this services and was very glad about it. Unfortunately, there was a bit of delay but when I contacted support they resolved the issue and compensated for the delay. That means something. I will try this again when I need to load on crypto!</Trans></div>
+              <div className="main__text"><Trans i18nKey="home.reviews.reviewstext.review3">I tried this services and was very glad about it. Unfortunately, there was a bit of delay but when I contacted support they resolved the issue and compensated for the delay. That means something. I will try this again when I need to load on crypto!</Trans></div>
         </div>
       </div>
     </div>

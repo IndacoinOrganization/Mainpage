@@ -39,11 +39,9 @@ export default class extends Component {
                             </Trans>
                           }
                           button={
-                              <Link to="listing">
                                   <Trans i18nKey="partnership.opportunities.moreBtn">
                                       More details
                                   </Trans>
-                              </Link>
                           }
                           onClick={() => Scroll.animateScroll.scrollTo(0)}
                         >
