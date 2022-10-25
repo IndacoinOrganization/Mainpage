@@ -610,13 +610,15 @@ const resources = {
 const brouserLanguage = window.navigator.language.split('-')[0]
 const acceptLanguage = ["en", "et"]
 const storage = Storage.getInstance()
-if (storage.get(COOKIES_LANGUAGE)) {
+if (!storage.get(COOKIES_LANGUAGE)) {
   let lang = acceptLanguage.find((el) => {
     if (brouserLanguage == el) return true
     return false
   })
   storage.set(COOKIES_LANGUAGE, lang || "en");
   
+}else{
+    storage.set(COOKIES_LANGUAGE, "en");
 }
 
 i18n
