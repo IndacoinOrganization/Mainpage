@@ -130,7 +130,7 @@ const VerificationBlock = (props) => {
                 href="https://indacoin.io/buy-bitcoin-with-card"
                 style={{ color: "#3463F8" }}
               >
-                https://www.indacoin.io
+                https://indacoin.io
               </a>
             </p>
           </div>
