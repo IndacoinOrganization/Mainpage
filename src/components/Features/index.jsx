@@ -64,7 +64,7 @@ export const Features = () => {
           <div className="content_box">
             <div className="div-12">  
             <img src={icon3}
-                  alet={'global transfers'}   
+                  alt={'global transfers'}   
               />
               <div className="builder-image-sizer image-sizer" />
             </div>
