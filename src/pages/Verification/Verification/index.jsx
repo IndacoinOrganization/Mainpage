@@ -17,7 +17,7 @@ const VerificationBlock = (props) => {
     
     axios
       .get(
-        `https://indacoin.io/api/v1/UserVerification/UserVerification?ContactInfo=${value}`
+        `https://api.indacoin.io/api/v1/UserVerification/UserVerification?ContactInfo=${value}`
       )
       .then((res) => {
         setIsVerification(res.data.data.userIsVerified);
