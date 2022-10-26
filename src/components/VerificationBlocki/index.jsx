@@ -3,10 +3,10 @@ import "./styles.sass";
 import Modal from "react-modal";
 import axios from "axios";
 import { withTranslation, Trans } from "react-i18next";
-import Verificatied from "@/images/Verificatied.svg"
-import warningIcon from "@/images/warningIcon.svg"
-import closeVerification from "@/images/closeVerification.svg"
-import searchVerification from "@/images/searchVerification.svg"
+import Verificatied from "../../assets/images/Verificatied.svg"
+import warningIcon from "../../assets/images/warningIcon.svg"
+import closeVerification from "../../assets/images/closeVerification.svg"
+import searchVerification from "../../assets/images/searchVerification.svg"
 
 Modal.setAppElement("#root");
 
@@ -132,10 +132,10 @@ const VerificationBlock = (props) => {
               </Trans>
               {' '}{' '}
               <a
-                href="https://indacoin.io/buy-bitcoin-with-card"
+                href="https://indacoin.io"
                 style={{ color: "#3463F8" }}
               >
-                https://www.indacoin.io
+                https://indacoin.io/
               </a>
             </p>
           </div>

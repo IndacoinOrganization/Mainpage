@@ -4,6 +4,8 @@ import Modal from "react-modal";
 import axios from "axios";
 import { withTranslation, Trans } from "react-i18next";
 import closeVerificationImg from "@/images/closeVerification.svg"
+import Verificatied from "@/assets/image/Verificatied.svg"
+import warningIcon from "@/assets/image/warningIcon.svg"
 Modal.setAppElement("#root");
 
 const VerificationBlock = (props) => {
@@ -15,7 +17,7 @@ const VerificationBlock = (props) => {
     
     axios
       .get(
-        `https://indacoin.io/api/v1/UserVerification/UserVerification?ContactInfo=${value}`
+        `https://api.indacoin.io/api/v1/UserVerification/UserVerification?ContactInfo=${value}`
       )
       .then((res) => {
         setIsVerification(res.data.data.userIsVerified);
@@ -46,8 +48,8 @@ const VerificationBlock = (props) => {
           >
             <img
               src={isVerification
-                ? "@/assets/image/Verificatied.svg"
-                : "@/assets/image/warningIcon.svg"}
+                ? Verificatied
+                : warningIcon}
             />
             <p
               className={styles.modalTitle}
@@ -130,7 +132,7 @@ const VerificationBlock = (props) => {
                 href="https://indacoin.io/buy-bitcoin-with-card"
                 style={{ color: "#3463F8" }}
               >
-                https://www.indacoin.io
+                https://indacoin.io
               </a>
             </p>
           </div>

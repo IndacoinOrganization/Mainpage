@@ -1,0 +1,145 @@
+.wrapper 
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    height: 100vh
+
+    main 
+        background: #fff
+        padding: 2rem 5rem 2rem 3rem
+        border-radius: 1.5rem
+        display: flex
+
+        .imgContainer 
+            width: 20rem
+            max-width: 512px
+            img 
+                display: block
+                width: 100%
+            
+        
+
+        .textContainer 
+            margin-left: 2rem
+
+            .title 
+                color: #3463F8
+                font-family: Gilroy
+                font-weight: bold
+                font-size: 7rem
+                line-height: 7rem
+                display: block
+            
+
+            .smallTitle 
+                text-transform: uppercase
+                font-family: Gilroy
+                font-weight: bold
+                font-size: 1.1rem
+                display: block
+            
+
+            .text 
+                color: #8B8B8B
+                font-family: Gilroy
+                font-size: .9rem
+                display: block
+                margin-top: 1rem
+            
+
+            .btnContainer 
+                .button 
+                    display: flex
+                    font-family: Gilroy
+                    text-transform: uppercase
+                    color: #3463F8
+                    text-decoration: none
+                    font-size: 1.5rem
+                    margin-top: 1rem
+
+                    span 
+                        padding-top: .45rem
+                    
+
+                    img 
+                        margin-left: 1em
+                        width: .8rem
+                    
+                
+            
+        
+    
+
+
+@media (max-width: 575px) 
+    .wrapper 
+        height: auto
+        display: block
+        margin-top: 2em
+        padding-bottom: 2rem
+
+        main 
+            width: 90%
+            margin: 0 auto
+            flex-direction: column
+            padding: 4rem 1rem 1.5rem 1rem
+            border-radius: 1.3rem
+            display: flex
+
+            .imgContainer 
+                width: 15rem
+                margin: 0 auto
+                order: 1
+            
+
+            .textContainer 
+                margin-left: 0
+
+                .title 
+                    font-size: 4rem
+                    text-align: center
+                    line-height: 4rem
+                
+
+                .smallTitle 
+                    font-size: 1rem
+                    margin-top: 1rem
+                    text-align: center
+                
+
+                .text 
+                    text-align: center
+                    font-size: 1rem
+                
+
+                .btnContainer 
+                    display: flex
+                    justify-content: center
+
+                    .button 
+                        font-size: 1.1rem
+
+                        img 
+                            margin-left: .7rem
+                            width: .6em
+                        
+
+                        span 
+                            padding-top: .25rem
+                        
+                    
+                
+            
+        
+    
+
+
+
+@media (min-width: 576px) AND (max-width: 768px) 
+    .wrapper 
+        main 
+            padding: 2rem 4rem 2rem 1rem
+        
+    
+

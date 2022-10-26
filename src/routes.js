@@ -3,6 +3,7 @@
 import Home from '@/pages/Home';
 import Business from '@/pages/Business';
 import Faq from './pages/Faq/index.jsx';
+import TermsAndAml from '@/pages/TermsAndAml'
 
 
 // import BlogOrder from '@pages/BlogOrder';
@@ -29,11 +30,11 @@ import Verification from '@/pages/Verification';
 export const ROUTES = [
     {
         path: '',
-        component: Home,
+        component: TermsAndAml,
     },
     {
         path: '/',
-        component: Home,
+        component: TermsAndAml,
     },
     {
         path: 'business',
@@ -46,6 +47,14 @@ export const ROUTES = [
     {
         path: 'verification',
         component: Verification
+    },
+    {
+        path: 'terms',
+        component: TermsAndAml,
+    },
+    {
+        path: 'terms/amlpolicy',
+        component: TermsAndAml,
     },
 ];
 

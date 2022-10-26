@@ -1,36 +1,38 @@
 import React, {Component} from 'react';
-import styles from './styles.scss';
+import styles from './styles.sass';
 import Link from '@components/Link';
 import {Trans} from 'react-i18next';
+import blueArrowRight from '@images/blueArrowRight.svg'
+import img404 from '@images/404.svg'
 
 export default class extends Component {
     render() {
         return (
-            <div className={styles.wrapper}>
+            <div className='wrapper'>
                 <main>
-                    <div className={styles.imgContainer}>
-                        <img src={require('@images/404.svg')} />
+                    <div className='imgContainer'>
+                        <img src={img404} />
                     </div>
-                    <div className={styles.textContainer}>
-                        <span className={styles.title}>404</span>
-                        <span className={styles.smallTitle}>
+                    <div className='textContainer'>
+                        <span className='title'>404</span>
+                        <span className='smallTitle'>
                             <Trans i18nKey="404.smallTitle">
                                 Looks like you’re lost"
                             </Trans>
                         </span>
-                        <span className={styles.text}>
+                        <span className='text'>
                             <Trans i18nKey="404.text">
                                 The page you are looking for not available!
                             </Trans>
                         </span>
-                        <div className={styles.btnContainer}>
-                            <Link to="" className={styles.button} forceUpdate={true}>
+                        <div className='btnContainer'>
+                            <Link to="" className='button' forceUpdate={true}>
                                 <span>
                                     <Trans i18nKey="404.button">
                                         Go to homepage
                                     </Trans>
                                 </span>
-                                <img src={require('@images/blueArrowRight.svg')} />
+                                <img src={blueArrowRight} />
                             </Link>
                         </div>
                     </div>
