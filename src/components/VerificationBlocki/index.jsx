@@ -132,10 +132,10 @@ const VerificationBlock = (props) => {
               </Trans>
               {' '}{' '}
               <a
-                href="https://indacoin.io/buy-bitcoin-with-card"
+                href="https://indacoin.io"
                 style={{ color: "#3463F8" }}
               >
-                https://www.indacoin.io
+                https://indacoin.io/
               </a>
             </p>
           </div>
