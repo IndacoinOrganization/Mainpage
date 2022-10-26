@@ -11,6 +11,7 @@ import NotFound from "@/pages/404/index.jsx"
 function App() {
   return (
     <BrowserRouter>
+      {console.log('test')}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/business' element={<Business />} />  
