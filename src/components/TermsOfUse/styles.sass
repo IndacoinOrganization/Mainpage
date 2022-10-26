@@ -1,0 +1,55 @@
+html 
+    scroll-behavior: smooth
+
+.wrapperTerms 
+    width: 95%
+    > span 
+        display: inline-block
+        padding: 15px 0 27px 0
+        font-size: 27px
+        color: #3463F8
+        cursor: pointer
+        &:hover::after 
+            content: ''
+            display: inline-block
+            width: 20px
+            height: 20px
+            background: right center/12px 14px no-repeat url('~@images/icons/doc.svg')
+        
+    
+    p 
+        text-align: justify
+        font-size: 16px
+        padding: 15px 0
+    
+    ul 
+        padding-left: 3.5%
+        > li 
+            position: relative
+            padding: 10px 0
+            &:before 
+                content: "\2B24"
+                position: absolute
+                left: -1.5%
+                margin-right: .5%
+                font-size: 12px
+                color: #3463F8
+            
+        
+    
+    ol 
+        padding-left: 3.5%
+        > li 
+            position: relative
+            padding: 10px 0
+            &:before 
+                content: "\2014"
+                position: absolute
+                left: -1.5%
+                margin-right: .5%
+                font-size: 12px
+                color: #3463F8
+
+            
+        
+    
