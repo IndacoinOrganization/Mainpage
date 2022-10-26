@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.sass";
-import { withTranslation, Trans } from 'react-i18next';
+import { Trans } from 'react-i18next';
 import portfolio from "@images/portfolio.png"
 import trade from "@images/trade.png"
 import deposit from "@images/deposit.png"
