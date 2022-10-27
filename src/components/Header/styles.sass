@@ -3,6 +3,7 @@ header
     justify-content: space-between
     padding: 1rem
     margin: 0 5%
+    align-items: center
     .burger-Box
         display: none
         font-weight: 600
@@ -22,6 +23,7 @@ header
     .navigateBox
         display: flex
         gap: 41px
+        align-items: center
         &.mobile
             flex-direction: column
             background-color: white
@@ -56,11 +58,12 @@ header
             font-weight: 700
             font-size: 18px
             line-height: 22px
-            padding: 9px 20px
+            padding: 15px 20px
             text-decoration: none
             background: #3463F8
             color: #fff
             border-radius: 13px
+            height: fit-content
 @media (max-width: 1200px)
     header
         .burger-Box
