@@ -123,18 +123,18 @@ class Faq extends Component {
               </Trans>
             ),
           },
-          {
-            question: (
-              <Trans i18nKey="faq.questionList.generalQuestions.question6">
-                CAN I DEPOSIT COINS TO INDACOIN WALLET?
-              </Trans>
-            ),
-            answer: (
-              <Trans i18nKey="faq.questionList.generalQuestions.answer6">
-                No, you can only purchase bitcoins here.
-              </Trans>
-            ),
-          },
+          // {
+          //   question: (
+          //     <Trans i18nKey="faq.questionList.generalQuestions.question6">
+          //       CAN I DEPOSIT COINS TO INDACOIN WALLET?
+          //     </Trans>
+          //   ),
+          //   answer: (
+          //     <Trans i18nKey="faq.questionList.generalQuestions.answer6">
+          //       No, you can only purchase bitcoins here.
+          //     </Trans>
+          //   ),
+          // },
           {
             question: (
               <Trans i18nKey="faq.questionList.generalQuestions.question7">

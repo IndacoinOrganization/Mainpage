@@ -196,7 +196,7 @@ const resources = {
             "question2": "HOW CAN I CONTACT YOU?",
             "answer2": "You can contact our support team by e-mail (support@indacoin.com), Telegram (@Indacoin_support) or by using a live chat option on our <1>webpage</1>.",
             "question3": "DO YOU HAVE AN AFFILIATE PROGRAM?",
-            "answer3": "Yes, we are happy to provide our services to different types of business. You can find more  details about our affiliate program <1>here</1>.<br> If you want to list a coin on our platform, please, check <3>this page</3>.",
+            "answer3": "Yes, we are happy to provide our services to different types of business. You can find more  details about our affiliate program <1>here</1>.",
             "question4": "WHICH CRYPTOCURRENCIES CAN I BUY HERE?",
             "answer4": "You can buy over 100 different cryptocurrencies that are all listed on our website.<br> To make an order you can use our website <1>https://indacoin.io</1>. Just enter the amount in the calculator and choose one of the available crypto coins. Then you will be able to enter your email, mobile phone number, card details and crypto wallet address where you want your coins to be deposited. At this stage you will be asked to verify your identity to confirm the payment.",
             "question5": "CAN I SELL MY CRYPTOCURRENCY ON INDACOIN?",
