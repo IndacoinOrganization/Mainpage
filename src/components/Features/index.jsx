@@ -1,15 +1,15 @@
 import React from "react";
 import "./styles.sass";
-import { withTranslation, Trans } from 'react-i18next';
-import icon1 from "../../assets/images/icon1.png"
-import icon8 from "../../assets/images/icon8.png"
-import icon9 from "../../assets/images/icon9.png"
-import icon3 from "../../assets/images/icon3.png"
-import icon7 from "../../assets/images/icon7.png"
-import icon4 from "../../assets/images/icon4.png"
-import icon5 from "../../assets/images/icon5.png"
-import icon2 from "../../assets/images/icon2.png"
-import icon6 from "../../assets/images/icon6.png"
+import { Trans } from 'react-i18next';
+import portfolio from "@images/portfolio.png"
+import trade from "@images/trade.png"
+import deposit from "@images/deposit.png"
+import transfers from "@images/transfers.png"
+import support from "@images/support.png"
+import cards from "@images/cards.png"
+import charges from "@images/charges.png"
+import bonuses from "@images/bonuses.png"
+import security from "@images/security.png"
 
 export const Features = () => {
   return (
@@ -18,7 +18,7 @@ export const Features = () => {
         <div className="features_content">
           <div className="content_box">
             <div className="div-3">
-            <img src={icon1}
+            <img src={portfolio}
                 alt={'portfolio'}
               />
               <div className="builder-image-sizer image-sizer"/>
@@ -33,7 +33,7 @@ export const Features = () => {
           </div>
           <div className="content_box">
             <div className="div-6">
-            <img src={icon8}
+            <img src={trade}
                 alt={'Trade it to get'}
               />
               <div className="builder-image-sizer image-sizer" />
@@ -48,7 +48,7 @@ export const Features = () => {
           </div>
           <div className="content_box">
             <div className="div-9">
-            <img src={icon9}
+            <img src={deposit}
                 alt={'deposit in the bank'}
               />
               <div className="builder-image-sizer image-sizer" />
@@ -63,8 +63,8 @@ export const Features = () => {
           </div>
           <div className="content_box">
             <div className="div-12">  
-            <img src={icon3}
-                  alet={'global transfers'}   
+            <img src={transfers}
+                  alt={'global transfers'}   
               />
               <div className="builder-image-sizer image-sizer" />
             </div>
@@ -78,7 +78,7 @@ export const Features = () => {
           </div>
           <div className="content_box">
             <div className="div-15">
-            <img src={icon7}
+            <img src={support}
                   alt={'live support'}
                 />
               <div className="builder-image-sizer image-sizer" />
@@ -93,7 +93,7 @@ export const Features = () => {
           </div>
           <div className="content_box">
             <div className="div-18">
-            <img src={icon4}
+            <img src={cards}
                   alt={'Visa & Mastercard'}
                 />
               <div className="builder-image-sizer image-sizer" />
@@ -108,7 +108,7 @@ export const Features = () => {
           </div>
           <div className="content_box">
             <div className="div-21">
-            <img src={icon5}
+            <img src={charges}
             alt={'extra charges'}
                 />
               <div className="builder-image-sizer image-sizer" />
@@ -123,7 +123,7 @@ export const Features = () => {
           </div>
           <div className="content_box">
             <div className="div-24">
-            <img src={icon2}
+            <img src={bonuses}
                   alt={'bonuses'}
                 />
               <div className="builder-image-sizer image-sizer" />
@@ -138,7 +138,7 @@ export const Features = () => {
           </div>
           <div className="content_box">
             <div className="div-27">
-            <img src={icon6}
+            <img src={security}
                   alt={'security system'}
                 />
               <div className="builder-image-sizer image-sizer" />
