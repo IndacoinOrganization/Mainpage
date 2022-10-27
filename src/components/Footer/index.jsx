@@ -14,6 +14,7 @@ function Footer() {
             <div className="navigate">
                 <a href="https://gw.indacoin.io/" target={"_blank"}><Trans i18nKey="header.menu.buyBtc">Buy crypto</Trans></a>
                 <Link to="business"><Trans i18nKey="header.menu.partnership">Business</Trans></Link>
+                <Link to="terms">Terms of Use</Link>
                 <Link to="faq"><Trans i18nKey="header.menu.faq">FAQ</Trans></Link>
                 <Link to="verification"><Trans i18nKey="header.menu.verification">Official Verification</Trans></Link>
                 <Languages />
