@@ -37,7 +37,7 @@ class AmlPolicy extends Component {
         return (
             <div className="wrapperAML">
                 <ToastContainer/>
-                <spanc style={{width: "95%"}}>Revised on 26th August 2020.</spanc>
+                <spanc style={{width: "95%"}}>Revised on 13.06.2022.</spanc>
                 <ol className='containerOl'>
                     <li>
                         <span
