@@ -1,12 +1,12 @@
 import React from "react";
 import './styles.sass';
 import { Trans } from 'react-i18next';
-import Alexandro from "@images/Alexandro.png"
-import locationReview from "@images/locationReview.png"
-import blueStar from "@images/blueStar.png"
-import Arnold from "@images/Arnold.png"
-import Erik from "@images/Erik.png"
-import Sofia from "@images/Sofia.png"
+import Alexandro from "@images/Alexandro.webp"
+import locationReview from "@images/locationReview.webp"
+import blueStar from "@images/blueStar.webp"
+import Arnold from "@images/Arnold.webp"
+import Erik from "@images/Erik.webp"
+import Sofia from "@images/Sofia.webp"
 
 export const ReviewMy = () => {
   return (
