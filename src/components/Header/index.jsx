@@ -20,8 +20,9 @@ function Header(props) {
 
     return (
         <header>
-            <a href='./'>
-                <img src={Indacoin} className="logo" alt='INDACOIN' />
+            <a style={{textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "center"}} href='./'>
+                <img src={Indacoin} className="logo" alt='INDACOIN' width={160}/>
+                <p style={{color: "#545454", padding: "5px 0px"}}>believe in crypto since <span style={{color: "#3463F8"}}>2014</span></p>
             </a>
             <div className='burger-Box' onClick={() => setMobile(!mobile)}>
                 <div className='burger'>

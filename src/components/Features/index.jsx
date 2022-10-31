@@ -1,15 +1,15 @@
 import React from "react";
 import "./styles.sass";
 import { Trans } from 'react-i18next';
-import portfolio from "@images/portfolio.png"
-import trade from "@images/trade.png"
-import deposit from "@images/deposit.png"
-import transfers from "@images/transfers.png"
-import support from "@images/support.png"
-import cards from "@images/cards.png"
-import charges from "@images/charges.png"
-import bonuses from "@images/bonuses.png"
-import security from "@images/security.png"
+import portfolio from "@images/portfolio.webp"
+import trade from "@images/trade.webp"
+import deposit from "@images/deposit.webp"
+import transfers from "@images/transfers.webp"
+import support from "@images/support.webp"
+import cards from "@images/cards.webp"
+import charges from "@images/charges.webp"
+import bonuses from "@images/bonuses.webp"
+import security from "@images/security.webp"
 
 export const Features = () => {
   return (

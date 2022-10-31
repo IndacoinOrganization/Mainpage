@@ -46,7 +46,7 @@ class Faq extends Component {
                 fully-fledged fiat-to-crypto gateway. If you’re interested in
                 scaling your business with us, please visit this
                 <a href={"/business"}>page</a>.Indacoin also has its
-                <a href="https://indacoin.com/token">loyalty program</a>, which
+                <a href="https://indacoin.io/token">loyalty program</a>, which
                 allows you to buy crypto with 0.00% fees and get cashback on
                 every purchase you make. The key element of this program is the
                 INDA token - a native token of the Indacoin ecosystem. It not
@@ -67,7 +67,7 @@ class Faq extends Component {
             answer: (
               <Trans i18nKey="faq.questionList.generalQuestions.answer2">
                 You can contact our support team by e-mail
-                (support@indacoin.com), phone (+44-207-048-2582), Telegram
+                (support@indacoin.io), phone (+44-207-048-2582), Telegram
                 (@Indacoin_support) or by using a live chat option on our
                 <a href={"/buy-bitcoin-with-card"}>webpage</a>.
               </Trans>
@@ -98,7 +98,7 @@ class Faq extends Component {
               <Trans i18nKey="faq.questionList.generalQuestions.answer4">
                 You can buy over 100 different cryptocurrencies that are all
                 listed on our website. To make an order you can use our website
-                <a href={"/buy-bitcoin-with-card"}>https://indacoin.com</a> or
+                <a href={"/buy-bitcoin-with-card"}>https://indacoin.io</a> or
                 app. Just enter the amount in the calculator and choose one of
                 the available crypto coins. Then you will be able to enter your
                 email, mobile phone number, card details and crypto wallet
@@ -368,7 +368,7 @@ class Faq extends Component {
                 No, having an account on Indacoin is not mandatory to buy crypto
                 coins. To make a purchase you just need to enter in the
                 calculator on the page
-                <a href={"/buy-bitcoin-with-card"}>https://indacoin.com</a>
+                <a href={"/buy-bitcoin-with-card"}>https://indacoin.io</a>
                 amount of fiat money you want to spend, email, mobile phone
                 number, card details and crypto wallet address. Then you will be
                 forwarded to your order page.
@@ -428,7 +428,7 @@ class Faq extends Component {
                 You can open the same order page link from your mobile device
                 and record it from there. If having trouble, you can also send
                 the required video as attachment via e-mail to
-                support@indacoin.com. Make sure to Indicate your exchange order
+                support@indacoin.io. Make sure to Indicate your exchange order
                 number.
               </Trans>
             ),
@@ -564,7 +564,7 @@ class Faq extends Component {
             answer: (
               <Trans i18nKey="faq.questionList.commissions.answer3">
                 Indacoin also has its own
-                <a href="https://indacoin.com/token">loyalty program</a>, which
+                <a href="https://indacoin.io/token">loyalty program</a>, which
                 allows you to buy crypto with 0.00% fees and get cashback on
                 every purchase you make. The key element of this program is the
                 INDA token - a native token of the Indacoin ecosystem. It not
@@ -757,7 +757,7 @@ class Faq extends Component {
                 If your card was stolen and used for the purchase on our
                 platform by another person, please, block your bank card and
                 contact our agent immediately via live-chat support or e-mail
-                <a href="mailto:support@indacoin.com">support@indacoin.com</a> for assistance. We kindly ask you to
+                <a href="mailto:support@indacoin.io">support@indacoin.io</a> for assistance. We kindly ask you to
                 contact us no later than 3 days from the date of purchase, so
                 that immediate action is taken on our side and if possible - a
                 refund.
@@ -817,7 +817,7 @@ class Faq extends Component {
                 <button
                   className={`blue small`}
                   onClick={() =>
-                    window.open("mailto:support@indacoin.com", "_blank")
+                    window.open("mailto:support@indacoin.io", "_blank")
                   }
                 >
                   <Trans i18nKey="faq.button">Contact Support</Trans>
