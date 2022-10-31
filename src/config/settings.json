@@ -22,7 +22,7 @@
     "LOYALTY_TOKEN_FULL_NAME" :  "INDA Token",
     "LOYALTY_TOKEN" :  "INDA",
     "LOYALTY_TOKEN_PAIR" :  "ETH",
-    "PCICertificateLink": "https://indacoin.com/assets/pdf/pci_dss_self_assessment_certificate.pdf",
+    "PCICertificateLink": "https://indacoin.io/assets/pdf/pci_dss_self_assessment_certificate.pdf",
     "locales":{
         "available": [
             {
@@ -58,6 +58,6 @@
         "FORM_DATA_KEY": "wNrNWIVaYA"
     },
     "referral": {
-        "registrationUrl": "https://indacoin.com?discount"
+        "registrationUrl": "https://indacoin.io?discount"
     }
 }

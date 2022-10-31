@@ -47,7 +47,7 @@ class AmlPolicy extends Component {
                         >1. INTRODUCTION</span>
                     </li>
                     <li>
-                        <p>1.1. Please read this KYC/AML Policy carefully before using indacoin.com website, APIs, or mobile applications. You are required to read and understand it before using the Services. If you are in any doubt about any of the contents of this document, you should obtain independent professional advice.</p>
+                        <p>1.1. Please read this KYC/AML Policy carefully before using indacoin.io website, APIs, or mobile applications. You are required to read and understand it before using the Services. If you are in any doubt about any of the contents of this document, you should obtain independent professional advice.</p>
                     </li>
                     <li>
                         <p>1.2. OUR SERVICES ARE NOT BEING OFFERED TO ANY RESIDENT OF OR ANY PERSON LOCATED OR DOMICILED IN THE RESTRICTED JURISDICTIONS AS DEFINED HEREIN AS WELL AS ANY REGION OR ANY COUNTRY OR TERRITORY THAT IS SUBJECT OF COUNTRY-WIDE OR TERRITORY-WIDE SANCTIONS.</p>
@@ -277,7 +277,7 @@ class AmlPolicy extends Component {
                         </ul>
                     </li>
                     <li>
-                        <p>4.16. Data Protection. We do our best to protect your ID Information and provided documents in accordance with the applicable laws and regulations. For further information about our rules on privacy please refer our Privacy Policy at https://indacoin.com/terms</p>
+                        <p>4.16. Data Protection. We do our best to protect your ID Information and provided documents in accordance with the applicable laws and regulations. For further information about our rules on privacy please refer our Privacy Policy at https://indacoin.io/terms</p>
                     </li>
                     <li>
                         <span
