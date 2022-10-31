@@ -15,12 +15,12 @@ export default class extends Component {
         }
     }
 
-    getImgPNG (name) {
-        const img = new URL(`../../../assets/images/partners/${name}.png`, import.meta.url).href
+    getImgwebp (name) {
+        const img = new URL(`@images/partners/${name}.webp`, import.meta.url).href
         return img || null 
     }
     getImgSVG (name) {
-        const img = new URL(`../../../assets/images/partners/${name}.svg`, import.meta.url).href
+        const img = new URL(`@images/partners/${name}.svg`, import.meta.url).href
         return img || null 
     }
 
@@ -113,7 +113,7 @@ export default class extends Component {
                         <div className={'slide'}>
                             <div>
                                 <a href="https://www.okex.com/" target="_blank">
-                                    <img src={this.getImgPNG('okexlogowebsite')} alt={'okex'} />
+                                    <img src={this.getImgwebp('okexlogowebsite')} alt={'okex'} />
                                 </a>
                             </div>
                         </div>
@@ -134,7 +134,7 @@ export default class extends Component {
                         <div className={'slide'}>
                             <div>
                                 <a href="https://www.cryptodaily.co.uk/" target="_blank">
-                                    <img src={this.getImgPNG('cryptodaily')} alt={'cryptodaily'}/>
+                                    <img src={this.getImgwebp('cryptodaily')} alt={'cryptodaily'}/>
                                 </a>
                             </div>
                         </div>
@@ -148,28 +148,28 @@ export default class extends Component {
                         <div className={'slide smallMobile'}>
                             <div>
                                 <a href="https://www.bithumb.com/" target="_blank">
-                                    <img src={this.getImgPNG('bithumb')} alt={'bithumb'}/>
+                                    <img src={this.getImgwebp('bithumb')} alt={'bithumb'}/>
                                 </a>
                             </div>
                         </div>
                         <div className={'slide small'}>
                             <div>
                                 <a href="https://coinswitch.co/" target="_blank">
-                                    <img src={this.getImgPNG('coinswitch')} alt={'coinswitch'}/>
+                                    <img src={this.getImgwebp('coinswitch')} alt={'coinswitch'}/>
                                 </a>
                             </div>
                         </div>
                         <div className={'slide'}>
                             <div>
                                 <a href="https://latoken.com/" target="_blank">
-                                    <img src={this.getImgPNG('latoken')} alt={'coinswitch'}/>
+                                    <img src={this.getImgwebp('latoken')} alt={'coinswitch'}/>
                                 </a>
                             </div>
                         </div>
                         <div className={'slide huge smallMobile'}>
                             <div>
                                 <a href="https://magnumwallet.co/" target="_blank">
-                                    <img src={this.getImgPNG('magnum')} alt={'magnum'}/>
+                                    <img src={this.getImgwebp('magnum')} alt={'magnum'}/>
                                 </a>
                             </div>
                         </div>
@@ -183,14 +183,14 @@ export default class extends Component {
                         <div className={'slide small'}>
                             <div>
                                 <a href="https://finex.cz/" target="_blank">
-                                    <img src={this.getImgPNG('finex.cz')}  alt={'finexcz'}/>
+                                    <img src={this.getImgwebp('finex.cz')}  alt={'finexcz'}/>
                                 </a>
                             </div>
                         </div>
                         <div className={'slide small'}>
                             <div>
                                 <a href="https://fortunez.com" target="_blank">
-                                    <img src={this.getImgPNG('fortunez.com')}  alt={'fortunez'}/>
+                                    <img src={this.getImgwebp('fortunez.com')}  alt={'fortunez'}/>
                                 </a>
                             </div>
                         </div>
@@ -204,7 +204,7 @@ export default class extends Component {
                         <div className={'slide'}>
                             <div>
                                 <a href="https://fundshing.com/" target="_blank">
-                                    <img src={this.getImgPNG('fundshing')} alt={'fundshing'} />
+                                    <img src={this.getImgwebp('fundshing')} alt={'fundshing'} />
                                 </a>
                             </div>
                         </div>
@@ -302,7 +302,7 @@ export default class extends Component {
                         <div className={'slide small'}>
                             <div>
                                 <a href="https://coinpedia.org/pro/" target="_blank">
-                                    <img src={this.getImgPNG('coinpedia')} alt={'cryptopolitian'} />
+                                    <img src={this.getImgwebp('coinpedia')} alt={'cryptopolitian'} />
                                 </a>
                             </div>
                         </div>
