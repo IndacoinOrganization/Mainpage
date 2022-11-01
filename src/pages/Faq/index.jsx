@@ -770,7 +770,12 @@ class Faq extends Component {
   }
 
   showAnswer(event) {
-    event.target.classList.toggle('show');
+    if(event.target.className){
+      event.target.classList.remove('show');
+    }else{
+      event.target.classList.add('show');
+    }
+    
   }
 
   scroll(event, index) {
