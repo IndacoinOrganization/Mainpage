@@ -145,15 +145,15 @@ class Faq extends Component {
               <Trans i18nKey="faq.questionList.generalQuestions.answer7">
                 Unfortunately, at the moment we do not operate in the following
                 countries: Afghanistan, American Samoa, Albania, Algeria, The
-                Bahamas, Bangladesh, Barbados, Bolivia, Botswana, Cambodia,
+                Bahamas, Bangladesh, Barbados, Belarus, Bolivia, Botswana, Cambodia,
                 China, Colombia, the Democratic Republic of the Congo, Ecuador,
                 Egypt, Eritrea, Gambia, Ghana, Guinea-Bissau, Guyana, Iran,
                 Iraq, Ivory Coast, Jamaica, Laos, Lesotho, Liberia, Mali,
                 Mauritius, Mongolia, Morocco, Myanmar, Namibia, Nepal,
                 Nicaragua, Niger, Nigeria, North Korea, Pakistan, Panama, Papua
-                New Guinea, Qatar, Saudi Arabia, Somalia, Sudan, Syria,
-                Tanzania, Trinidad and Tobago, Uganda, Vanuatu, Yemen, Zambia,
-                Zimbabwe.We are constantly improving our platform and believe
+                New Guinea, Qatar, Russia, Saudi Arabia, Somalia, Sudan, Syria,
+                Tanzania, Trinidad and Tobago, Uganda, Ukraine, Vanuatu, Yemen, Zambia,
+                Zimbabwe. We are constantly improving our platform and believe
                 that one day our service will be available everywhere.
               </Trans>
             ),
