@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-const API_LINK = 'https://indacoin.io';
+const API_LINK = 'https://gw.indacoin.io/api/v1';
 // const axios = require('axios');
 
 

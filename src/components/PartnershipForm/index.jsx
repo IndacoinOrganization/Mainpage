@@ -70,7 +70,7 @@ class PartnershipForm extends Component {
                 isValid: {
                     name: formObject.name.match(/[A-Z][a-z]+/g) ? true : false,
                     email: formObject.email.match(/.+@.+\..+/i),
-                    phone: formObject.phone,
+                    phone: formObject.phone.match(/(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?/),
                     project: formObject.project ? true : false
                 }
             }
@@ -112,7 +112,7 @@ class PartnershipForm extends Component {
         document.querySelectorAll(`form .inputContainer span`).forEach(item => item.classList.remove('active'));
 
         if(res.d >= 0) {
-            toast.success(this.props.t('toast.partnershipFormSuccess'), {
+            toast.success('Your message send!', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: true,
@@ -121,7 +121,7 @@ class PartnershipForm extends Component {
                 draggable: true
             });
         } else {
-            toast.error(this.props.t('toast.partnershipFormError'), {
+            toast.error('Your letter has not been sent. Please contact customer service.', {
                 position: "top-right",
                 autoClose: 10000,
                 hideProgressBar: true,

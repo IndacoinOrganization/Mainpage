@@ -77,7 +77,7 @@ export default class extends BaseRequest {
      * @param _function
      */
     send(data, _function = null) {
-        this.post('/change/AddNewPotentialPartner',  {
+        this.post('/Partners/AddNewPotentialPartner',  {
             name: data.name,
             phone: data.phone,
             email: data.email,
