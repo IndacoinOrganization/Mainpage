@@ -16,11 +16,11 @@ export default class extends Component {
     }
 
     getImgwebp (name) {
-        const img = new URL(`@images/partners/${name}.webp`, import.meta.url).href
+        const img = new URL(`../../../assets/images/partners/${name}.webp`, import.meta.url).href
         return img || null 
     }
     getImgSVG (name) {
-        const img = new URL(`@images/partners/${name}.svg`, import.meta.url).href
+        const img = new URL(`../../../assets/images/partners/${name}.svg`, import.meta.url).href
         return img || null 
     }
 
