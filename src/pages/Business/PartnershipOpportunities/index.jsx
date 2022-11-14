@@ -24,7 +24,7 @@ export default class extends Component {
     }
     render () {
         return (
-            <section className="wrapper">
+            <section className="wrapper" >
                 <span className="title">
                     <Trans i18nKey="partnership.opportunities.title">
                         Opportunities for partners
