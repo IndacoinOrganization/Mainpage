@@ -18,7 +18,7 @@ export default class extends Component {
         event.preventDefault();
         const offsetTop = document.getElementById(this.formId).offsetTop;
         Scroll.animateScroll.scrollTo(offsetTop, {
-            duration: 1000,
+            duration: 500,
             delay: 100,
         });
     }
@@ -39,11 +39,11 @@ export default class extends Component {
                             </Trans>
                           }
                           button={
-                                  <Trans i18nKey="partnership.opportunities.moreBtn">
-                                      More details
-                                  </Trans>
+                            <Trans i18nKey="partnership.opportunities.moreBtn">
+                                More details
+                            </Trans>
                           }
-                          onClick={() => Scroll.animateScroll.scrollTo(0)}
+                          onClick={ this.scroll.bind(this) }
                         >
                             <ul className="cardList">
                                 <li>
