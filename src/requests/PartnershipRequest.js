@@ -86,7 +86,7 @@ export default class extends BaseRequest {
             website: data.website,
         }).then(response => {
             if(typeof response['data'] !== 'undefined' && this.sendSuccessCallback != null) {
-                return this.sendSuccessCallback(response['data']);
+                return this.sendSuccessCallback(response);
             }
 
             if(this.sendFailCallback != null) {

@@ -4,6 +4,7 @@ import {Trans, withTranslation} from 'react-i18next';
 import SendForm from '@requests/PartnershipRequest.js';
 
 import { ToastContainer, toast } from 'react-toastify';
+import { t } from 'i18next';
 // import Loader from "react-loader-spinner";
 
 const PROJECT_TYPES = [
@@ -64,7 +65,8 @@ class PartnershipForm extends Component {
 
     onSubmit(target) {
         let form = () => {
-            let formObject = Object.assign(...[...target.querySelectorAll('input'),...target.querySelectorAll('textarea')].map(tag => new Object({[tag.dataset.key]:tag.value})));
+            let formObject = Object.assign(...[...target.querySelectorAll('input'), ...target.querySelectorAll('textarea')]
+                .map(tag => new Object({[tag.dataset.key]:tag.value})));
             return {
                 formObject: formObject,
                 isValid: {
@@ -104,14 +106,10 @@ class PartnershipForm extends Component {
      * @param res
      */
     successCallback(res) {
-        setTimeout(() => {
-            this.setState({isLoad: false});
-        }, 1000);
-
+        setTimeout(() => { this.setState({isLoad: false}); }, 1000);
         document.querySelectorAll('form input').forEach(item => item.value = null);
         document.querySelectorAll(`form .inputContainer span`).forEach(item => item.classList.remove('active'));
-
-        if(res.d >= 0) {
+        if(res.status === 200) {
             toast.success('Your message send!', {
                 position: "top-right",
                 autoClose: 5000,
@@ -146,12 +144,12 @@ class PartnershipForm extends Component {
                 <form className={'form'} onSubmit={ e => {e.preventDefault(); this.onSubmit(e.target);} }>
                     <div className={'inputGroup' + ' clearfix'}>
                         <div className={'inputContainer'}>
-                            <input data-key="name" type="text" placeholder={<Trans i18nKey="partnership.form.name" />}/>
+                            <input data-key="name" type="text" placeholder={this.props.t('partnership.form.name')}/>
                             <span data-key="name" className={'error'}>Your Name</span>
                         </div>
 
                         <div className={'inputContainer'}>
-                            <input data-key="email" type="text" placeholder={<Trans i18nKey="partnership.form.email" />}/>
+                            <input data-key="email" type="text" placeholder={this.props.t('partnership.form.email')}/>
                             <span data-key="email" className={'error'}>your@e.mail</span>
                         </div>
 
@@ -159,12 +157,12 @@ class PartnershipForm extends Component {
 
                     <div className={'inputGroup' + ' clearfix'}>
                         <div className={'inputContainer'}>
-                            <input data-key="phone" type="text" placeholder={<Trans i18nKey="partnership.form.phone" />}/>
+                            <input data-key="phone" type="text" placeholder={this.props.t('partnership.form.phone')}/>
                             <span data-key="phone" className={'error'}>+1 (202) 202-2020</span>
                         </div>
 
                         <div className={'inputContainer'}>
-                            <input data-key="website" type="text" placeholder={<Trans i18nKey="partnership.form.website" />}/>
+                            <input data-key="website" type="text" placeholder={this.props.t('partnership.form.website')}/>
                         </div>
 
                         <div className={'inputContainer' + ' ' + 'inputDownContainer'}>
@@ -172,14 +170,14 @@ class PartnershipForm extends Component {
                                 <input
                                     data-key="project"
                                     type="text"
-                                    placeholder={<Trans i18nKey="partnership.form.type" />}
+                                    placeholder={this.props.t('partnership.form.type')}
                                     onClick={this.toggleProjectType.bind(this)}
                                     onKeyPress={(event) => {event.preventDefault()}}
                                     onChange={(event) => {event.preventDefault()}}
                                     value={this.state.currentType}
                                 />
                                 <button onClick={this.toggleProjectType.bind(this)}>
-                                    <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="11" height="9" viewBox="0 0 11 9">
                                         <path d="M5.5 9L0.73686 0.75L10.2631 0.750001L5.5 9Z" fill="#3463F8"/>
                                     </svg>
                                 </button>
@@ -206,7 +204,7 @@ class PartnershipForm extends Component {
                     </div>
 
                     <div className={'inputGroup'}>
-                        <textarea data-key="message" rows="5" placeholder={<Trans i18nKey="partnership.form.textarea" />} />
+                        <textarea data-key="message" rows="5" placeholder={this.props.t('partnership.form.textarea')} />
                     </div>
 
                     <div className={'inputGroup' +  ' ' + 'btnContainer'}>
