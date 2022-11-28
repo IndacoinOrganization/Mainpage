@@ -39,7 +39,6 @@ class TermsOfUse extends Component {
                 switch (window.location.host) {
                     case 'indacoin.io':
                         return 'indacoin.io +44 207 048 25 82. Indacoin OU, Registry code: 14798473, Address: Meistri 16, Tallinn, Estonia, 13517, Operating license: FVT000145';
-                    case 'indacoin.io':
                     default:
                         return 'indacoin.io +44 207 048 25 82. Indacoin Limited, Suite 4b, 43 Berkeley Square, Mayfair, London, Westminster, United Kingdom, W1J 5FJ';    
                 }                            
@@ -48,7 +47,6 @@ class TermsOfUse extends Component {
                 switch (window.location.host) {
                     case 'indacoin.io':
                         return 'Indacoin OU, Registry code: 14798473, Address: Meistri 16, Tallinn, Estonia, 13517, Operating license: FVT000145';
-                    case 'indacoin.io':
                     default:
                         return 'Indacoin';
                 }
