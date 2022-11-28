@@ -1,12 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import Storage from './global/storage';
-// import global from './global/config'
 
-// import commonRu from './assets/locales/en.json'
-// import commonEn from './assets/locales/en.json'
-
-const COOKIES_LANGUAGE = 'cookies_language';
 const resources = {
   en: {
     translation: {
@@ -592,7 +586,7 @@ const resources = {
             "question9": "SAASIN VÄHEM MÜNTE, KUI LUBATUD. MIKS?",
             "answer9": "Töötleme vahetust vastavalt kehtivale turukursile hetkel, mil KYC kontrollimine on lõppenud ja tellimus on kinnitatud. Püüame teha iga tehingu teile võimalikult tulusaks, kuid kasutajale saadav summa võib järsu kursi hüppe tõttu erineda algselt näidatust.<br>Juhul kui summa erineb rohkem kui 25 protsenti, kasutajal on õigus nõuda raha tagasi, esitades taotluse aadressil support@indacoin.io",
             "question10": "MULT ON KAKS KORDA LASTUD. KAS SA TASTA MULLE TASU?",
-            "answer10": "On äärmiselt ebatõenäoline, et oleme teilt sama tellimuse eest kogemata kaks korda tasu võtnud, seega kontrollige esmalt, kas olete ühe tellimuse asemel esitanud kaks.<br>Kui see nii ei ole, esitage ametlik pangaväljavõte, kus see täpsustatakse, et tehingu autoriseeris Indacoin (mitte SMS-i ekraanipilt) aadressil support@indacoin.io ning meie finantsosakond uurib juhtumit ja annab teile võimalikku abi.",
+            "answer10": "On äärmiselt ebatõenäoline, et oleme teilt sama tellimuse eest kogemata kaks korda tasu võtnud, seega kontrollige esmalt, kas olete ühe tellimuse asemel esitanud kaks.<br>Kui see nii ei ole, esitage ametlik pangaväljavõte, kus see täpsustatakse, et tehingu autoriseeris Indacoin (mitte SMS-i ekraanipilt) aadressil <1>support@indacoin.io</1> ning meie finantsosakond uurib juhtumit ja annab teile võimalikku abi.",
             "question11": "MA EI TEINUD INDACOINIS TELLIMUST, KUID MINU KAARTI VÕI TASUTA. MIDA PEAKSIN TEGEMA?",
             "answer11": "Kui teie kaart varastati ja seda kasutas meie platvormil ostmiseks mõni teine isik, blokeerige oma pangakaart ja võtke otsekohe ühendust meie agendiga reaalajas vestluse toe või e-posti aadressil <1>support@indacoin.io</1> abi.<br> Palume võtta meiega ühendust hiljemalt 3 päeva jooksul alates ostukuupäevast, et saaksime koheselt tegutseda ja võimalusel raha tagastada."
           }
@@ -615,22 +609,20 @@ const resources = {
 
 const brouserLanguage = window.navigator.language.split('-')[0]
 const acceptLanguage = ["en", "et"]
-const storage = Storage.getInstance()
-if (!storage.get(COOKIES_LANGUAGE)) {
+
+if (!localStorage.getItem('cookies_language')) {
   let lang = acceptLanguage.find((el) => {
-    if (brouserLanguage == el) return true
+    if (brouserLanguage === el) return true
     return false
   })
-  storage.set(COOKIES_LANGUAGE, lang || "en");
-}else{
-    storage.set(COOKIES_LANGUAGE, "en");
+  localStorage.setItem('cookies_language', lang || "en");
 }
 
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: storage.get(COOKIES_LANGUAGE),
+    lng: localStorage.getItem('cookies_language'),
     interpolation: {
       escapeValue: false
     }
