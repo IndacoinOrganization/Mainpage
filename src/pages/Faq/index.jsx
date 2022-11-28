@@ -797,14 +797,14 @@ class Faq extends Component {
               <div className='anchors'>
                 <ul>
                   {this.questions.map((value, index) => {
-                    const title = <Trans i18nKey="partnership.form.textarea" />
+                    const title = this.props.t(value.title.props.i18nKey)
                     return (
                       <li key={index}>
                         <a
                           href={"#" + value.title}
                           onClick={(event) => this.scroll(event, index)}
                         >
-                          <span>{title.toLocaleLowerCase()}</span>
+                          <span>{title.toLowerCase()}</span>
                         </a>
                       </li>
                     );
