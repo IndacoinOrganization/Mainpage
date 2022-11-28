@@ -563,8 +563,7 @@ class Faq extends Component {
             ),
             answer: (
               <Trans i18nKey="faq.questionList.commissions.answer3">
-                Indacoin also has its own
-                <a href="https://indacoin.io/token">loyalty program</a>, which
+                Indacoin also has its own loyalty program, which
                 allows you to buy crypto with 0.00% fees and get cashback on
                 every purchase you make. The key element of this program is the
                 INDA token - a native token of the Indacoin ecosystem. It not
