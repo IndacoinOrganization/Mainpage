@@ -1,36 +1,38 @@
 import React, { Component } from 'react';
 import './styles.sass';
 import { ToastContainer, toast } from 'react-toastify';
-import {Trans, withTranslation} from 'react-i18next';
+import { Trans, withTranslation } from 'react-i18next';
+import 'react-toastify/dist/ReactToastify.css';
 
 class TermsOfUse extends Component {
     copyLink(event) {
-        const language = this.props.i18n.language === 'en' ? '' : `${this.props.i18n.language}/`;
-        let copy = `${window.location.host}/${language}terms#${encodeURIComponent(event.target.id)}`;
-        this.copyStringToClipboard(copy);
-        this.toast();
+        const language = this.props.i18n.language === 'en' ? '' : `${this.props.i18n.language}/`
+        let copy = `${window.location.host}/${language}terms#${encodeURIComponent(event.target.id)}`
+        this.copyStringToClipboard(copy)
+        this.toast()
     }
 
     copyStringToClipboard(string) {
-        const el = document.createElement('textarea');
-        el.value = string;
-        el.setAttribute('readonly', '');
-        el.style = {position: 'absolute', left: '-9999px'};
-        document.body.appendChild(el);
-        el.select();
-        document.execCommand('copy');
-        document.body.removeChild(el);
+        const el = document.createElement('textarea')
+        el.value = string
+        el.setAttribute('readonly', '')
+        el.style = {position: 'absolute', left: '-9999px'}
+        document.body.appendChild(el)
+        el.select()
+        document.execCommand('copy')
+        document.body.removeChild(el)
     }
 
     toast() {
-        toast.success(this.props.t('CPanel.referral.link.copyMessage'), {
+        toast.success('Link copied successfully',
+            {
             position: "top-right",
             autoClose: 3000,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true
-        });
+        })
     }
 
     render() {
@@ -57,8 +59,19 @@ class TermsOfUse extends Component {
 
         return (
             <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
- <div className='wrapperTerms'>
-                <ToastContainer/>
+                <div className='wrapperTerms'>
+                <ToastContainer
+                    position="top-right"
+                    autoClose={3000}
+                    hideProgressBar
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="light"
+                />
                 <Trans
                     i18nKey="terms.termsOfUse.0"
                     values={{

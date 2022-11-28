@@ -797,7 +797,7 @@ class Faq extends Component {
               <div className='anchors'>
                 <ul>
                   {this.questions.map((value, index) => {
-                    const title = this.props.t(value.title.props.i18nKey);
+                    const title = <Trans i18nKey="partnership.form.textarea" />
                     return (
                       <li key={index}>
                         <a

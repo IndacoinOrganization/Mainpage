@@ -146,12 +146,12 @@ class PartnershipForm extends Component {
                 <form className={'form'} onSubmit={ e => {e.preventDefault(); this.onSubmit(e.target);} }>
                     <div className={'inputGroup' + ' clearfix'}>
                         <div className={'inputContainer'}>
-                            <input data-key="name" type="text" placeholder={this.props.t('partnership.form.name')}/>
+                            <input data-key="name" type="text" placeholder={<Trans i18nKey="partnership.form.name" />}/>
                             <span data-key="name" className={'error'}>Your Name</span>
                         </div>
 
                         <div className={'inputContainer'}>
-                            <input data-key="email" type="text" placeholder={this.props.t('partnership.form.email')}/>
+                            <input data-key="email" type="text" placeholder={<Trans i18nKey="partnership.form.email" />}/>
                             <span data-key="email" className={'error'}>your@e.mail</span>
                         </div>
 
@@ -159,12 +159,12 @@ class PartnershipForm extends Component {
 
                     <div className={'inputGroup' + ' clearfix'}>
                         <div className={'inputContainer'}>
-                            <input data-key="phone" type="text" placeholder={this.props.t('partnership.form.phone')}/>
+                            <input data-key="phone" type="text" placeholder={<Trans i18nKey="partnership.form.phone" />}/>
                             <span data-key="phone" className={'error'}>+1 (202) 202-2020</span>
                         </div>
 
                         <div className={'inputContainer'}>
-                            <input data-key="website" type="text" placeholder={this.props.t('partnership.form.website')}/>
+                            <input data-key="website" type="text" placeholder={<Trans i18nKey="partnership.form.website" />}/>
                         </div>
 
                         <div className={'inputContainer' + ' ' + 'inputDownContainer'}>
@@ -172,7 +172,7 @@ class PartnershipForm extends Component {
                                 <input
                                     data-key="project"
                                     type="text"
-                                    placeholder={this.props.t('partnership.form.type')}
+                                    placeholder={<Trans i18nKey="partnership.form.type" />}
                                     onClick={this.toggleProjectType.bind(this)}
                                     onKeyPress={(event) => {event.preventDefault()}}
                                     onChange={(event) => {event.preventDefault()}}
@@ -206,7 +206,7 @@ class PartnershipForm extends Component {
                     </div>
 
                     <div className={'inputGroup'}>
-                        <textarea data-key="message" rows="5" placeholder={this.props.t('partnership.form.textarea')} />
+                        <textarea data-key="message" rows="5" placeholder={<Trans i18nKey="partnership.form.textarea" />} />
                     </div>
 
                     <div className={'inputGroup' +  ' ' + 'btnContainer'}>

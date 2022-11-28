@@ -23,7 +23,7 @@ class AmlPolicy extends Component {
     }
 
     toast() {
-        toast.success(this.props.t('CPanel.referral.link.copyMessage'), {
+        toast.success('Link copied successfully', {
             position: "top-right",
             autoClose: 3000,
             hideProgressBar: true,

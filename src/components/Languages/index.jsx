@@ -6,6 +6,7 @@ import etLanguage from "../../assets/images/etLanguage.svg"
 
 const LangBlock = () => {
     const { i18n } = useTranslation()
+
     const changeLanguage = (language) => {
         setLanguage(language)
         setopenLanguges(false)
@@ -36,7 +37,7 @@ const LangBlock = () => {
                     openHandler(true)
                 }}>
                     <p>{Language.toUpperCase()}</p>
-                    <svg width="9" height="7" viewBox="0 0 9 7">
+                    <svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.5 7L0.602887 0.249999L8.39711 0.25L4.5 7Z" fill="#3463F8"/>
                     </svg>
                 </div>
@@ -44,9 +45,13 @@ const LangBlock = () => {
                 <div className = "header__Languages">
                     {
                         languages.map((lang, index) => {
-                            return  <div onClick={() => { changeLanguage(lang), closeHandler(false)}}
-                                style={{display: "flex", cursor: "pointer"}}
-                                key={ lang + index }>
+                            return <div 
+                            onClick={() => {
+                                changeLanguage(lang)
+                                closeHandler(false)
+                            }}
+                            key={ lang + index }
+                            style={{display: "flex", cursor: "pointer"}}>
                                 <img src={lang == "et" ? etLanguage : enLanguage} style={{marginRight: 10}} alt=""/>
                                 <span className="itemLang">
                                     { lang.toUpperCase() }
