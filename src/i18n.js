@@ -14,6 +14,7 @@ const resources = {
         "menu": {
           "buyBtc": "Buy Bitcoin",
           "partnership": "Business",
+          "partnerPanel": "Partner Panel",
           "referral": "Referral",
           "Bonuses": "Bonuses",
           "blog": "Blog",

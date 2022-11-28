@@ -44,18 +44,11 @@ const LangBlock = () => {
                 <div className = "header__Languages">
                     {
                         languages.map((lang, index) => {
-                            return <div 
-                            onClick={() => {
-                                changeLanguage(lang)
-                                closeHandler(false)
-
-                            }} 
-                            style={{display: "flex", cursor: "pointer"}}>
+                            return  <div onClick={() => { changeLanguage(lang), closeHandler(false)}}
+                                style={{display: "flex", cursor: "pointer"}}
+                                key={ lang + index }>
                                 <img src={lang == "et" ? etLanguage : enLanguage} style={{marginRight: 10}} alt=""/>
-                                <span
-                                className="itemLang"
-                                key={ index }
-                                >
+                                <span className="itemLang">
                                     { lang.toUpperCase() }
                                 </span>
                                 </div>
