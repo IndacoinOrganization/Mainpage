@@ -46,27 +46,21 @@ export default class extends Component {
         return (
             <div className={`wrapperOpportunities ${this.state.isOpen ? "open" : ''}`}>
                 <span className="title">{this.props.title}</span>
-
                 <div className="content" ref={this.contentContainerRef}>
                     <div ref={this.contentRef}>
                         {this.props.children}
                     </div>
                 </div>
-
                 {
-                    this.state.showButton ?
-                        <div className="absolute">
-                            <div className="arrowContainer">
-                                <button onClick={() => this.setState({isOpen: !this.state.isOpen})}>
-                                    <img src={arrowDown} alt="arrowDown"/>
-                                </button>
-                            </div>
+                    this.state.showButton &&
+                    <div className="absolute">
+                        <div className="arrowContainer">
+                            <button onClick={() => this.setState({isOpen: !this.state.isOpen})}>
+                                <img src={arrowDown} alt="arrowDown"/>
+                            </button>
                         </div>
-                        :
-                        false
+                    </div>
                 }
-
-
                 <div className="btnContainer">
                     <button onClick={this.props.onClick || null}>{this.props.button}</button>
                 </div>
