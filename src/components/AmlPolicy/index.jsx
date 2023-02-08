@@ -343,7 +343,7 @@ class AmlPolicy extends Component {
                                 <p>- avoid conducting illegal financial activities and any other illegal transactions using our Services;</p>
                             </li>
                             <li>
-                                <p>- guarantee lawful source and your legal right to control the fiat and virtual currency on your Account balance.</p>
+                                <p>- guarantee lawful source and your legal right to control the fiat and virtual currency on your Account balance;</p>
                             </li>
                             <li>
                                 <p>- be a beneficial owner of your transactions.</p>
