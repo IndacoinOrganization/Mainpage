@@ -7,7 +7,15 @@
     border-radius: 1rem
     position: relative
     user-select: none
-
+    &.open
+        .content 
+            height: 12rem
+            max-height: 100%
+        .absolute 
+            padding-top: 0
+            .arrowContainer 
+                button 
+                    transform: rotate(180deg)
     .title 
         font-family: Gilroy
         font-weight: bold
@@ -15,16 +23,12 @@
         display: block
         font-size: 1.2rem
         height: 2.5em
-    
-
     .content 
         margin-top: .5rem
         height: 8rem
         max-height: 13rem
         overflow: hidden
-        transition: .3s ease-in
-    
-
+        transition: all .3s ease-in-out
     .absolute 
         position: absolute
         width: 100%
@@ -42,15 +46,10 @@
                 outline: none
                 cursor: pointer
                 transition: .3s ease-out
-            
-        
-    
-
     .btnContainer 
         margin-top: 3rem
         display: flex
         justify-content: center
-
         button 
             width: 137px
             height: 35px
@@ -64,14 +63,11 @@
             border-radius: 1.5rem
             outline: none
             cursor: pointer
-
             &:hover 
                 -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15)
                 -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15)
                 box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15)
                 background: #2d57dc
-            
-
             a 
                 display: block
                 width: 100%
@@ -79,67 +75,27 @@
                 color: inherit
                 text-decoration: inherit
                 padding: .2rem 0
-            
-        
-    
-
-
-.wrapperOpportunities.open 
-    .content 
-        height: auto
-        max-height: 100%
-    
-
-    .absolute 
-        padding-top: 0
-
-        .arrowContainer 
-            button 
-                transform: rotate(180deg)
-            
-        
-    
-
-
 @media(max-width: 575px) 
     .wrapperOpportunities 
         .content 
             height: 7rem
             max-height: 7rem
-        
-
         .absolute 
             padding-top: 8rem
-        
-    
-
-
-
 @media(min-width: 575px) AND (max-width: 768px) 
     .wrapperOpportunities 
         .content 
             height: 5rem
             max-height: 5rem
-        
-
         .absolute 
             padding-top: 6rem
-        
-    
-
-
-
 @media(min-width: 769px) AND (max-width: 1144px) 
     .wrapperOpportunities 
-
         .title 
             font-size: 1rem
             height: 2.5em
             overflow: hidden
-        
-
-        .btnContainer 
-
+        .btnContainer
             button 
                 padding: .2rem .5rem
                 font-size: .9rem

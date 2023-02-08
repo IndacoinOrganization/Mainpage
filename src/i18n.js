@@ -1,12 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import Storage from './global/storage';
-// import global from './global/config'
 
-// import commonRu from './assets/locales/en.json'
-// import commonEn from './assets/locales/en.json'
-
-const COOKIES_LANGUAGE = 'cookies_language';
 const resources = {
   en: {
     translation: {
@@ -20,6 +14,7 @@ const resources = {
         "menu": {
           "buyBtc": "Buy Bitcoin",
           "partnership": "Business",
+          "partnerPanel": "Partner Panel",
           "referral": "Referral",
           "Bonuses": "Bonuses",
           "blog": "Blog",
@@ -260,7 +255,7 @@ const resources = {
             "question2": "HOW MUCH WILL I BE CHARGED FOR THE TRANSACTION?",
             "answer2": "You will be charged only the amount you specify during your order in our calculator. All fees are included in that amount.",
             "question3": "DO YOU HAVE ANY DISCOUNTS?",
-            "answer3": "Indacoin also has its own <1>loyalty program</1>, which allows you to buy crypto with 0.00% fees and get cashback on every purchase you make. The key element of this program is the INDA token - a native token of the Indacoin ecosystem. It not only fuels the loyalty and referral systems but also connects Indacoin to IndaFi - an all-in-one aggregator for every financial need. At the moment we officially launched the core module of IndaFi - IndaSwap, which allows everyone to buy DeFi tokens directly with Visa and Mastercard."
+            "answer3": "Indacoin also has its own loyalty program, which allows you to buy crypto with 0.00% fees and get cashback on every purchase you make. The key element of this program is the INDA token - a native token of the Indacoin ecosystem. It not only fuels the loyalty and referral systems but also connects Indacoin to IndaFi - an all-in-one aggregator for every financial need. At the moment we officially launched the core module of IndaFi - IndaSwap, which allows everyone to buy DeFi tokens directly with Visa and Mastercard."
           },
           "purchase": {
             "title": "PURCHASE",
@@ -283,7 +278,7 @@ const resources = {
             "question9": "I RECEIVED FEWER COINS THAN WAS PROMISED. WHY?",
             "answer9": "We process the exchange according to the current market rate at the moment when KYC verification is completed and the order is approved. We are trying to make every transaction as profitable as possible for you but the amount that the user receives may differ from originally shown due to sharp jumps in rate.<br>In case, if the amount differs by more than 25 per cent, the user has the right to ask for  a refund by providing a request via support@indacoin.io",
             "question10": "I’VE BEEN CHARGED TWICE. WILL YOU REFUND ME?",
-            "answer10": "It is extremely unlikely we have accidentally charged you twice for the same order, so first, please check to see if you have placed two orders instead of one.<br>If this is not the case, please provide an official bank statement where it is specified that the transaction was authorised by Indacoin (not a screenshot of the SMS) via support@indacoin.io and our finance department will investigate the case and provide you with any possible assistance.",
+            "answer10": "It is extremely unlikely we have accidentally charged you twice for the same order, so first, please check to see if you have placed two orders instead of one.<br>If this is not the case, please provide an official bank statement where it is specified that the transaction was authorised by Indacoin (not a screenshot of the SMS) via <1>support@indacoin.io</1> and our finance department will investigate the case and provide you with any possible assistance.",
             "question11": "I DIDN’T MAKE AN ORDER ON INDACOIN BUT MY CARD WAS CHARGED. WHAT SHOULD I DO?",
             "answer11": "If your card was stolen and used for the purchase on our platform by another person, please, block your bank card and contact our agent immediately via live-chat support or e-mail  <1>support@indacoin.io</1> for assistance.<br> We kindly ask you to contact us no later than 3 days from the date of purchase, so that immediate action is taken on our side and if possible - a refund."
           }
@@ -592,7 +587,7 @@ const resources = {
             "question9": "SAASIN VÄHEM MÜNTE, KUI LUBATUD. MIKS?",
             "answer9": "Töötleme vahetust vastavalt kehtivale turukursile hetkel, mil KYC kontrollimine on lõppenud ja tellimus on kinnitatud. Püüame teha iga tehingu teile võimalikult tulusaks, kuid kasutajale saadav summa võib järsu kursi hüppe tõttu erineda algselt näidatust.<br>Juhul kui summa erineb rohkem kui 25 protsenti, kasutajal on õigus nõuda raha tagasi, esitades taotluse aadressil support@indacoin.io",
             "question10": "MULT ON KAKS KORDA LASTUD. KAS SA TASTA MULLE TASU?",
-            "answer10": "On äärmiselt ebatõenäoline, et oleme teilt sama tellimuse eest kogemata kaks korda tasu võtnud, seega kontrollige esmalt, kas olete ühe tellimuse asemel esitanud kaks.<br>Kui see nii ei ole, esitage ametlik pangaväljavõte, kus see täpsustatakse, et tehingu autoriseeris Indacoin (mitte SMS-i ekraanipilt) aadressil support@indacoin.io ning meie finantsosakond uurib juhtumit ja annab teile võimalikku abi.",
+            "answer10": "On äärmiselt ebatõenäoline, et oleme teilt sama tellimuse eest kogemata kaks korda tasu võtnud, seega kontrollige esmalt, kas olete ühe tellimuse asemel esitanud kaks.<br>Kui see nii ei ole, esitage ametlik pangaväljavõte, kus see täpsustatakse, et tehingu autoriseeris Indacoin (mitte SMS-i ekraanipilt) aadressil <1>support@indacoin.io</1> ning meie finantsosakond uurib juhtumit ja annab teile võimalikku abi.",
             "question11": "MA EI TEINUD INDACOINIS TELLIMUST, KUID MINU KAARTI VÕI TASUTA. MIDA PEAKSIN TEGEMA?",
             "answer11": "Kui teie kaart varastati ja seda kasutas meie platvormil ostmiseks mõni teine isik, blokeerige oma pangakaart ja võtke otsekohe ühendust meie agendiga reaalajas vestluse toe või e-posti aadressil <1>support@indacoin.io</1> abi.<br> Palume võtta meiega ühendust hiljemalt 3 päeva jooksul alates ostukuupäevast, et saaksime koheselt tegutseda ja võimalusel raha tagastada."
           }
@@ -608,29 +603,470 @@ const resources = {
         "subTitle": "Palun veenduge, et külastate",
         "placeholder": "Sisestage päringu täielik teave",
         "modalFalseText": "The <0>{{value}}</0> mille kohta küsisite, <1>EI OLE</1> Indacoini ametlik kanal. Palun pöörake tähelepanu oma varadele ja kaitske oma isikuandmeid <br /> <br /> Saate sisu kontrollida ja uuesti päringu teha."
+      }
+    }
+  },
+  "CPanel": {
+    "dashboard": {
+      "youSell": "You Sell",
+      "youReceive": "You Receive",
+      "loyaltyBanner": {
+        "title": "Earn INDA tokens with new loyalty program"
       },
+      "Portfolio": {
+        "Buy": "Buy",
+        "Deposit": "Deposit",
+        "ViewAll": "View all"
+      },
+      "CardsOther": {
+        "KycIdentity": "Verify your identity",
+        "KycIdentityBeen": "Your identity has been verified",
+        "User": "Verify my account",
+        "VerifyAccount": "Confirm your phone number",
+        "buyCrypto": "Buy Crypto",
+        "YourAccountBeenVerified": "Your phone number was verified",
+        "2FA": "Two-factor authentication (2FA)",
+        "SecuritySettings": "Security settings",
+        "DefaultCurrency": "Default currency",
+        "Language": "Language",
+        "UserSettings": "User settings",
+        "ReferralProgram": "Referral program",
+        "Share": "Share",
+        "InvitedUsers": "Invited users",
+        "ItWasEarned": "It was earned",
+        "SeeMore": "Gain your profit!",
+        "Portfolio": "Portfolio",
+        "myBalance": "My balance",
+        "Day": "Day",
+        "Week": "Week",
+        "Month": "Month",
+        "Balance": "Balance",
+        "View": "View",
+        "howToStart": "How to start?",
+        "Transactions": "Transactions",
+        "recentTransactions": "Recent transactions",
+        "Sept": "Sept",
+        "Received": "Received",
+        "All": "All",
+        "LoadMore": "Load more",
+        "Other": "Other",
+        "YouHaveNoAnyCrypto": "You have no crypto",
+        "WhatIsReferralProgram": "What is referral program?"
+      },
+      "KYC": {
+        "title": "KYC Verification",
+        "text": "Dear customer, please note that you may need to pass a simple KYC verification to confirm your order. This step helps us to keep you and your funds safe and secure. We respect your privacy that is why our verification process is fully GDPR compliant <br/><br/> Please, pass KYC verification here. To pass it you will need to upload a photo of your official document and take a photo of your face on the verification page. After verification is completed, the status will update in a few minutes.",
+        "continue": "Continue",
+        "cancel": "Cancel"
+      }
+    },
+    "referral": {
+      "mainTitle": "We want you to enjoy your crypto journey thus we prepared a few bonuses that can make your experience a bit more pleasant. Get and grow cashback from the very first purchase, and unlock extra benefits with our referral program.",
+      "title": "Referral",
+      "link": {
+        "title": "Your referral link",
+        "social": "Share on social networks",
+        "copyMessage": "Link copied successfully"
+      },
+      "description": {
+        "title": "How to start earning<br /> with a referral program?",
+        "text1": "Your earnings are credited immediately, after the transaction is made by the client, to the Indacoin personal account in USDT or INDA Token.",
+        "text2": "In addition, you can convert your earnings into any other cryptocurrency that is available on Indacoin.",
+        "text3": "Your earnings are credited immediately, after the<br /> transaction is made by your referral"
+      },
+      "statistic": {
+        "title": "Referral program statistic",
+        "data": {
+          "income": "My income",
+          "users": "Traded friends",
+          "operations": "Operations",
+          "amount": "Transaction amount"
+        }
+      },
+      "referrals": {
+        "title": "Your referrals",
+        "empty": "No referrals",
+        "hint": "For more information use full version of the site",
+        "filter": {
+          "all": "All",
+          "month": "Month",
+          "week": "Week"
+        },
+        "table": {
+          "id": "Referral ID",
+          "level": "Level",
+          "email": "Email",
+          "date": "Registration date",
+          "spent": "Money spent",
+          "profit": "Your earnings"
+        }
+      }
+    },
+    "loyalty": {
+      "mainTitle": "Share profit with us. We’re crediting a bonus to clients who hold INDA tokens in their personal accounts because they act as liquidity providers. Profit is generated by our turnover and shared with all the token holders, the bonus size depends on the amount of INDA on the balance.",
+      "title": "Loyalty program",
+      "buttons": {
+        "yourTransactions": "Current balance",
+        "months": "for 3 months",
+        "buy": "Buy",
+        "buyCrypto": "Buy Crypto",
+        "yourCashback": "My Cashback",
+        "nextLevel": "Next level",
+        "nextCashback": "Next bonus",
+        "all": "All"
+      },
+      "graph": {
+        "cashback": "Bonus",
+        "volume": "Turnover for 3 months"
+      },
+      "text": {
+        "title": "What is Indacoin loyalty program?",
+        "whyYouNeed": "<strong>Why do you need INDA tokens? You'll be able to:</strong>",
+        "list": {
+          "first": "Buy crypto with <strong>0%</strong> fees",
+          "second": "Pool tokens on Uniswap and get extra <strong>INDA</strong>",
+          "third": "Get the earliest access to new products and <strong>IndaFi</strong>"
+        },
+        "firstSentence": "It's our way to thank you for your support and give you a chance to buy crypto with <strong>0%</strong> fees forever.",
+        "secondSentence": "When you make a purchase in Indacoin account, you receive a guaranteed cashback. The size of cashback depends on the amount of tokens you have on your balance:"
+      },
+      "table": {
+        "orderWasDeleted": "Order was deleted",
+        "serverError": "Server error",
+        "deleteModalTitle": "Delete order",
+        "deleteModalText": "Are you sure to delete order?",
+        "confirmButton": "Confirm",
+        "cancelButton": "Cancel",
+        "amountLabel": "Volume (INDA)",
+        "totalLabel": "Total",
+        "priceLabel": "Price (ETH)",
+        "hideMore": "Hide",
+        "viewMore": "View more",
+        "yourOrders": "Your orders",
+        "selling": "Selling",
+        "buying": "Buying",
+        "myOrders": "My orders",
+        "date": "Date",
+        "volume": "Volume",
+        "price": "Price",
+        "total": "Total",
+        "action": "Action",
+        "buy": "Buy",
+        "sell": "Sell"
+      },
+      "form": {
+        "serverError": "Server error",
+        "orderWasCompleted": "Order was completed",
+        "orderWasCreated": "Order was created",
+        "buy": "Buy",
+        "sell": "Sell",
+        "amount": "Amount",
+        "bid": "BID in",
+        "ask": "ASK in",
+        "price": "Price",
+        "market": "Market",
+        "limit": "Limit",
+        "total": "Total",
+        "bestPrice": "{{action}} {{name}} at the best market price",
+        "limitPrice": "{{action}} at a fixed price per {{name}}",
+        "skip": "Skip order confirmations",
+        "confirmModal": {
+          "orderTitle": "Do you really want to buy <br/> {{amount}} {{name}} for {{total}}{{mark}}?",
+          "formTitle": "Better offer detected. Please pick {{pair}} <br/> pair to avoid fees or confirm the following order",
+          "continue": "Continue",
+          "cancel": "Cancel"
+        },
+        "validation": {
+          "smallBalance": "Not enough balance",
+          "buyWithCard": "you can buy with card"
+        }
+      },
+      "cards": {
+        "receive": "Receive a <strong>guaranteed</strong> cashback",
+        "buyCrypto": "Buy crypto with <strong>0%</strong> fees",
+        "poolTokens": "Pool tokens on Uniswap and get <strong>extra INDA</strong>",
+        "getAccess": "Get the earliest access to <strong>new products</strong> and <strong>IndaFi</strong>"
+      }
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "all": "All",
+      "inventory": "My coins",
+      "favourites": "Favourites",
+      "clickToPin": "Click to pin to a dashboard",
+      "attachedSuccess": "Currency attached successfully",
+      "deleteAttachmentSuccess": "Delete attachment successfully",
+      "copyMessage": "Address copied successfully",
+      "completeKYCMessage": "You must confirm your phone for buying tokens",
+      "unavailableGraphCourse": "Unavailable Graph Course",
+      "cards": {
+        "wallet": "You currently have no coins in your wallet",
+        "favourites": "You don't have favorite currencies",
+        "noCryptocurrency": "No cryptocurrency was found with this name, please check the spelling. Perhaps, we don't have this coin or it was delisted"
+      },
+      "cryptoBanner": {
+        "title": "Create your first portfolio, buy any crypto with us. Visa & MasterCard are accepted",
+        "button": "Buy your first crypto"
+      },
+      "buttons": {
+        "buy": "Buy",
+        "sell": "Sell",
+        "withdraw": "Withdraw",
+        "exchange": "Exchange",
+        "deposit": "Deposit"
+      },
+      "view": {
+        "backLink": "Back to Portfolio",
+        "wallet": "wallet",
+        "authInvest": "Add to Autoinvestment Portfolio",
+        "operations": "Operations with crypto",
+        "transactions": {
+          "title": "Transactions",
+          "filters": {
+            "sent": "Sent",
+            "received": "Received",
+            "all": "All"
+          }
+        }
+      },
+      "modals": {
+        "noCoins": "There are no coins in your account yet.",
+        "balance": "Balance:",
+        "deposit": {
+          "title": "Deposit",
+          "addressFieldTitle": "Wallet address"
+        },
+        "withdrawal": {
+          "title": "Withdrawal",
+          "addressFieldTitle": "Wallet address",
+          "tagFieldTitle": "Tag (optional)",
+          "maxCountText": "Available",
+          "maxCountButton": "Maximum",
+          "amountFieldTitle": "Amount",
+          "button": "Withdraw",
+          "successMessage": "Withdrawal completed successfully",
+          "successText": "To continue withdrawal, click on link sent to you by email",
+          "validation": {
+            "changePass": "Withdrawal blocked after pass change for 24 hours",
+            "notSaved": "Withdrawal blocked because it is not saved, please wait",
+            "blocked": "User blocked",
+            "notEnough": "Not enough coins",
+            "TooSmallAmount": "Too small amount",
+            "TooBigAmount": "Too Big Amount"
+          }
+        },
+        "buy": {
+          "title": "Buy",
+          "commonTitle": "Buy Crypto",
+          "cryptoFieldTitle": "Coins amount",
+          "fiatFieldTitle": "Fiat amount",
+          "paymentDetails": "Payment Details",
+          "cardNumFieldTitle": "Card number",
+          "cardDateFieldTitle": "Date",
+          "cardCvcFieldTitle": "CVC",
+          "cardNameFieldTitle": "Card holder name",
+          "button": "Buy",
+          "successMessage": "Buying completed successfully",
+          "validation": {
+            "CurrencyNotAvailable": "Currency no available",
+            "blockUser": "User is blocked",
+            "TooSmallAmount": "Amount is too small",
+            "TooBigAmount": "Amount is too big",
+            "BadRequest": "BadRequest"
+          }
+        },
+        "exchange": {
+          "title": "Exchange",
+          "currencyFieldTitle": "Choose a pair",
+          "firstFieldTitle": "Amount",
+          "secondFieldTitle": "Amount",
+          "button": "Exchange",
+          "maxCountButton": "Maximum",
+          "successMessage": "Exchange queued successfully",
+          "validation": {
+            "notEnough": "Not enough coins",
+            "notAvailable": "Currency not available",
+            "notAuth": "User is not authorized",
+            "smallAmount": "Toо small amount",
+            "maxAmount": "Max amount - 10.000"
+          }
+        }
+      }
+    },
+    "confirmWithdrawal": {
+      "bigTitle": "Your withdrawal has been confirmed",
+      "smallTitle": "thank you for choosing us",
+      "toDashboard": "To dashboard",
+      "bigTitleFail": "Your withdrawal has't been confirmed",
+      "smallTitleFail": "invalid link"
+    },
+    "Profile": {
+      "verification": {
+        "title": "Phone verification",
+        "invalidPhone": "Invalid phone number",
+        "wrongCaptcha": "Wrong captcha",
+        "wrongLimit": "Over limit",
+        "next": "Next",
+        "cancel": "Cancel",
+        "codePlaceholder": "4 digit code",
+        "codeText": "You will receive SMS from Indacoin with a 4 digit code. Enter it and press Next to verify your phone.",
+        "invalidCode": "Invalid code",
+        "wrongCode": "Wrong code",
+        "successText": "Phone verified successfully!",
+        "successButton": "Go to profile"
+      },
+      "DeleteAccount": {
+        "title": "Are you sure you want to delete your account?",
+        "AllInformation": "All information about cards, transactions, referral program and personal data will be lost.",
+        "DeleteAccount": "Delete account",
+        "Cancel": "Cancel",
+        "ToDelete": "To delete an account, you need to reset the account deposit to less than {{amount}}$",
+        "LinkWas": "Account deleted. A link was sent to your email to restore it.",
+        "SomethingWentWrong": "Something went wrong, please try deleting your account later. If the problem persists, contact support.",
+        "Accept": "Accept"
+      },
+      "menu": {
+        "title": "Profile",
+        "VerifyNow": "Verify phone",
+        "MyAccount": "My account",
+        "History": "History",
+        "ApiKey": "API key",
+        "Security": "Security"
+      },
+      "MyAccount": {
+        "title": "My account",
+        "DeleteAccount": "Delete account",
+        "ReferralProgramLevel": "Referral Program Level",
+        "FirstLevel": "First level",
+        "YourCashback": "My cashback",
+        "LanguageAndCurrency": "Language and currency",
+        "DefaultCurrency": "Default currency",
+        "Language": "Language",
+        "HowToStart": "How to start?",
+        "HowToCreatePortfolio": "How to create portfolio?",
+        "HowToUseReferralProgram": "How to use referral program?",
+        "HowToBuyINDAToken": "How to buy INDAToken?",
+        "ViewAll": "View all",
+        "Newsletter": "Newsletter",
+        "DesktopNotifications": "Desktop notifications",
+        "IndacoinNews": "Indacoin news",
+        "Transactions": "Transactions",
+        "CoinUpdate": "Coin update",
+        "PriceAlerts": "Price alerts",
+        "ImportantInformation": "Important information",
+        "ToHelpGettingYouStarted": "To help getting you started",
+        "referralLvl": {
+          "1": "1 level",
+          "2": "2 level",
+          "3": "3 level",
+          "4": "4 level",
+          "5": "5 level"
+        }
+      },
+      "History": {
+        "History": "History",
+        "Sent": "Sent",
+        "Received": "Received",
+        "All": "All",
+        "NoTransactions": "No transactions",
+        "Address": "Address",
+        "TxId": "TxId",
+        "Exchange": "Exchange",
+        "Deposit": "Deposit",
+        "Withdrawal": "Withdrawal",
+        "Wait": "Wait",
+        "Success": "Success",
+        "Cancelled": "Cancelled",
+        "NeedKYC": "Need KYC",
+        "NotPaid": "Not Paid",
+        "Unknown": "Unknown"
+      },
+      "Apikey": {
+        "IndacoinAPI": "Indacoin API is designed to allow access to all<br /> of the features of the Indacoin platform",
+        "ViewAPI": "View API documentation",
+        "GeneralAPI": "General API",
+        "WithdrawalAPI": "Withdrawal API",
+        "FullAccess": "Full access",
+        "ReadOnly": "Read only",
+        "NoAccess": "No access",
+        "GenetareNew": "Generate new API key",
+        "ActiveApiKeys": "Active API keys"
+      },
+      "Security": {
+        "TwoFA": "Two-factor authentication (2FA)",
+        "EnhanceTheSecurity": "Protect your Indacoin account access with additional secure means of verification.",
+        "Set2FA": "Add 2FA",
+        "Unset2FA": "Remove 2FA",
+        "ChangePassword": "Change password",
+        "uniquePassword": "Set a unique password to protect your Indacoin account.",
+        "Activity": "Activity",
+        "SeeWhichBrowsers": "See which browsers you logged in from and control the access to your account.",
+        "Date": "Date",
+        "Time": "Time",
+        "Location": "Location",
+        "Browser": "Browser",
+        "ChPasswordModal": {
+          "title": "Change password",
+          "oldPassErr": "It turned out that your old password is not true. Re-enter your password.",
+          "newPassErr": "Password must contain at least 6 characters, uppercase and lowercase letters in Latin and numbers.",
+          "oldPassTwoErr": "Password is duplicated incorrectly.",
+          "oldPassPlace": "Old password",
+          "newPassPlace": "New password",
+          "newPassTwoPlace": "New password replay",
+          "Go": "Go",
+          "Ok": "Ok",
+          "Cancel": "Cancel",
+          "MessFail": "Something went wrong. Password not changed.",
+          "MessSucc": "Password changed successfully."
+        },
+        "TFAModal": {
+          "title": "Two-factor authentication (2FA)",
+          "Waiting": "Waiting load your profile...",
+          "Ok": "Ok",
+          "Cancel": "Cancel",
+          "Go": "Go",
+          "Code": "Code",
+          "InstallApplication": "Install application <0>{{android}}</0>, <1>{{ios}}</1>.",
+          "SynchronizeMobile": "Synchronize mobile clock via interner\u2028",
+          "AddAccount": "Add account into the application",
+          "YourSecretKey": "Your secret key",
+          "SetTFAFail": "Something went wrong. The password is incorrect or the qr code is out of date. Try again.",
+          "SetTFASuccess": "Two-factor authentication successfully installed",
+          "EnterPass": "Removal Two-factor authentication. Enter your one time password.",
+          "UnsetTFAFail": "Something went wrong. Two-factor authentication could not be deleted. Try again.",
+          "UnsetTFASuccess": "Two-factor authentication removed."
+        },
+        "DeleteAccount": {
+          "title": "Are you sure you want to delete your account?",
+          "AllInformation": "All information about cards, transactions, referral program and personal data will be lost.",
+          "DeleteAccount": "Delete account",
+          "Cancel": "Cancel",
+          "ToDelete": "To delete an account, you need to reset the account deposit to less than {{amount}}$",
+          "LinkWas": "Account deleted. A link was sent to your email to restore it.",
+          "SomethingWentWrong": "Something went wrong, please try deleting your account later. If the problem persists, contact support.",
+          "Accept": "Accept"
+        }
+      }
     }
   }
 }
 
 const brouserLanguage = window.navigator.language.split('-')[0]
 const acceptLanguage = ["en", "et"]
-const storage = Storage.getInstance()
-if (!storage.get(COOKIES_LANGUAGE)) {
+
+if (!localStorage.getItem('cookies_language')) {
   let lang = acceptLanguage.find((el) => {
-    if (brouserLanguage == el) return true
+    if (brouserLanguage === el) return true
     return false
   })
-  storage.set(COOKIES_LANGUAGE, lang || "en");
-}else{
-    storage.set(COOKIES_LANGUAGE, "en");
+  localStorage.setItem('cookies_language', lang || "en");
 }
 
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: storage.get(COOKIES_LANGUAGE),
+    lng: localStorage.getItem('cookies_language'),
     interpolation: {
       escapeValue: false
     }

@@ -1,36 +1,38 @@
 import React, { Component } from 'react';
 import './styles.sass';
 import { ToastContainer, toast } from 'react-toastify';
-import {Trans, withTranslation} from 'react-i18next';
+import { Trans, withTranslation } from 'react-i18next';
+import 'react-toastify/dist/ReactToastify.css';
 
 class TermsOfUse extends Component {
     copyLink(event) {
-        const language = this.props.i18n.language === 'en' ? '' : `${this.props.i18n.language}/`;
-        let copy = `${window.location.host}/${language}terms#${encodeURIComponent(event.target.id)}`;
-        this.copyStringToClipboard(copy);
-        this.toast();
+        const language = this.props.i18n.language === 'en' ? '' : `${this.props.i18n.language}/`
+        let copy = `${window.location.host}/${language}terms#${encodeURIComponent(event.target.id)}`
+        this.copyStringToClipboard(copy)
+        this.toast()
     }
 
     copyStringToClipboard(string) {
-        const el = document.createElement('textarea');
-        el.value = string;
-        el.setAttribute('readonly', '');
-        el.style = {position: 'absolute', left: '-9999px'};
-        document.body.appendChild(el);
-        el.select();
-        document.execCommand('copy');
-        document.body.removeChild(el);
+        const el = document.createElement('textarea')
+        el.value = string
+        el.setAttribute('readonly', '')
+        el.style = {position: 'absolute', left: '-9999px'}
+        document.body.appendChild(el)
+        el.select()
+        document.execCommand('copy')
+        document.body.removeChild(el)
     }
 
     toast() {
-        toast.success(this.props.t('CPanel.referral.link.copyMessage'), {
+        toast.success('Link copied successfully',
+            {
             position: "top-right",
             autoClose: 3000,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true
-        });
+        })
     }
 
     render() {
@@ -39,7 +41,6 @@ class TermsOfUse extends Component {
                 switch (window.location.host) {
                     case 'indacoin.io':
                         return 'indacoin.io +44 207 048 25 82. Indacoin OU, Registry code: 14798473, Address: Meistri 16, Tallinn, Estonia, 13517, Operating license: FVT000145';
-                    case 'indacoin.io':
                     default:
                         return 'indacoin.io +44 207 048 25 82. Indacoin Limited, Suite 4b, 43 Berkeley Square, Mayfair, London, Westminster, United Kingdom, W1J 5FJ';    
                 }                            
@@ -48,7 +49,6 @@ class TermsOfUse extends Component {
                 switch (window.location.host) {
                     case 'indacoin.io':
                         return 'Indacoin OU, Registry code: 14798473, Address: Meistri 16, Tallinn, Estonia, 13517, Operating license: FVT000145';
-                    case 'indacoin.io':
                     default:
                         return 'Indacoin';
                 }
@@ -59,23 +59,34 @@ class TermsOfUse extends Component {
 
         return (
             <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
- <div className='wrapperTerms'>
-                <ToastContainer/>
-                <Trans
-                    i18nKey="terms.termsOfUse.0"
-                    values={{
-                        addr: trans.addr,
-                        host: trans.host,
-                    }}
-                >
-                    <p>
-                        Introduction This is a contract between you and {{ addr: trans.addr }} (“The Service”, “Indacoin”). By signing up to use an account through {{ host: trans.host }}, APIs, or mobile applications, you agree that you have read, understood, and accept all of the terms and conditions contained in this Agreement, as well as our Privacy Policy.
-                        Please read these Terms of Use ("Terms", "Terms of Use") carefully before using the https://{{ host: trans.host }}/ website and the Indacoin mobile application (the "Service") operated by our company.
-                        Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
-                        If you do not agree to accept and comply with any of the provisions of the Terms of Use, or if the Terms of Use are contrary to your national law or to the law of your location, you agree not to use the Service, otherwise, you are liable for all losses and damages to the Service or to third parties, caused by your failure to follow the Terms of Use.
-                        In addition, when using the Indacoin particular services, you shall be subject to any posted guidelines or rules applicable to such services, which may be posted and modified from time to time. To be eligible to use the Service, you must be at least 18 years old.
-                    </p>
-                </Trans>
+                <div className='wrapperTerms'>
+                    <ToastContainer
+                        position="top-right"
+                        autoClose={3000}
+                        hideProgressBar
+                        newestOnTop={false}
+                        closeOnClick
+                        rtl={false}
+                        pauseOnFocusLoss
+                        draggable
+                        pauseOnHover
+                        theme="light"
+                    />
+                    <Trans
+                        i18nKey="terms.termsOfUse.0"
+                        values={{
+                            addr: trans.addr,
+                            host: trans.host,
+                        }}
+                    >
+                        <p>
+                            Introduction This is a contract between you and {{ addr: trans.addr }} (“The Service”, “Indacoin”). By signing up to use an account through {{ host: trans.host }}, APIs, or mobile applications, you agree that you have read, understood, and accept all of the terms and conditions contained in this Agreement, as well as our Privacy Policy.
+                            Please read these Terms of Use ("Terms", "Terms of Use") carefully before using the https://{{ host: trans.host }}/ website and the Indacoin mobile application (the "Service") operated by our company.
+                            Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
+                            If you do not agree to accept and comply with any of the provisions of the Terms of Use, or if the Terms of Use are contrary to your national law or to the law of your location, you agree not to use the Service, otherwise, you are liable for all losses and damages to the Service or to third parties, caused by your failure to follow the Terms of Use.
+                            In addition, when using the Indacoin particular services, you shall be subject to any posted guidelines or rules applicable to such services, which may be posted and modified from time to time. To be eligible to use the Service, you must be at least 18 years old.
+                        </p>
+                    </Trans>
                 <span
                     id="Changes"
                     onClick={this.copyLink.bind(this)}

@@ -705,7 +705,7 @@
         "question2": "HOW MUCH WILL I BE CHARGED FOR THE TRANSACTION?",
         "answer2": "You will be charged only the amount you specify during your order in our calculator. All fees are included in that amount.",
         "question3": "DO YOU HAVE ANY DISCOUNTS?",
-        "answer3": "Indacoin also has its own <1>loyalty program</1>, which allows you to buy crypto with 0.00% fees and get cashback on every purchase you make. The key element of this program is the INDA token - a native token of the Indacoin ecosystem. It not only fuels the loyalty and referral systems but also connects Indacoin to IndaFi - an all-in-one aggregator for every financial need. At the moment we officially launched the core module of IndaFi - IndaSwap, which allows everyone to buy DeFi tokens directly with Visa and Mastercard."
+        "answer3": "Indacoin also has its own loyalty program, which allows you to buy crypto with 0.00% fees and get cashback on every purchase you make. The key element of this program is the INDA token - a native token of the Indacoin ecosystem. It not only fuels the loyalty and referral systems but also connects Indacoin to IndaFi - an all-in-one aggregator for every financial need. At the moment we officially launched the core module of IndaFi - IndaSwap, which allows everyone to buy DeFi tokens directly with Visa and Mastercard."
       },
       "purchase": {
         "title": "PURCHASE",
@@ -728,7 +728,7 @@
         "question9": "I RECEIVED FEWER COINS THAN WAS PROMISED. WHY?",
         "answer9": "We process the exchange according to the current market rate at the moment when KYC verification is completed and the order is approved. We are trying to make every transaction as profitable as possible for you but the amount that the user receives may differ from originally shown due to sharp jumps in rate.<br>In case, if the amount differs by more than 25 per cent, the user has the right to ask for  a refund by providing a request via support@indacoin.io",
         "question10": "I’VE BEEN CHARGED TWICE. WILL YOU REFUND ME?",
-        "answer10": "It is extremely unlikely we have accidentally charged you twice for the same order, so first, please check to see if you have placed two orders instead of one.<br>If this is not the case, please provide an official bank statement where it is specified that the transaction was authorised by Indacoin (not a screenshot of the SMS) via support@indacoin.io and our finance department will investigate the case and provide you with any possible assistance.",
+        "answer10": "It is extremely unlikely we have accidentally charged you twice for the same order, so first, please check to see if you have placed two orders instead of one.<br>If this is not the case, please provide an official bank statement where it is specified that the transaction was authorised by Indacoin (not a screenshot of the SMS) via <1>support@indacoin.io</1> and our finance department will investigate the case and provide you with any possible assistance.",
         "question11": "I DIDN’T MAKE AN ORDER ON INDACOIN BUT MY CARD WAS CHARGED. WHAT SHOULD I DO?",
         "answer11": "If your card was stolen and used for the purchase on our platform by another person, please, block your bank card and contact our agent immediately via live-chat support or e-mail  <1>support@indacoin.io</1> for assistance.<br> We kindly ask you to contact us no later than 3 days from the date of purchase, so that immediate action is taken on our side and if possible - a refund."
       }

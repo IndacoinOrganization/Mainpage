@@ -563,8 +563,7 @@ class Faq extends Component {
             ),
             answer: (
               <Trans i18nKey="faq.questionList.commissions.answer3">
-                Indacoin also has its own
-                <a href="https://indacoin.io/token">loyalty program</a>, which
+                Indacoin also has its own loyalty program, which
                 allows you to buy crypto with 0.00% fees and get cashback on
                 every purchase you make. The key element of this program is the
                 INDA token - a native token of the Indacoin ecosystem. It not
@@ -736,13 +735,7 @@ class Faq extends Component {
             ),
             answer: (
               <Trans i18nKey="faq.questionList.purchase.answer10">
-                If your transaction fails, we cancel the temporary
-                pre-authorisation that was placed on your card when you first
-                made your order. In this case, funds should have returned to
-                your bank account shortly, usually within 3 business days, the
-                exact time depends on the bank. Otherwise please contact the
-                bank they'll be able to see pending declined transaction and
-                remove the hold status from your funds.
+                It is extremely unlikely we have accidentally charged you twice for the same order, so first, please check to see if you have placed two orders instead of one. If this is not the case, please provide an official bank statement where it is specified that the transaction was authorised by Indacoin (not a screenshot of the SMS) via <a href="mailto:support@indacoin.io">support@indacoin.io</a> and our finance department will investigate the case and provide you with any possible assistance."
               </Trans>
             ),
           },
@@ -804,14 +797,14 @@ class Faq extends Component {
               <div className='anchors'>
                 <ul>
                   {this.questions.map((value, index) => {
-                    const title = this.props.t(value.title.props.i18nKey);
+                    const title = this.props.t(value.title.props.i18nKey)
                     return (
                       <li key={index}>
                         <a
                           href={"#" + value.title}
                           onClick={(event) => this.scroll(event, index)}
                         >
-                          <span>{title.toLocaleLowerCase()}</span>
+                          <span>{title.toLowerCase()}</span>
                         </a>
                       </li>
                     );
