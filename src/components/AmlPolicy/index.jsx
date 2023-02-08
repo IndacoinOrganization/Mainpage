@@ -328,12 +328,13 @@ class AmlPolicy extends Component {
                     </li>
                     <li>
                         <span
+                            className='titleAml'
                             id="YOUR RESPONSIBILITIES"
                             onClick={this.copyLink.bind(this)}
-                        >9. YOUR RESPONSIBILITIES</span>
+                        >8. YOUR RESPONSIBILITIES</span>
                     </li>
                     <li>
-                        <p>9.1. You shall:</p>
+                        <p>8.1. You shall:</p>
                         <ul>
                             <li>
                                 <p>- comply with any requirements of applicable law, including international, regulating AML and combating TF standards;</p>
@@ -344,13 +345,16 @@ class AmlPolicy extends Component {
                             <li>
                                 <p>- guarantee lawful source and your legal right to control the fiat and virtual currency on your Account balance.</p>
                             </li>
+                            <li>
+                                <p>- be a beneficial owner of your transactions.</p>
+                            </li>
                         </ul>
                     </li>
                     <li>
-                        <p>9.2. Suspension, Limitation and Cancelation due to Incomplete Verification. We reserve the right to limit, suspend or cancel the Account to Users, who have not verified their identity or set up a necessary level of security of Account, or to ask such User to complete verification procedure once again.</p>
+                        <p>8.2. Suspension, Limitation and Cancelation due to Incomplete Verification. We reserve the right to limit, suspend or cancel the Account to Users, who have not verified their identity or set up a necessary level of security of Account, or to ask such User to complete verification procedure once again.</p>
                     </li>
                     <li>
-                        <p>9.3. Suspension, Limitation and Cancelation due to Failure to Comply with this KYC/AML Policy. Should the User fail to comply with the requirements set out by this KYC/AML Policy on any stage of the User identification process and/or further CDD screenings we will exercise our right to limit, suspend, or cancel User’s Account or access to the Services for such User. We will normally give a notice of any limitation, suspension, or cancelation of the Account but it may, if it is reasonable to do so (for example we consider it advisable for security reasons), limit, suspend or cancel the Account without any prior notice to User. We also reserve the right to decline any pending transactions requested by the User and to investigate transactions of doubtful nature and inform relevant competent or law enforcement authorities regarding the suspicious activities of any User.</p>
+                        <p>8.3. Suspension, Limitation and Cancelation due to Failure to Comply with this KYC/AML Policy. Should the User fail to comply with the requirements set out by this KYC/AML Policy on any stage of the User identification process and/or further CDD screenings we will exercise our right to limit, suspend, or cancel User’s Account or access to the Services for such User. We will normally give a notice of any limitation, suspension, or cancelation of the Account but it may, if it is reasonable to do so (for example we consider it advisable for security reasons), limit, suspend or cancel the Account without any prior notice to User. We also reserve the right to decline any pending transactions requested by the User and to investigate transactions of doubtful nature and inform relevant competent or law enforcement authorities regarding the suspicious activities of any User.</p>
                     </li>
                 </ol>
             </div>
